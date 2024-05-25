@@ -1,13 +1,10 @@
-// src/components/MyComponent.js
 
+
+// src/Home.js
 import React from 'react';
 
-const MyComponent = () => {
-  return (
-    <div>
-      <h1> Zenit School!</h1>
-    </div>
-  );
+const Home = () => {
+  return <div>Home Page</div>;
 };
 
-export default MyComponent;
+export default Home;
