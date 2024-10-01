@@ -1,0 +1,25 @@
+body {
+    background-color: white; /* White background */
+    color: rgba(20, 34, 71, 1); /* Default text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: rgba(20, 34, 71, 1); /* Blue text for headings */
+  }
+  
+  p {
+    color: rgba(20, 34, 71, 0.8); /* Slightly lighter blue for paragraphs */
+  }
+  
+  a {
+    color: rgba(20, 34, 71, 1); /* Blue links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,27 @@
+nav {
+    background-color: rgba(20, 34, 71, 1); /* Blue background */
+    padding: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    color: white; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
