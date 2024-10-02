@@ -1,0 +1,14 @@
+.contact-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white; /* White background */
+  }
+  
+  h1 {
+    color: rgba(20, 34, 71, 1); /* Blue headings */
+  }
+  
+  p {
+    color: rgba(20, 34, 71, 0.8); /* Slightly lighter blue for paragraphs */
+  }
+  

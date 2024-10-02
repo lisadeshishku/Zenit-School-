@@ -4,7 +4,7 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>© 2024 Zenit School. All rights reserved.</p>
+      <p>© 2024 Zenit School</p>
     </footer>
   );
 };
