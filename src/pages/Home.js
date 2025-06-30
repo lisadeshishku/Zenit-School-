@@ -1,11 +1,22 @@
+// pages/Home.js - Unique Homepage Content (Different from other pages)
 import React from 'react';
-import '../styles/Home.css'; // Import the CSS file
+import Hero from '../components/Hero';
+import StatsSection from '../components/StatsSection';
+import AboutSection from '../components/AboutSection';
+import ProgramsSection from '../components/ProgramsSection';
+import LearningEnvironment from '../components/LearningEnvironment';
+import AdmissionsCTA from '../components/AdmissionsCTA';
+import ContactSection from '../components/ContactSection';
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <h1>Welcome to Zenit School</h1>
-      <p>Explore our programs and learn more about our school.</p>
+    <div className="home-page">
+      <Hero />
+      <StatsSection />
+      <AboutSection />
+      <ProgramsSection />
+      <LearningEnvironment />
+      <AdmissionsCTA />
     </div>
   );
 };

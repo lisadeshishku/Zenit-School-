@@ -1,7 +1,10 @@
+// src/App.js - Remove Router from here, keep only Routes
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // Import the Footer
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
@@ -10,16 +13,18 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/programs" element={<Programs />} />
-        <Route path="/admissions" element={<Admissions />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer /> {/* Add the Footer here */}
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/admissions" element={<Admissions />} /> 
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,52 @@
+/* styles/LanguageToggle.css */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.language-toggle:hover {
+  background-color: #f1f3f4;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+.language-toggle:active {
+  transform: translateY(0);
+}
+
+.flag-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.language-text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar integration */
+.navbar .language-toggle {
+  margin-left: 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .language-toggle {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .flag-icon {
+    font-size: 1rem;
+  }
+}
