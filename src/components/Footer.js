@@ -15,10 +15,10 @@ const Footer = () => {
               Featuring world-class facilities including a half Olympic pool.
             </p>
             <div className="social-links">
-              <a href="https://instagram.com/zenitschool" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.instagram.com/shkollazenit/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Instagram size={24} />
               </a>
-              <a href="https://facebook.com/zenitschool" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.facebook.com/shkollazenit" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Facebook size={24} />
               </a>
             </div>
