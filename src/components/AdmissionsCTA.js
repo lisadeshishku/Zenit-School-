@@ -6,10 +6,12 @@ const AdmissionsCTA = () => {
   const navigate = useNavigate();
 
   const handleApplyNow = () => {
-    navigate('/admissions');
+    // Open Google Form in new tab
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeGmeV2aKE8Wi8fHLksaDj4WIs1p22gn4rLtSFBLnUtag9bCw/viewform?pli=1', '_blank');
   };
 
   const handleScheduleTour = () => {
+    // Navigate to contact page
     navigate('/contact');
   };
 

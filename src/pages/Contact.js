@@ -1,7 +1,6 @@
-// Complete Contact.js - Updated with better styling
+// Replace your Contact.js with this version that has inline styles
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook } from 'lucide-react';
-import '../styles/PageHeaders.css';
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -12,6 +11,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
+  const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
@@ -31,6 +32,35 @@ const Contact = () => {
       subject: '',
       message: ''
     });
+  };
+
+  // Inline styles for social icons (this will override any CSS)
+  const socialLinkStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '2.5rem',
+    height: '2.5rem',
+    backgroundColor: '#374151',
+    color: '#9ca3af',
+    borderRadius: '0.5rem',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
+    transform: 'translateY(0)'
+  };
+
+  const socialLinkHoverStyle = {
+    ...socialLinkStyle,
+    backgroundColor: '#2563eb',
+    color: 'white',
+    transform: 'translateY(-2px)'
+  };
+
+  const socialLinksContainerStyle = {
+    display: 'flex',
+    gap: '1rem',
+    alignItems: 'center',
+    justifyContent: 'center'
   };
 
   return (
@@ -100,17 +130,29 @@ const Contact = () => {
             </div>
           </div>
           
-          {/* Social Media Links */}
+          {/* Social Media Links with inline styles */}
           <div className="social-section">
             <h3>Follow Us</h3>
-            <div className="social-links">
-              <a href="https://instagram.com/zenitschool" target="_blank" rel="noopener noreferrer" className="social-link">
+            <div style={socialLinksContainerStyle}>
+              <a 
+                href="https://www.instagram.com/shkollazenit/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={hoveredIcon === 'instagram' ? socialLinkHoverStyle : socialLinkStyle}
+                onMouseEnter={() => setHoveredIcon('instagram')}
+                onMouseLeave={() => setHoveredIcon(null)}
+              >
                 <Instagram size={24} />
-                <span>@zenitschool</span>
               </a>
-              <a href="https://facebook.com/zenitschool" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a 
+                href="https://www.facebook.com/shkollazenit" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={hoveredIcon === 'facebook' ? socialLinkHoverStyle : socialLinkStyle}
+                onMouseEnter={() => setHoveredIcon('facebook')}
+                onMouseLeave={() => setHoveredIcon(null)}
+              >
                 <Facebook size={24} />
-                <span>Zenit School</span>
               </a>
             </div>
           </div>
@@ -211,11 +253,11 @@ const Contact = () => {
         <div className="container">
           <div className="quick-info-grid">
             <div className="info-card">
-              <h4> Swimming Facilities</h4>
+              <h4>🏊 Swimming Facilities</h4>
               <p>Visit our half Olympic pool - perfect for competitive swimming, lessons, and summer camp activities.</p>
             </div>
             <div className="info-card">
-              <h4> Parking</h4>
+              <h4>🚗 Parking</h4>
               <p>Free parking available on campus for all visitors and families.</p>
             </div>
             <div className="info-card">
@@ -223,7 +265,7 @@ const Contact = () => {
               <p>All facilities are wheelchair accessible with accommodations available.</p>
             </div>
             <div className="info-card">
-              <h4> Languages</h4>
+              <h4>🌐 Languages</h4>
               <p>Translation services available upon request for non-English speaking families.</p>
             </div>
           </div>

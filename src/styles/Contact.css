@@ -1,14 +1,58 @@
-.contact-container {
-    text-align: center;
-    padding: 2rem;
-    background-color: white; /* White background */
-  }
-  
-  h1 {
-    color: rgba(20, 34, 71, 1); /* Blue headings */
-  }
-  
-  p {
-    color: rgba(20, 34, 71, 0.8); /* Slightly lighter blue for paragraphs */
-  }
-  
+/* Add this to the END of your Contact.css file */
+
+/* Social Media Section - Clean implementation */
+.contact-page .social-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+}
+
+.contact-page .social-section h3 {
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-page .social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Force exact Footer styling */
+.contact-page .social-links .social-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background-color: #374151 !important;
+  color: #9ca3af !important;
+  border-radius: 0.5rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  transform: translateY(0) !important;
+}
+
+.contact-page .social-links .social-link:hover {
+  background-color: #2563eb !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Override any conflicting styles */
+.contact-page .social-links a[href*="instagram"],
+.contact-page .social-links a[href*="facebook"] {
+  background-color: #374151 !important;
+  color: #9ca3af !important;
+}
+
+.contact-page .social-links a[href*="instagram"]:hover,
+.contact-page .social-links a[href*="facebook"]:hover {
+  background-color: #2563eb !important;
+  color: white !important;
+}

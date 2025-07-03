@@ -1,6 +1,6 @@
-// src/App.js - Remove Router from here, keep only Routes
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+// src/App.js - Updated with scroll to top functionality
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,6 +12,13 @@ import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 
 function App() {
+  const { pathname } = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="App">
       <Navbar />
