@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // ADD THIS
 import '../styles/AboutSection.css';
 
 const AboutSection = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); // ADD THIS
 
   const handleLearnMore = () => {
     navigate('/about');
@@ -14,35 +16,31 @@ const AboutSection = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-text">
-            <h2 className="about-title">Cultivating Excellence Since 1985</h2>
+            <h2 className="about-title">{t("aboutSection.title")}</h2>
             <p className="about-description">
-              Zenit School stands as a beacon of educational excellence, where innovation meets tradition. 
-              Our commitment to holistic education ensures that every student develops not just academically, 
-              but as a confident, creative, and compassionate global citizen.
+              {t("aboutSection.desc1")}
             </p>
             <p className="about-description">
-              With campuses designed to inspire learning and a curriculum that bridges disciplines, 
-              we prepare students for the challenges and opportunities of tomorrow while fostering 
-              a lifelong love of learning.
+              {t("aboutSection.desc2")}
             </p>
             
             <div className="facilities-highlight">
-              <h3>🏊‍♀️ World-Class Facilities</h3>
-              <p>Our campus features state-of-the-art learning spaces, including a half Olympic pool for aquatic programs and competitive swimming.</p>
+              <h3>🏊‍♀️ {t("aboutSection.facilities")}</h3>
+              <p>{t("aboutSection.facilitiesDesc")}</p>
             </div>
             
             <button className="about-cta-btn" onClick={handleLearnMore}>
-              Learn More About Our Mission
+              {t("aboutSection.cta")}
             </button>
           </div>
           <div className="about-image">
             <img
               src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Students in classroom"
+              alt={t("aboutSection.title")}
             />
             <div className="experience-badge">
               <span className="badge-number">40+</span>
-              <span className="badge-text">Years of Excellence</span>
+              <span className="badge-text">{t("aboutSection.years")}</span>
             </div>
           </div>
         </div>

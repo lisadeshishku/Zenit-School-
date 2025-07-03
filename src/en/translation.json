@@ -1,0 +1,136 @@
+{
+  "navbar": {
+    "about": "About",
+    "whyZenit": "Why Zenit?",
+    "insideClassroom": "Inside the Classroom",
+    "activities": "Activities",
+    "culture": "Culture",
+    "news": "News",
+    "programs": "Programs",
+    "elementary": "Elementary School",
+    "middle": "Middle School",
+    "high": "High School",
+    "summer": "Summer Camp",
+    "leadership": "Leadership",
+    "director": "From the Director",
+    "staff": "Meet the Staff",
+    "mission": "Mission and Vision",
+    "history": "Our History",
+    "careers": "Employment Opportunities",
+    "community": "Community",
+    "volunteer": "Volunteer Work",
+    "charity": "Charity",
+    "solidarity": "Solidarity",
+    "admissions": "Admissions",
+    "admission": "Admission to Zenit",
+    "aid": "Financial Aid",
+    "scholarships": "Scholarships and Awards",
+    "fees": "Student Fees",
+    "digitalEducation": "Digital Education",
+    "campus": "Academic Campus",
+    "curriculum": "Academic Curriculum",
+    "results": "Test Results",
+    "contact": "Contact Details",
+    "logo": {
+      "name": "Zenit School"
+    }
+  },
+  "footer": {
+    "description": "Inspiring excellence in education and preparing students for a dynamic future. Featuring world-class facilities including a half Olympic pool.",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "programs": "Programs",
+    "admissions": "Admissions",
+    "contact": "Contact",
+    "programsHeader": "Programs",
+    "elementary": "Elementary School",
+    "middle": "Middle School",
+    "high": "High School",
+    "summer": "Zenit Summer Camp",
+    "connect": "Connect",
+    "address1": "123 Education Boulevard",
+    "address2": "Academic Heights, AH 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@zenitschool.edu",
+    "copyright": "© 2025 Zenit School. All rights reserved."
+  },
+  "contactSection": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to answer your questions and welcome you to our community.",
+    "visit": "Visit Us",
+    "visitAddress1": "123 Education Boulevard",
+    "visitAddress2": "Academic Heights, AH 12345",
+    "call": "Call Us",
+    "callPhone": "+1 (555) 123-4567",
+    "callHours": "Mon-Fri, 8:00 AM - 5:00 PM",
+    "email": "Email Us",
+    "email1": "admissions@zenitschool.edu",
+    "email2": "info@zenitschool.edu"
+  },
+  "learning": {
+    "title": "State-of-the-Art Learning Environment",
+    "desc": "Our campus is thoughtfully designed to inspire learning at every corner. From cutting-edge science laboratories to our half Olympic pool, every space is crafted to enhance the educational experience and foster innovation.",
+    "modernClassrooms": "Modern Classrooms",
+    "modernClassroomsDesc": "Interactive technology and flexible learning spaces designed for collaboration",
+    "pool": "Half Olympic Pool",
+    "poolDesc": "Professional swimming facility for competitive training and recreational activities",
+    "research": "Research Facilities",
+    "researchDesc": "Advanced labs for scientific discovery and hands-on experimentation",
+    "creative": "Creative Studios",
+    "creativeDesc": "Inspiring spaces for arts, music, theater, and digital media production"
+  },
+  "programs": {
+    "title": "Our Programs",
+    "subtitle": "From early childhood through graduation, plus our exciting summer camp program, we offer comprehensive educational experiences designed to nurture growth and inspire curiosity.",
+    "elementaryTitle": "Elementary School",
+    "elementaryDesc": "Foundation years focused on creativity, exploration, and fundamental skills development in a nurturing environment.",
+    "elementaryAges": "Ages 5-11",
+    "middleTitle": "Middle School",
+    "middleDesc": "Transitional years emphasizing critical thinking, collaboration, and personal growth through innovative curriculum.",
+    "middleAges": "Ages 11-14",
+    "highTitle": "High School",
+    "highDesc": "Advanced preparation for university with rigorous academics, leadership opportunities, and global perspectives.",
+    "highAges": "Ages 14-18",
+    "summerTitle": "Zenit Summer Camp",
+    "summerDesc": "An exciting summer program featuring swimming in our half Olympic pool, arts, sports, and academic enrichment activities.",
+    "summerAges": "Ages 6-16",
+    "learnMore": "Learn More"
+  },
+  "stats": {
+    "students": "Students",
+    "countries": "Countries Represented",
+    "ratio": "Student to Teacher Ratio",
+    "acceptance": "University Acceptance"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Excellence in Education",
+      "subtitle": "Inspiring minds, shaping futures in our world-class learning environment"
+    },
+    "slide2": {
+      "title": "Global Perspectives",
+      "subtitle": "Preparing students for success in an interconnected world"
+    },
+    "slide3": {
+      "title": "Innovation & Discovery",
+      "subtitle": "State-of-the-art facilities fostering creativity and critical thinking"
+    },
+    "explorePrograms": "Explore Programs",
+    "scheduleTour": "Schedule Tour"
+  },
+  "admissionsCTA": {
+    "title": "Ready to Join Our Community?",
+    "subtitle": "Take the first step towards an exceptional educational journey. Our admissions team is here to guide you through the process.",
+    "apply": "Apply Now",
+    "visit": "Schedule a Visit"
+  },
+  "aboutSection": {
+    "title": "Cultivating Excellence Since 1985",
+    "desc1": "Zenit School stands as a beacon of educational excellence, where innovation meets tradition. Our commitment to holistic education ensures that every student develops not just academically, but as a confident, creative, and compassionate global citizen.",
+    "desc2": "With campuses designed to inspire learning and a curriculum that bridges disciplines, we prepare students for the challenges and opportunities of tomorrow while fostering a lifelong love of learning.",
+    "facilities": "World-Class Facilities",
+    "facilitiesDesc": "Our campus features state-of-the-art learning spaces, including a half Olympic pool for aquatic programs and competitive swimming.",
+    "cta": "Learn More About Our Mission",
+    "years": "Years of Excellence"
+  }
+}

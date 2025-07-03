@@ -1,14 +1,16 @@
-// components/StatsSection.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Users, Globe, BookOpen, Award } from 'lucide-react';
 import '../styles/StatsSection.css';
 
 const StatsSection = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { number: "450", label: "Students", icon: Users },
-    { number: "35", label: "Countries Represented", icon: Globe },
-    { number: "8:1", label: "Student to Teacher Ratio", icon: BookOpen },
-    { number: "98%", label: "University Acceptance", icon: Award }
+    { number: "450", label: t("stats.students"), icon: Users },
+    { number: "35", label: t("stats.countries"), icon: Globe },
+    { number: "8:1", label: t("stats.ratio"), icon: BookOpen },
+    { number: "98%", label: t("stats.acceptance"), icon: Award }
   ];
 
   return (

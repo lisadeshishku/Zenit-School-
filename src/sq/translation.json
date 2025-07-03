@@ -1,0 +1,136 @@
+{
+  "navbar": {
+    "about": "Rreth Nesh",
+    "whyZenit": "Pse Zenit?",
+    "insideClassroom": "Brenda Klasës",
+    "activities": "Aktivitete",
+    "culture": "Kulturë",
+    "news": "Lajme",
+    "programs": "Programe",
+    "elementary": "Shkolla Fillore",
+    "middle": "Shkolla e Mesme e Ulët",
+    "high": "Shkolla e Mesme e Lartë",
+    "summer": "Kampi Veror",
+    "leadership": "Lidership",
+    "director": "Nga Drejtori",
+    "staff": "Stafi",
+    "mission": "Misioni dhe Vizioni",
+    "history": "Historia Jonë",
+    "careers": "Punësime",
+    "community": "Komuniteti",
+    "volunteer": "Punë Vullnetare",
+    "charity": "Bamirësi",
+    "solidarity": "Solidaritet",
+    "admissions": "Pranime",
+    "admission": "Pranimi në Zenit",
+    "aid": "Ndihmë Financiare",
+    "scholarships": "Bursa dhe Çmime",
+    "fees": "Tarifat e Studentëve",
+    "digitalEducation": "Arsimi Digjital",
+    "campus": "Kampusi Akademik",
+    "curriculum": "Kurrikula Akademike",
+    "results": "Rezultatet e Testeve",
+    "contact": "Detajet e Kontaktit",
+    "logo": {
+      "name": "Shkolla Zenit"
+    }
+  },
+  "footer": {
+    "description": "Frymëzojmë ekselencën në arsim dhe përgatisim nxënësit për një të ardhme dinamike. Ofrojmë ambiente të klasit botëror, përfshirë një pishinë gjysmë olimpike.",
+    "quickLinks": "Lidhje të Shpejta",
+    "about": "Rreth Nesh",
+    "programs": "Programe",
+    "admissions": "Pranime",
+    "contact": "Kontakt",
+    "programsHeader": "Programe",
+    "elementary": "Shkolla Fillore",
+    "middle": "Shkolla e Mesme e Ulët",
+    "high": "Shkolla e Mesme e Lartë",
+    "summer": "Kampi Veror Zenit",
+    "connect": "Lidhu",
+    "address1": "Bulevardi i Arsimit 123",
+    "address2": "Lartësitë Akademike, AH 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@zenitschool.edu",
+    "copyright": "© 2025 Shkolla Zenit. Të gjitha të drejtat e rezervuara."
+  },
+  "contactSection": {
+    "title": "Kontaktoni",
+    "subtitle": "Jemi këtu për t'ju përgjigjur pyetjeve dhe për t'ju mirëpritur në komunitetin tonë.",
+    "visit": "Na Vizitoni",
+    "visitAddress1": "Bulevardi i Arsimit 123",
+    "visitAddress2": "Lartësitë Akademike, AH 12345",
+    "call": "Na Telefononi",
+    "callPhone": "+1 (555) 123-4567",
+    "callHours": "E hënë - E premte, 8:00 - 17:00",
+    "email": "Na shkruani email",
+    "email1": "admissions@zenitschool.edu",
+    "email2": "info@zenitschool.edu"
+  },
+  "learning": {
+    "title": "Mjedis Mësimor i Standardeve të Larta",
+    "desc": "Kampusi ynë është projektuar me kujdes për të frymëzuar mësimin në çdo cep. Nga laboratorët modern të shkencës te pishina gjysmë olimpike, çdo hapësirë është krijuar për të përmirësuar përvojën edukative dhe për të nxitur inovacionin.",
+    "modernClassrooms": "Klasa Moderne",
+    "modernClassroomsDesc": "Teknologji interaktive dhe hapësira fleksibël për bashkëpunim",
+    "pool": "Pishinë Gjysmë Olimpike",
+    "poolDesc": "Pishinë profesionale për trajnim garues dhe aktivitete rekreative",
+    "research": "Fasilitete Kërkimore",
+    "researchDesc": "Laboratorë të avancuar për zbulime shkencore dhe eksperimente praktike",
+    "creative": "Studio Kreative",
+    "creativeDesc": "Hapësira frymëzuese për arte, muzikë, teatër dhe prodhim mediesh digjitale"
+  },
+  "programs": {
+    "title": "Programe",
+    "subtitle": "Nga fëmijëria e hershme deri në diplomim, si dhe programi ynë i veçantë i kampit veror, ofrojmë përvoja gjithëpërfshirëse arsimore për të nxitur rritjen dhe kureshtjen.",
+    "elementaryTitle": "Shkolla Fillore",
+    "elementaryDesc": "Vitet themeluese të fokusuara në kreativitet, eksplorim dhe zhvillim të aftësive bazë në një mjedis të kujdesshëm.",
+    "elementaryAges": "Mosha 5-11",
+    "middleTitle": "Shkolla e Mesme e Ulët",
+    "middleDesc": "Vite tranzicioni që theksojnë mendimin kritik, bashkëpunimin dhe zhvillimin personal përmes kurrikulës inovative.",
+    "middleAges": "Mosha 11-14",
+    "highTitle": "Shkolla e Mesme e Lartë",
+    "highDesc": "Përgatitje e avancuar për universitet me akademikë të fortë, mundësi lidershipi dhe perspektiva globale.",
+    "highAges": "Mosha 14-18",
+    "summerTitle": "Kampi Veror Zenit",
+    "summerDesc": "Një program emocionues veror me not në pishinën tonë gjysmë olimpike, arte, sport dhe aktivitete të pasura edukative.",
+    "summerAges": "Mosha 6-16",
+    "learnMore": "Mëso Më Shumë"
+  },
+  "stats": {
+    "students": "Nxënës",
+    "countries": "Shtete të Përfaqësuara",
+    "ratio": "Raporti Nxënës-Mësues",
+    "acceptance": "Pranimi në Universitet"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Ekselencë në Arsim",
+      "subtitle": "Frymëzojmë mendjet, formojmë të ardhmen në një mjedis të jashtëzakonshëm mësimor"
+    },
+    "slide2": {
+      "title": "Perspektiva Globale",
+      "subtitle": "Përgatitje e nxënësve për sukses në një botë të ndërlidhur"
+    },
+    "slide3": {
+      "title": "Inovacion & Zbulim",
+      "subtitle": "Fasilitete moderne që nxisin kreativitetin dhe mendimin kritik"
+    },
+    "explorePrograms": "Eksploro Programet",
+    "scheduleTour": "Rezervo Vizitën"
+  },
+  "admissionsCTA": {
+    "title": "Gati për t'iu Bashkuar Komunitetit Tonë?",
+    "subtitle": "Hidh hapin e parë drejt një udhëtimi të jashtëzakonshëm arsimor. Ekipi ynë i pranimeve është këtu për t'ju udhëhequr gjatë procesit.",
+    "apply": "Apliko Tani",
+    "visit": "Rezervo një Vizitë"
+  },
+  "aboutSection": {
+    "title": "Kultivojmë Ekselencën Që Nga 1985",
+    "desc1": "Shkolla Zenit është simbol i ekselencës arsimore, ku inovacioni takon traditën. Angazhimi ynë për arsim gjithëpërfshirës siguron që çdo nxënës të zhvillohet jo vetëm akademikisht, por edhe si qytetar global i sigurt, kreativ dhe i dhembshur.",
+    "desc2": "Me kampuse të dizajnuara për të frymëzuar mësimin dhe një kurrikulë që bashkon disiplinat, përgatisim nxënësit për sfidat dhe mundësitë e së nesërmes duke nxitur dashurinë për të mësuar gjatë gjithë jetës.",
+    "facilities": "Fasilitete të Standardeve Botërore",
+    "facilitiesDesc": "Kampusi ynë ofron hapësira moderne mësimore, përfshirë një pishinë gjysmë olimpike për programe ujore dhe not garues.",
+    "cta": "Mëso Më Shumë Rreth Misionit Tonë",
+    "years": "Vite Ekselence"
+  }
+}

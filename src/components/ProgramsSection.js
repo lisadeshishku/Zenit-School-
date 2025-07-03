@@ -1,35 +1,38 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ProgramCard from './ProgramCard';
 import '../styles/ProgramsSection.css';
 
 const ProgramsSection = () => {
+  const { t } = useTranslation();
+
   const programs = [
     {
-      title: "Elementary School",
-      description: "Foundation years focused on creativity, exploration, and fundamental skills development in a nurturing environment.",
+      title: t("programs.elementaryTitle"),
+      description: t("programs.elementaryDesc"),
       image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      ages: "Ages 5-11",
+      ages: t("programs.elementaryAges"),
       link: "/programs#elementary"
     },
     {
-      title: "Middle School",
-      description: "Transitional years emphasizing critical thinking, collaboration, and personal growth through innovative curriculum.",
+      title: t("programs.middleTitle"),
+      description: t("programs.middleDesc"),
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      ages: "Ages 11-14",
+      ages: t("programs.middleAges"),
       link: "/programs#middle"
     },
     {
-      title: "High School",
-      description: "Advanced preparation for university with rigorous academics, leadership opportunities, and global perspectives.",
+      title: t("programs.highTitle"),
+      description: t("programs.highDesc"),
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      ages: "Ages 14-18",
+      ages: t("programs.highAges"),
       link: "/programs#high"
     },
     {
-      title: "Zenit Summer Camp",
-      description: "An exciting summer program featuring swimming in our half Olympic pool, arts, sports, and academic enrichment activities.",
+      title: t("programs.summerTitle"),
+      description: t("programs.summerDesc"),
       image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      ages: "Ages 6-16",
+      ages: t("programs.summerAges"),
       link: "/programs#summer"
     }
   ];
@@ -38,11 +41,8 @@ const ProgramsSection = () => {
     <section className="programs-section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Our Programs</h2>
-          <p className="section-subtitle">
-            From early childhood through graduation, plus our exciting summer camp program, 
-            we offer comprehensive educational experiences designed to nurture growth and inspire curiosity.
-          </p>
+          <h2 className="section-title">{t("programs.title")}</h2>
+          <p className="section-subtitle">{t("programs.subtitle")}</p>
         </div>
 
         <div className="programs-grid">

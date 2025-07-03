@@ -1,28 +1,29 @@
-// components/Hero.js
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
 import '../styles/Hero.css';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const heroSlides = [
     {
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Excellence in Education",
-      subtitle: "Inspiring minds, shaping futures in our world-class learning environment"
+      title: t("hero.slide1.title"),
+      subtitle: t("hero.slide1.subtitle")
     },
     {
       image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80",
-      title: "Global Perspectives",
-      subtitle: "Preparing students for success in an interconnected world"
+      title: t("hero.slide2.title"),
+      subtitle: t("hero.slide2.subtitle")
     },
     {
       image: "https://images.unsplash.com/photo-1581726690015-c9861472ba13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Innovation & Discovery",
-      subtitle: "State-of-the-art facilities fostering creativity and critical thinking"
+      title: t("hero.slide3.title"),
+      subtitle: t("hero.slide3.subtitle")
     }
   ];
 
@@ -67,10 +68,10 @@ const Hero = () => {
         </p>
         <div className="hero-buttons">
           <button className="btn-primary" onClick={handleExplorePrograms}>
-            Explore Programs
+            {t("hero.explorePrograms")}
           </button>
           <button className="btn-secondary" onClick={handleScheduleTour}>
-            Schedule Tour
+            {t("hero.scheduleTour")}
           </button>
         </div>
       </div>
@@ -79,7 +80,6 @@ const Hero = () => {
         <ChevronDown className="scroll-icon" />
       </div>
 
-      {/* Slide indicators */}
       <div className="slide-indicators">
         {heroSlides.map((_, index) => (
           <button
