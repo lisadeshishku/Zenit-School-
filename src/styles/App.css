@@ -140,18 +140,6 @@ input:focus, textarea:focus, select:focus {
   padding: 0 1rem;
 }
 
-@media (min-width: 640px) {
-  .container {
-    padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding: 0 2rem;
-  }
-}
-
 .text-center {
   text-align: center;
 }
@@ -313,26 +301,59 @@ input:focus, textarea:focus, select:focus {
   animation: slideIn 0.6s ease-out;
 }
 
-/* Responsive Design */
+/* Responsive Design - Using standard media queries instead of escaped class names */
 @media (min-width: 640px) {
-  .sm\\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-  .sm\\:text-xl { font-size: 1.25rem; }
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .responsive-text-xl {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .md\\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .md\\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .md\\:text-5xl { font-size: 3rem; }
-  .md\\:text-2xl { font-size: 1.5rem; }
-  .md\\:block { display: block; }
-  .md\\:hidden { display: none; }
+  .responsive-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .responsive-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .responsive-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .responsive-text-5xl {
+    font-size: 3rem;
+  }
+  
+  .responsive-text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .responsive-block {
+    display: block;
+  }
+  
+  .responsive-hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-  .lg\\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .lg\\:text-7xl { font-size: 4.5rem; }
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .responsive-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .responsive-text-7xl {
+    font-size: 4.5rem;
+  }
 }
 
 /* Page-specific styles */
