@@ -68,57 +68,51 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="mission-vision-section">
-        <div className="container">
-          <div className="mission-vision-grid">
-            <div className="mission-card">
-              <div className="card-icon">🎯</div>
-              <h3>Our Mission</h3>
-              <p>
-                To provide an exceptional educational experience that nurtures intellectual curiosity, 
-                develops character, and prepares students to be thoughtful, engaged citizens of the world.
-              </p>
-            </div>
-            <div className="vision-card">
-              <div className="card-icon">🌟</div>
-              <h3>Our Vision</h3>
-              <p>
-                To be a leading educational institution that inspires students to reach their full potential 
-                and make meaningful contributions to society through innovation, collaboration, and service.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="mission-vision-section">
+  <div className="container">
+    <div className="mission-vision-grid">
+      <div className="mission-card">
+        <h3>Our Mission</h3>
+        <p>
+          To provide an exceptional educational experience that nurtures intellectual curiosity, 
+          develops character, and prepares students to be thoughtful, engaged citizens of the world.
+        </p>
+      </div>
+      <div className="vision-card">
+        <h3>Our Vision</h3>
+        <p>
+          To be a leading educational institution that inspires students to reach their full potential 
+          and make meaningful contributions to society through innovation, collaboration, and service.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Values Section */}
-      <section className="values-section">
-        <div className="container">
-          <h2 className="section-title">Our Core Values</h2>
-          <div className="values-grid">
-            <div className="value-item">
-              <div className="value-icon">🧠</div>
-              <h4>Academic Excellence</h4>
-              <p>We maintain the highest standards of learning and intellectual growth.</p>
-            </div>
-            <div className="value-item">
-              <div className="value-icon">🤝</div>
-              <h4>Character Development</h4>
-              <p>We foster integrity, empathy, and ethical leadership in all our students.</p>
-            </div>
-            <div className="value-item">
-              <div className="value-icon">🌍</div>
-              <h4>Global Citizenship</h4>
-              <p>We prepare students to thrive in an interconnected, diverse world.</p>
-            </div>
-            <div className="value-item">
-              <div className="value-icon">💪</div>
-              <h4>Holistic Wellness</h4>
-              <p>We promote physical, mental, and emotional well-being through our programs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Values Section */}
+<section className="values-section">
+  <div className="container">
+    <h3 className="mission-title">Our Core Values</h3>
+    <div className="values-grid">
+      <div className="value-item">
+        <h4>Academic Excellence</h4>
+        <p>We maintain the highest standards of learning and intellectual growth.</p>
+      </div>
+      <div className="value-item">
+        <h4>Character Development</h4>
+        <p>We foster integrity, empathy, and ethical leadership in all our students.</p>
+      </div>
+      <div className="value-item">
+        <h4>Global Citizenship</h4>
+        <p>We prepare students to thrive in an interconnected, diverse world.</p>
+      </div>
+      <div className="value-item">
+        <h4>Holistic Wellness</h4>
+        <p>We promote physical, mental, and emotional well-being through our programs.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Faculty & Staff */}
       <section className="faculty-section">
@@ -159,7 +153,7 @@ const About = () => {
       {/* Campus Life */}
       <section className="campus-life-section">
         <div className="container">
-          <h2 className="section-title">Campus Life & Facilities</h2>
+          <h3 className="mission-title">Campus Life & Facilities</h3>
           <div className="facilities-grid">
             <div className="facility-card">
               <img 

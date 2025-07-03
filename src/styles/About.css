@@ -1,223 +1,442 @@
-/* styles/About.css - Unique About Page Styling */
-.history-section {
-  padding: 5rem 0;
-  background-color: white;
+/* styles/About.css - Enhanced version */
+
+/* Base Styles */
+.about-page {
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.history-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
-  align-items: flex-start;
+.about-page .section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.history-text h2 {
+.about-page .section-title {
+  text-align: center;
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #111827;
-  margin-bottom: 1.5rem;
-}
-
-.history-text p {
-  font-size: 1.125rem;
-  color: #6b7280;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.history-timeline {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
   position: relative;
 }
 
-.history-timeline::before {
+.about-page .section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* History Section */
+.about-page .history-section {
+  padding: 6rem 0;
+  background-color: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-page .history-section::before {
   content: '';
   position: absolute;
-  left: 1rem;
   top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+  left: 0;
+  width: 100%;
+  height: 8px;
 }
 
-.timeline-item {
-  display: flex;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.timeline-year {
-  background-color: #2563eb;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-weight: bold;
-  margin-right: 2rem;
-  flex-shrink: 0;
-  z-index: 2;
-}
-
-.timeline-content {
-  flex: 1;
-  background-color: #f9fafb;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border-left: 3px solid #2563eb;
-}
-
-.timeline-content h4 {
-  color: #111827;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content p {
-  color: #6b7280;
-  margin: 0;
-}
-
-.mission-vision-section {
-  padding: 5rem 0;
-  background-color: #f9fafb;
-}
-
-.mission-vision-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.mission-card, .vision-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-top: 4px solid #2563eb;
-}
-
-.card-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.mission-card h3, .vision-card h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #111827;
-  margin-bottom: 1rem;
-}
-
-.values-section {
-  padding: 5rem 0;
-  background-color: white;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #111827;
-  margin-bottom: 3rem;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.value-item {
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.value-item:hover {
-  transform: translateY(-4px);
-}
-
-.value-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.faculty-section {
-  padding: 5rem 0;
-  background-color: #f9fafb;
-}
-
-.faculty-content {
+.about-page .history-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
   align-items: center;
 }
 
-.faculty-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+.about-page .history-text h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
-.stat {
-  text-align: center;
-  padding: 1rem;
-  background: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.about-page .history-text p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
-.stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2563eb;
+.about-page .history-timeline {
+  position: relative;
+  padding-left: 2rem;
 }
 
-.stat-label {
+.about-page .history-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 2px;
+}
+
+.about-page .timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.about-page .timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .timeline-year {
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
   font-size: 0.875rem;
-  color: #6b7280;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  z-index: 2;
 }
 
-.campus-life-section {
-  padding: 5rem 0;
+.about-page .timeline-content {
+  background-color: white;
+  padding: 1.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2563eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .timeline-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .timeline-content h4 {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.about-page .timeline-content p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Mission & Vision Section */
+.about-page .mission-vision-section {
+  padding: 6rem 0;
   background-color: white;
 }
 
-.facilities-grid {
+.about-page .mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-page .mission-card,
+.about-page .vision-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.about-page .mission-card:hover,
+.about-page .vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.about-page .mission-card h3,
+.about-page .vision-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.about-page .mission-card h3::after,
+.about-page .vision-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  border-radius: 2px;
+}
+
+.about-page .mission-card p,
+.about-page .vision-card p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* Values Section */
+.about-page .values-section {
+  padding: 6rem 0;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.about-page .value-item {
+  background: white;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.about-page .value-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+}
+
+.about-page .value-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
+}
+
+.about-page .value-icon {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.about-page .value-item h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.about-page .value-item p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Faculty Section */
+.about-page .faculty-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.about-page .faculty-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-page .faculty-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.about-page .faculty-text h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  margin-top: 1.5rem;
+  border-radius: 2px;
+}
+
+.about-page .faculty-text p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-page .faculty-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about-page .stat {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.about-page .stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
+}
+
+.about-page .stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-page .stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Campus Life Section */
+.about-page .campus-life-section {
+  padding: 6rem 0;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.about-page .facilities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.facility-card {
+.about-page .facility-card {
   background: white;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.facility-card:hover {
-  transform: translateY(-8px);
+.about-page .facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-.facility-card img {
+.about-page .facility-card img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.facility-content {
-  padding: 1.5rem;
+.about-page .facility-card:hover img {
+  transform: scale(1.05);
 }
 
-.facility-content h4 {
-  font-weight: 600;
+.about-page .facility-content {
+  padding: 1.75rem;
+}
+
+.about-page .facility-content h4 {
+  font-weight: 700;
   color: #111827;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
 }
+
+.about-page .facility-content p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-page .history-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-page .mission-vision-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  
+  .about-page .faculty-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  
+  .about-page .section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .about-page .faculty-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Animation Classes */
+.about-page .fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-page .delay-1 { animation-delay: 0.2s; }
+.about-page .delay-2 { animation-delay: 0.4s; }
+.about-page .delay-3 { animation-delay: 0.6s; }
