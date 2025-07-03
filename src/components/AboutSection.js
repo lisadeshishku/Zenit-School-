@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/AboutSection.css';
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate('/about');
+  };
+
   return (
     <section className="about-section">
       <div className="container">
@@ -24,7 +31,7 @@ const AboutSection = () => {
               <p>Our campus features state-of-the-art learning spaces, including a half Olympic pool for aquatic programs and competitive swimming.</p>
             </div>
             
-            <button className="about-cta-btn" onClick={() => window.location.href = '/about'}>
+            <button className="about-cta-btn" onClick={handleLearnMore}>
               Learn More About Our Mission
             </button>
           </div>

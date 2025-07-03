@@ -1,13 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/AdmissionsCTA.css';
 
 const AdmissionsCTA = () => {
+  const navigate = useNavigate();
+
   const handleApplyNow = () => {
-    window.location.href = '/admissions';
+    navigate('/admissions');
   };
 
   const handleScheduleTour = () => {
-    window.location.href = '/contact';
+    navigate('/contact');
   };
 
   return (

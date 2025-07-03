@@ -1,10 +1,12 @@
 // components/Hero.js
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import '../styles/Hero.css';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   const heroSlides = [
     {
@@ -31,6 +33,14 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, [heroSlides.length]);
 
+  const handleExplorePrograms = () => {
+    navigate('/programs');
+  };
+
+  const handleScheduleTour = () => {
+    navigate('/contact');
+  };
+
   return (
     <section className="hero">
       <div className="hero-overlay"></div>
@@ -56,10 +66,10 @@ const Hero = () => {
           {heroSlides[currentSlide].subtitle}
         </p>
         <div className="hero-buttons">
-          <button className="btn-primary">
+          <button className="btn-primary" onClick={handleExplorePrograms}>
             Explore Programs
           </button>
-          <button className="btn-secondary">
+          <button className="btn-secondary" onClick={handleScheduleTour}>
             Schedule Tour
           </button>
         </div>
