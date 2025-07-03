@@ -1,4 +1,4 @@
-/* styles/About.css - Enhanced version */
+/* styles/About.css - Enhanced and Mobile-Optimized Version */
 
 /* Base Styles */
 .about-page {
@@ -260,49 +260,70 @@
   font-size: 1rem;
 }
 
-/* Faculty Section */
+/* Faculty Section - Responsive Fix */
 .about-page .faculty-section {
-  padding: 6rem 0;
+  padding: 4rem 1.25rem;
   background-color: white;
 }
 
 .about-page .faculty-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-page .faculty-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
 }
 
 .about-page .faculty-text h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.3;
+  text-align: center;
 }
 
 .about-page .faculty-text h2::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
+  width: 50px;
+  height: 3px;
   background: linear-gradient(90deg, #2563eb, #1d4ed8);
-  margin-top: 1.5rem;
+  margin: 1rem auto 0;
   border-radius: 2px;
 }
 
 .about-page .faculty-text p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #4b5563;
-  line-height: 1.8;
+  line-height: 1.7;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .about-page .faculty-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .about-page .faculty-stats {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page .faculty-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .about-page .stat {
@@ -401,17 +422,12 @@
   .about-page .history-content {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .about-page .mission-vision-grid {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
-  
-  .about-page .faculty-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-  }
-  
+
   .about-page .section-title {
     font-size: 3rem;
   }
@@ -420,10 +436,6 @@
 @media (min-width: 1024px) {
   .about-page .values-grid {
     grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .about-page .faculty-stats {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
