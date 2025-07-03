@@ -16,7 +16,7 @@
     "staff": "Stafi",
     "mission": "Misioni dhe Vizioni",
     "history": "Historia Jonë",
-    "careers": "Punësime",
+    "careers": "Mundësi Punësimi",
     "community": "Komuniteti",
     "volunteer": "Punë Vullnetare",
     "charity": "Bamirësi",
@@ -47,7 +47,7 @@
     "middle": "Shkolla e Mesme e Ulët",
     "high": "Shkolla e Mesme e Lartë",
     "summer": "Kampi Veror Zenit",
-    "connect": "Lidhu",
+    "connect": "Kontakt",
     "address1": "Bulevardi i Arsimit 123",
     "address2": "Lartësitë Akademike, AH 12345",
     "phone": "+1 (555) 123-4567",
@@ -58,10 +58,10 @@
     "title": "Kontaktoni",
     "subtitle": "Jemi këtu për t'ju përgjigjur pyetjeve dhe për t'ju mirëpritur në komunitetin tonë.",
     "visit": "Na Vizitoni",
-    "visitAddress1": "Bulevardi i Arsimit 123",
+    "visitAddress1": "Prugoc",
     "visitAddress2": "Lartësitë Akademike, AH 12345",
     "call": "Na Telefononi",
-    "callPhone": "+1 (555) 123-4567",
+    "callPhone": "+38349959436",
     "callHours": "E hënë - E premte, 8:00 - 17:00",
     "email": "Na shkruani email",
     "email1": "admissions@zenitschool.edu",
@@ -74,7 +74,7 @@
     "modernClassroomsDesc": "Teknologji interaktive dhe hapësira fleksibël për bashkëpunim",
     "pool": "Pishinë Gjysmë Olimpike",
     "poolDesc": "Pishinë profesionale për trajnim garues dhe aktivitete rekreative",
-    "research": "Fasilitete Kërkimore",
+    "research": "Laboratorë",
     "researchDesc": "Laboratorë të avancuar për zbulime shkencore dhe eksperimente praktike",
     "creative": "Studio Kreative",
     "creativeDesc": "Hapësira frymëzuese për arte, muzikë, teatër dhe prodhim mediesh digjitale"
@@ -119,10 +119,10 @@
     "scheduleTour": "Rezervo Vizitën"
   },
   "admissionsCTA": {
-    "title": "Gati për t'iu Bashkuar Komunitetit Tonë?",
+    "title": "Gati për t'iu bashkuar komunitetit konë?",
     "subtitle": "Hidh hapin e parë drejt një udhëtimi të jashtëzakonshëm arsimor. Ekipi ynë i pranimeve është këtu për t'ju udhëhequr gjatë procesit.",
     "apply": "Apliko Tani",
-    "visit": "Rezervo një Vizitë"
+    "visit": "Cakto një Vizitë"
   },
   "aboutSection": {
     "title": "Kultivojmë Ekselencën Që Nga 1985",
