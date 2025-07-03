@@ -19,37 +19,28 @@ const Navbar = () => {
   };
 
   const menuSections = {
-    'Programs': [
-      { name: 'Arts', path: '/programs/arts' },
-      { name: 'Drama', path: '/programs/drama' },
-      { name: 'Music', path: '/programs/music' },
-      { name: 'Sports', path: '/programs/sports' }
-    ],
+    
     'About': [
-      { name: 'Home', path: '/about' },
+      { name: 'About', path: '/about' },
       { name: 'Why Zenit?', path: '/about/why-zenit' },
       { name: 'Inside the Classroom', path: '/about/classroom' },
       { name: 'Activities', path: '/about/activities' },
       { name: 'Culture', path: '/about/culture' },
-      { name: 'Registration', path: '/admissions' },
-      { name: 'Contact Us', path: '/contact' },
       { name: 'News', path: '/about/news' }
     ],
+    'Programs': [
+      { name: 'Elementary School', path: '/programs#elementary' },
+      { name: 'Middle School', path: '/programs#middle' },
+      { name: 'High School', path: '/programs#high' },
+      { name: 'Summer Camp', path: '/programs#summer' }
+    ],
+
     'Leadership': [
       { name: 'From the Director', path: '/about/director' },
       { name: 'Meet the Staff', path: '/about/staff' },
       { name: 'Mission and Vision', path: '/about/mission' },
       { name: 'Our History', path: '/about/history' },
-      { name: 'Research Center', path: '/about/research' },
       { name: 'Employment Opportunities', path: '/about/careers' }
-    ],
-    'Media': [
-      { name: 'Podcast', path: '/media/podcast' },
-      { name: 'School Calendar', path: '/media/calendar' }
-    ],
-    'Contact': [
-      { name: 'Contact Details', path: '/contact' },
-      { name: 'Address and Visits', path: '/contact/visit' }
     ],
     'Community': [
       { name: 'Volunteer Work', path: '/community/volunteer' },
@@ -58,9 +49,6 @@ const Navbar = () => {
     ],
     'Admissions': [
       { name: 'Admission to Zenit', path: '/admissions' },
-      { name: 'Elementary School (1-5)', path: '/admissions/elementary' },
-      { name: 'Middle School', path: '/admissions/middle' },
-      { name: 'High School', path: '/admissions/high' },
       { name: 'Financial Aid', path: '/admissions/financial-aid' },
       { name: 'Scholarships and Awards', path: '/admissions/scholarships' },
       { name: 'Student Fees', path: '/admissions/fees' }
@@ -70,6 +58,9 @@ const Navbar = () => {
       { name: 'Academic Campus', path: '/digital-education/campus' },
       { name: 'Academic Curriculum', path: '/digital-education/curriculum' },
       { name: 'Test Results', path: '/digital-education/results' }
+    ],
+    'Contact': [
+      { name: 'Contact Details', path: '/contact' },
     ]
   };
 
@@ -119,7 +110,7 @@ const Navbar = () => {
         <div className="side-nav-header">
           <div className="side-nav-logo">
             <img src="/zenitschoollogo.jpeg" alt="Zenit School Logo" className="side-logo-image" />
-            <span className="side-logo-text">Navigation</span>
+            <span className="side-logo-text"></span>
           </div>
           <button
             onClick={closeMenu}

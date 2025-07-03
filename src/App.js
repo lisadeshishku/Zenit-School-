@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Programs from './pages/Programs';
+import Programs from './pages/programs/Programs';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 

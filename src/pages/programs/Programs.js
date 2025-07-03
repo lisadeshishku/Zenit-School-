@@ -1,21 +1,21 @@
 // pages/Programs.js - Unique Programs Page (Different from homepage)
 import React, { useEffect } from 'react';
-import '../styles/PageHeaders.css';
-import '../styles/Programs.css';
+import '../../styles/PageHeaders.css';
+import '../../styles/Programs.css';
+import { useLocation } from 'react-router-dom';
 
 const Programs = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    // Handle anchor links when page loads
-    const hash = window.location.hash;
-    if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }, []);
+  }, [location]); // 👈 This ensures it re-runs even if you're already on /programs
+
 
   return (
     <div className="programs-page">
