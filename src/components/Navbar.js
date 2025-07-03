@@ -1,5 +1,5 @@
-// components/Navbar.js - Updated for Side Navigation Only
-import React, { useState } from 'react';
+// components/Navbar.js - Final Clean Navigation Component
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
@@ -11,6 +11,19 @@ const Navbar = () => {
   const [openSubmenus, setOpenSubmenus] = useState({});
   const { t } = useTranslation();
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const toggleSubmenu = (section) => {
     setOpenSubmenus(prev => ({
       ...prev,
@@ -18,55 +31,69 @@ const Navbar = () => {
     }));
   };
 
+  // Streamlined menu structure - shorter names, better organization
   const menuSections = {
-    
     'About': [
       { name: 'About', path: '/about' },
       { name: 'Why Zenit?', path: '/about/why-zenit' },
-      { name: 'Inside the Classroom', path: '/about/classroom' },
+      { name: 'Classroom', path: '/about/classroom' },
       { name: 'Activities', path: '/about/activities' },
       { name: 'Culture', path: '/about/culture' },
       { name: 'News', path: '/about/news' }
     ],
-    'Programs': [
-      { name: 'Elementary School', path: '/programs#elementary' },
-      { name: 'Middle School', path: '/programs#middle' },
-      { name: 'High School', path: '/programs#high' },
-      { name: 'Summer Camp', path: '/programs#summer' }
-    ],
-
     'Leadership': [
-      { name: 'From the Director', path: '/about/director' },
-      { name: 'Meet the Staff', path: '/about/staff' },
-      { name: 'Mission and Vision', path: '/about/mission' },
-      { name: 'Our History', path: '/about/history' },
-      { name: 'Employment Opportunities', path: '/about/careers' }
+      { name: 'Director', path: '/about/director' },
+      { name: 'Staff', path: '/about/staff' },
+      { name: 'Mission', path: '/about/mission' },
+      { name: 'History', path: '/about/history' },
+      { name: 'Research', path: '/about/research' },
+      { name: 'Careers', path: '/about/careers' }
+    ],
+    'Programs': [
+      { name: 'Overview', path: '/programs' },
+      { name: 'Arts', path: '/programs/arts' },
+      { name: 'Drama', path: '/programs/drama' },
+      { name: 'Music', path: '/programs/music' },
+      { name: 'Sports', path: '/programs/sports' }
+    ],
+    'Admissions': [
+      { name: 'Apply', path: '/admissions' },
+      { name: 'Elementary', path: '/admissions/elementary' },
+      { name: 'Middle School', path: '/admissions/middle' },
+      { name: 'High School', path: '/admissions/high' },
+      { name: 'Financial Aid', path: '/admissions/financial-aid' },
+      { name: 'Scholarships', path: '/admissions/scholarships' }
+    ],
+    'Digital Education': [
+      { name: 'Overview', path: '/digital-education' },
+      { name: 'Campus', path: '/digital-education/campus' },
+      { name: 'Curriculum', path: '/digital-education/curriculum' },
+      { name: 'Results', path: '/digital-education/results' }
     ],
     'Community': [
-      { name: 'Volunteer Work', path: '/community/volunteer' },
+      { name: 'Volunteer', path: '/community/volunteer' },
       { name: 'Charity', path: '/community/charity' },
       { name: 'Solidarity', path: '/community/solidarity' }
     ],
-    'Admissions': [
-      { name: 'Admission to Zenit', path: '/admissions' },
-      { name: 'Financial Aid', path: '/admissions/financial-aid' },
-      { name: 'Scholarships and Awards', path: '/admissions/scholarships' },
-      { name: 'Student Fees', path: '/admissions/fees' }
-    ],
-    'Digital Education': [
-      { name: 'Digital Education', path: '/digital-education' },
-      { name: 'Academic Campus', path: '/digital-education/campus' },
-      { name: 'Academic Curriculum', path: '/digital-education/curriculum' },
-      { name: 'Test Results', path: '/digital-education/results' }
+    'Media': [
+      { name: 'Podcast', path: '/media/podcast' },
+      { name: 'Calendar', path: '/media/calendar' }
     ],
     'Contact': [
-      { name: 'Contact Details', path: '/contact' },
+      { name: 'Contact', path: '/contact' },
+      { name: 'Visit', path: '/contact/visit' }
     ]
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setOpenSubmenus({});
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeMenu();
+    }
   };
 
   return (
@@ -79,8 +106,9 @@ const Navbar = () => {
             <button
               className="menu-toggle-btn"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
             >
-              <Menu size={24} />
+              <Menu size={22} />
             </button>
 
             {/* Logo */}
@@ -89,7 +117,7 @@ const Navbar = () => {
               <div className="logo-text">{t('logo.name')}</div>
             </Link>
             
-            {/* Language Toggle (always visible on top) */}
+            {/* Language Toggle */}
             <div className="top-language-toggle">
               <LanguageToggle />
             </div>
@@ -97,67 +125,72 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Black and White Overlay */}
+      {/* Overlay and Side Navigation */}
       {isMenuOpen && (
-        <div 
-          className="menu-overlay"
-          onClick={closeMenu}
-        />
-      )}
+        <>
+          {/* Overlay */}
+          <div 
+            className="menu-overlay"
+            onClick={handleOverlayClick}
+          />
 
-      {/* Side Navigation */}
-      <div className={`side-navigation ${isMenuOpen ? 'open' : ''}`}>
-        <div className="side-nav-header">
-          <div className="side-nav-logo">
-            <img src="/zenitschoollogo.jpeg" alt="Zenit School Logo" className="side-logo-image" />
-            <span className="side-logo-text"></span>
-          </div>
-          <button
-            onClick={closeMenu}
-            className="close-btn"
-          >
-            <X size={20} />
-          </button>
-        </div>
-
-        <div className="side-nav-content">
-          {Object.entries(menuSections).map(([section, items]) => (
-            <div key={section} className="nav-section">
+          {/* Side Navigation */}
+          <div className="side-navigation open">
+            <div className="side-nav-header">
+              <div className="side-nav-logo">
+                <img src="/zenitschoollogo.jpeg" alt="Zenit School Logo" className="side-logo-image" />
+                <span className="side-logo-text">Navigation</span>
+              </div>
               <button
-                onClick={() => toggleSubmenu(section)}
-                className="section-header"
+                onClick={closeMenu}
+                className="close-btn"
+                aria-label="Close menu"
               >
-                <span className="section-title">{section}</span>
-                {openSubmenus[section] ? (
-                  <ChevronDown size={16} />
-                ) : (
-                  <ChevronRight size={16} />
-                )}
+                <X size={16} />
               </button>
-              
-              {openSubmenus[section] && (
-                <div className="submenu">
-                  {items.map((item, index) => (
-                    <Link
-                      key={index}
-                      to={item.path}
-                      className="submenu-link"
-                      onClick={closeMenu}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
             </div>
-          ))}
-        </div>
 
-        {/* Language Toggle in Side Menu */}
-        <div className="side-nav-footer">
-          <LanguageToggle />
-        </div>
-      </div>
+            <div className="side-nav-content">
+              {Object.entries(menuSections).map(([section, items]) => (
+                <div key={section} className="nav-section">
+                  <button
+                    onClick={() => toggleSubmenu(section)}
+                    className="section-header"
+                    aria-expanded={openSubmenus[section]}
+                  >
+                    <span className="section-title">{section}</span>
+                    {openSubmenus[section] ? (
+                      <ChevronDown size={14} />
+                    ) : (
+                      <ChevronRight size={14} />
+                    )}
+                  </button>
+                  
+                  {openSubmenus[section] && (
+                    <div className="submenu">
+                      {items.map((item, index) => (
+                        <Link
+                          key={index}
+                          to={item.path}
+                          className="submenu-link"
+                          onClick={closeMenu}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Language Toggle in Side Menu */}
+            <div className="side-nav-footer">
+              <LanguageToggle />
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 };
