@@ -6,7 +6,6 @@ import AboutSection from '../components/AboutSection';
 import ProgramsSection from '../components/ProgramsSection';
 import LearningEnvironment from '../components/LearningEnvironment';
 import AdmissionsCTA from '../components/AdmissionsCTA';
-import ContactSection from '../components/ContactSection';
 
 const Home = () => {
   return (
