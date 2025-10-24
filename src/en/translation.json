@@ -133,21 +133,80 @@
   },
 
   "whyZenit": {
-    "title": "Why Choose Zenit?",
-    "subtitle": "What makes Zenit School stand out for students and families.",
+    "title": "Why Zenit",
+    "subtitle": "A school where students feel known, challenged, and supported.",
+    "intro": {
+      "paragraphs": [
+        "Zenit School is built around a simple idea: when students feel known, challenged, and supported, they do their best work — and become their best selves.",
+        "We combine rigorous academics with purposeful character formation. Families choose Zenit for an environment that is calm, safe, and focused on growth."
+      ]
+    },
+    "pillarsTitle": "What makes Zenit different",
     "reasons": [
-      { "icon": "🎓", "title": "Academic Excellence", "text": "Challenging curriculum, dedicated teachers, and individual support." },
-      { "icon": "🏊‍♀️", "title": "Facilities", "text": "Modern classrooms, labs, and a half Olympic swimming pool." },
-      { "icon": "🌍", "title": "Diverse Community", "text": "Students from many backgrounds learn and grow together." },
-      { "icon": "🤝", "title": "Strong Support", "text": "Close collaboration with families to help every student thrive." },
-      { "icon": "💡", "title": "Future Skills", "text": "STEAM focus, critical thinking, creativity and leadership." }
+      {
+        "icon": "🎯",
+        "title": "Clear, rigorous learning",
+        "text": "Students know exactly what success looks like and receive the feedback to get there.",
+        "points": [
+          "Small classes with focused instruction",
+          "Frequent checks for understanding",
+          "Evidence-based teaching strategies"
+        ]
+      },
+      {
+        "icon": "🤝",
+        "title": "Strong relationships",
+        "text": "Every student is known. Families are partners, not spectators.",
+        "points": [
+          "Advisors who advocate for each child",
+          "Open communication with families",
+          "Calm, respectful school culture"
+        ]
+      },
+      {
+        "icon": "📈",
+        "title": "Visible progress",
+        "text": "We measure what matters and help students reflect, plan, and improve.",
+        "points": [
+          "Clear goals for each unit",
+          "Useful feedback students can act on",
+          "Celebrations of growth and mastery"
+        ]
+      }
     ],
+    "approach": {
+      "title": "How learning works at Zenit",
+      "steps": [
+        { "title": "Clear goals", "text": "We define essential knowledge and skills for every unit so students know what success looks like." },
+        { "title": "Deliberate practice", "text": "Short teaching bursts, frequent checks, and targeted feedback accelerate mastery." },
+        { "title": "Partnerships that work", "text": "We collaborate with families. Students have adults who notice, encourage, and advocate for them." }
+      ]
+    },
+    "outcomesTitle": "Results you can feel and measure",
     "highlights": [
-      { "kpi": "98%", "label": "University Acceptance" },
-      { "kpi": "8:1", "label": "Student–Teacher Ratio" },
-      { "kpi": "35+", "label": "Countries Represented" },
-      { "kpi": "40+", "label": "Years of Excellence" }
-    ]
+      { "kpi": "95%", "label": "Family satisfaction", "note": "Families cite caring teachers, calm culture, and clear communication." },
+      { "kpi": "3×", "label": "Practice opportunities", "note": "Frequent feedback produces faster, more confident progress." },
+      { "kpi": "100%", "label": "Safety & belonging", "note": "Students report feeling known and supported at school." }
+    ],
+    "cta": {
+      "title": "Visit and experience Zenit for yourself",
+      "text": "A short tour shows far more than a brochure. Meet our teachers, sit in on a lesson, and see how our students learn.",
+      "button": "Book a tour"
+    },
+    "fallback": {
+      "intro1": "Zenit School is built around a simple idea: when students feel known, challenged, and supported, they do their best work — and become their best selves.",
+      "intro2": "Our teachers combine rigorous academics with purposeful character formation.",
+      "pillarTitle": "Small classes. Big progress.",
+      "pillarText": "With one-to-one time and evidence-based instruction, students advance faster — and with more confidence.",
+      "approach1Title": "Clear goals",
+      "approach1Text": "We define essential knowledge and skills for each unit so students always know what success looks like.",
+      "approach2Title": "Deliberate practice",
+      "approach2Text": "Short teaching bursts, frequent checks for understanding, and targeted feedback accelerate mastery.",
+      "approach3Title": "Strong relationships",
+      "approach3Text": "We partner closely with families. Every student has adults who notice, encourage, and advocate for them.",
+      "outcomeLabel": "Family satisfaction",
+      "outcomeNote": "Families cite caring teachers, calm culture, and clear communication as top reasons they recommend Zenit."
+    }
   },
   "classroom": {
     "title": "Inside the Classroom",

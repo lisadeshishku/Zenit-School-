@@ -116,7 +116,7 @@
       "subtitle": "Fasilitete moderne që nxisin kreativitetin dhe mendimin kritik"
     },
     "explorePrograms": "Eksploro Programet",
-    "scheduleTour": "Rezervo Vizitën"
+    "scheduleTour": "Cakto Vizitën"
   },
   "admissionsCTA": {
     "title": "Gati për t'iu bashkuar komunitetit tonë?",
@@ -135,22 +135,82 @@
   },
 
   "whyZenit": {
-    "title": "Pse Zenit?",
-    "subtitle": "Çfarë e veçon Zenit School për nxënësit dhe familjet.",
+    "title": "Pse Zenit",
+    "subtitle": "Një shkollë ku nxënësit ndihen të vlerësuar, të sfiduar dhe të përkrahur.",
+    "intro": {
+      "paragraphs": [
+        "Shkolla Zenit ndërtohet mbi një ide të thjeshtë: kur nxënësit ndihen të njohur, të sfiduar dhe të përkrahur, ata bëjnë punën e tyre më të mirë — dhe bëhen versioni i tyre më i mirë.",
+        "Ne kombinojmë akademikë rigorozë me formim të qëllimshëm të karakterit. Familjet zgjedhin Zenit për një mjedis të qetë, të sigurt dhe të fokusuar te rritja."
+      ]
+    },
+    "pillarsTitle": "Çfarë e bën Zenit-in ndryshe",
     "reasons": [
-      { "icon": "🎓", "title": "Përsosmëri Akademike", "text": "Kurrikulë sfiduese, mësues të përkushtuar dhe mbështetje individuale." },
-      { "icon": "🏊‍♀️", "title": "Ambiente", "text": "Klasa moderne, laboratorë dhe pishinë gjysmë-olimpike." },
-      { "icon": "🌍", "title": "Komunitet i Larmishëm", "text": "Nxënës nga shumë prejardhje mësojnë e rriten së bashku." },
-      { "icon": "🤝", "title": "Mbështetje e Fortë", "text": "Bashkëpunim i ngushtë me familjet për mirëqenien e çdo nxënësi." },
-      { "icon": "💡", "title": "Aftësi për të Ardhmen", "text": "Fokus në STEAM, të menduar kritik, kreativitet dhe lidership." }
+      {
+        "icon": "🎯",
+        "title": "Mësim i qartë dhe rigoroz",
+        "text": "Nxënësit e dinë saktësisht si duket suksesi dhe marrin reagime për ta arritur.",
+        "points": [
+          "Klasa të vogla me mësim të fokusuar",
+          "Verifikime të shpeshta të kuptimit",
+          "Strategji mësimore të bazuara në prova"
+        ]
+      },
+      {
+        "icon": "🤝",
+        "title": "Marrëdhënie të forta",
+        "text": "Çdo nxënës njihet. Familjet janë partnerë, jo spektatorë.",
+        "points": [
+          "Kujdestarë që avokojnë për secilin fëmijë",
+          "Komunikim i hapur me familjet",
+          "Kulturë shkollore e qetë dhe respektuese"
+        ]
+      },
+      {
+        "icon": "📈",
+        "title": "Përparim i dukshëm",
+        "text": "Matim atë që ka rëndësi dhe ndihmojmë nxënësit të reflektojnë, planifikojnë dhe përmirësohen.",
+        "points": [
+          "Qëllime të qarta për çdo njësi",
+          "Reagime të dobishme që mund të zbatohen",
+          "Festim i rritjes dhe i arritjeve"
+        ]
+      }
     ],
+    "approach": {
+      "title": "Si funksionon të nxënit në Zenit",
+      "steps": [
+        { "title": "Qëllime të qarta", "text": "Përcaktojmë njohuritë dhe aftësitë thelbësore për çdo njësi që nxënësit ta dinë se si duket suksesi." },
+        { "title": "Ushtrime të qëllimshme", "text": "Shpjegime të shkurtra, verifikime të shpeshta dhe reagime të synuara përshpejtojnë zotërimin." },
+        { "title": "Partneritete që funksionojnë", "text": "Bashkëpunojmë ngushtë me familjet. Nxënësit kanë të rritur që i vërejnë, i inkurajojnë dhe avokojnë për ta." }
+      ]
+    },
+    "outcomesTitle": "Rezultate që ndihen dhe maten",
     "highlights": [
-      { "kpi": "98%", "label": "Pranim në Universitet" },
-      { "kpi": "8:1", "label": "Raporti Nxënës–Mësues" },
-      { "kpi": "35+", "label": "Vende të Përfaqësuara" },
-      { "kpi": "40+", "label": "Vite Ekselence" }
-    ]
+      { "kpi": "95%", "label": "Kënaqësia e familjeve", "note": "Familjet përmendin mësues të kujdesshëm, kulturë të qetë dhe komunikim të qartë." },
+      { "kpi": "3×", "label": "Mundësi praktike", "note": "Reagimet e shpeshta sjellin përparim më të shpejtë dhe me më shumë besim." },
+      { "kpi": "100%", "label": "Siguri & përkatësi", "note": "Nxënësit raportojnë se ndihen të njohur dhe të përkrahur në shkollë." }
+    ],
+    "cta": {
+      "title": "Vizitoni dhe përjetoni Zenit-in nga afër",
+      "text": "Një tur i shkurtër tregon më shumë se një broshurë. Takoni mësuesit, merrni pjesë në një orë mësimi dhe shihni si mësojnë nxënësit tanë.",
+      "button": "Cakto Vizitën"
+    },
+    "fallback": {
+      "intro1": "Shkolla Zenit ndërtohet mbi një ide të thjeshtë: kur nxënësit ndihen të njohur, të sfiduar dhe të përkrahur, ata bëhen versioni i tyre më i mirë.",
+      "intro2": "Mësuesit tanë kombinojnë akademikë rigorozë me formim të qëllimshëm të karakterit.",
+      "pillarTitle": "Klasa të vogla. Përparim i madh.",
+      "pillarText": "Me kohë një-për-një dhe mësim të bazuar në prova, nxënësit përparojnë më shpejt — dhe me më shumë besim.",
+      "approach1Title": "Qëllime të qarta",
+      "approach1Text": "Përcaktojmë njohuritë dhe aftësitë thelbësore për çdo njësi.",
+      "approach2Title": "Ushtrime të qëllimshme",
+      "approach2Text": "Shpjegime të shkurtra, verifikime të shpeshta, reagime të synuara.",
+      "approach3Title": "Marrëdhënie të forta",
+      "approach3Text": "Partneritet i ngushtë me familjet dhe mbështetje e vazhdueshme.",
+      "outcomeLabel": "Kënaqësia e familjeve",
+      "outcomeNote": "Mësues të kujdesshëm, kulturë e qetë, komunikim i qartë."
+    }
   },
+
   "classroom": {
     "title": "Brenda Klasës",
     "subtitle": "Si ndodh mësimi në Zenit: angazhues, praktik dhe i fokusuar te nxënësi.",
