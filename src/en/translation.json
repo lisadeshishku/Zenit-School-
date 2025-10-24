@@ -50,7 +50,6 @@
     "connect": "Connect",
     "address1": "123 Education Boulevard",
     "address2": "Academic Heights, AH 12345",
-    "phone": "+1 (555) 123-4567",
     "email": "info@zenitschool.edu",
     "copyright": "© 2025 Zenit School. All rights reserved."
   },
@@ -61,7 +60,6 @@
     "visitAddress1": "123 Education Boulevard",
     "visitAddress2": "Academic Heights, AH 12345",
     "call": "Call Us",
-    "callPhone": "+1 (555) 123-4567",
     "callHours": "Mon-Fri, 8:00 AM - 5:00 PM",
     "email": "Email Us",
     "email1": "admissions@zenitschool.edu",
@@ -176,16 +174,32 @@
     ]
   },
   "culture": {
-    "title": "School Culture",
-    "subtitle": "Values that shape daily life at Zenit.",
-    "pillars": [
-      { "icon": "🤗", "title": "Respect & Inclusion", "text": "Everyone is welcomed and supported." },
-      { "icon": "📈", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
-      { "icon": "🤝", "title": "Community", "text": "Students, families and staff work together." },
-      { "icon": "🧭", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
-    ],
-    "cta": { "title": "Get Involved", "text": "Join events, volunteer and be part of our community.", "btn": "Volunteer" }
+  "title": "School Culture",
+  "subtitle": "The values that define our community.",
+  "intro": {
+    "title": "Building a Respectful, Supportive Environment",
+    "text1": "At Zenit School, our culture is built on empathy, curiosity, and collaboration. We believe that learning happens best in a community that values every voice and celebrates diversity.",
+    "text2": "From classroom discussions to school events, our students learn to think critically, communicate openly, and grow together as confident, kind individuals.",
+    "imageAlt": "Students collaborating at Zenit School"
   },
+  "pillars": [
+    { "icon": "🤗", "title": "Respect & Inclusion", "text": "Every individual is welcomed and supported." },
+    { "icon": "📈", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
+    { "icon": "🤝", "title": "Community", "text": "Students, families, and staff work together." },
+    { "icon": "🧭", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
+  ],
+  "gallery": {
+    "title": "Community & Life at Zenit",
+    "subtitle": "Our days are filled with creativity, teamwork, and moments that strengthen our spirit.",
+    "imageAlt": "Zenit culture image {{index}}"
+  },
+  "cta": {
+    "title": "Be Part of Our Community",
+    "text": "Zenit School is more than a place to learn — it’s a place to belong. Join our events, volunteer, and grow with us.",
+    "btn": "Explore Activities"
+  }
+},
+
   "news": {
     "title": "News & Updates",
     "subtitle": "The latest from campus life.",
@@ -567,6 +581,7 @@
       "title": "Contact Us",
       "subtitle": "Reach out to Zenit School for more information about our programs, admissions, summer camp, or to schedule a campus visit including a tour of our half Olympic pool."
     },
+
     "info": {
       "visit": {
         "title": "Visit Us",
@@ -577,9 +592,8 @@
       },
       "call": {
         "title": "Call Us",
-        "main": "Main: +1 (555) 123-4567",
-        "admissions": "Admissions: +1 (555) 123-4568",
-        "camp": "Summer Camp: +1 (555) 123-4569"
+        "admissions": "Admissions: +383 49 959 435",
+        "camp": "Summer Camp: +383 49 959 430 "
       },
       "email": {
         "title": "Email Us",
@@ -602,10 +616,16 @@
       "subject": "Subject",
       "message": "Message",
       "submit": "Send Message",
+
+      "success": "Thank you! Your message has been sent.",
+      "error": "Sorry, something went wrong. Please try again or email info@zenitschool.org.",
+      "sending": "Sending…",
+      "phoneTitle": "Please enter a valid phone number",
+
       "placeholders": {
         "name": "Your full name",
         "email": "firstname.lastname@example.com",
-        "phone": "+1 (555) 123-4567",
+        "phone": "+383 123 123",
         "message": "Tell us how we can help you..."
       },
       "subjects": {
@@ -630,7 +650,6 @@
     }
   }
 }
-
 
 
 

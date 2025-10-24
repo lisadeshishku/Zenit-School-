@@ -176,16 +176,32 @@
     ]
   },
   "culture": {
-    "title": "Kultura e Shkollës",
-    "subtitle": "Vlerat që formësojnë jetën e përditshme në Zenit.",
-    "pillars": [
-      { "icon": "🤗", "title": "Respekt & Përfshirje", "text": "Çdo kush pritet dhe mbështetet." },
-      { "icon": "📈", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
-      { "icon": "🤝", "title": "Komunitet", "text": "Nxënës, familje dhe staf punojnë së bashku." },
-      { "icon": "🧭", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
-    ],
-    "cta": { "title": "Bëhu Pjesë", "text": "Bashkohu në aktivitete, vullnetarizo dhe bëhu pjesë e komunitetit.", "btn": "Vullnetarizo" }
+  "title": "Kultura e Shkollës",
+  "subtitle": "Vlerat që formësojnë komunitetin tonë.",
+  "intro": {
+    "title": "Ndërtimi i një Mjedisi Respektues dhe Mbështetës",
+    "text1": "Në Shkollën Zenit, kultura jonë bazohet në empati, kureshtje dhe bashkëpunim. Ne besojmë se të nxënit ndodh më së miri në një komunitet që vlerëson çdo zë dhe feston diversitetin.",
+    "text2": "Nga diskutimet në klasë te aktivitetet e shkollës, nxënësit tanë mësojnë të mendojnë kritikisht, të komunikojnë hapur dhe të rriten së bashku si individë të sigurt dhe të dhembshur.",
+    "imageAlt": "Nxënës duke bashkëpunuar në Shkollën Zenit"
   },
+  "pillars": [
+    { "icon": "🤗", "title": "Respekt & Përfshirje", "text": "Çdo individ pritet dhe mbështetet." },
+    { "icon": "📈", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
+    { "icon": "🤝", "title": "Komunitet", "text": "Nxënësit, familjet dhe stafi punojnë së bashku." },
+    { "icon": "🧭", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
+  ],
+  "gallery": {
+    "title": "Komuniteti & Jeta në Zenit",
+    "subtitle": "Ditët tona janë të mbushura me kreativitet, bashkëpunim dhe momente që forcojnë shpirtin tonë komunitar.",
+    "imageAlt": "Foto e kulturës së Zenit {{index}}"
+  },
+  "cta": {
+    "title": "Bëhu Pjesë e Komunitetit Tonë",
+    "text": "Shkolla Zenit është më shumë se një vend për të mësuar — është një vend për të përkitur. Bashkohuni në evente, bëhuni vullnetarë dhe rrituni me ne.",
+    "btn": "Eksploro Aktivitetet"
+  }
+},
+
   "news": {
     "title": "Lajme & Përditësime",
     "subtitle": "Të rejat nga jeta në kampus.",
@@ -577,9 +593,8 @@
       },
       "call": {
         "title": "Na Telefononi",
-        "main": "Kryesor: +1 (555) 123-4567",
-        "admissions": "Pranime: +1 (555) 123-4568",
-        "camp": "Kampi Veror: +1 (555) 123-4569"
+        "admissions": "Pranime: +383 49 959 435",
+        "camp": "Kampi Veror: +383 49 959 430"
       },
       "email": {
         "title": "Na dërgoni Email",
@@ -602,10 +617,16 @@
       "subject": "Subjekti",
       "message": "Mesazhi",
       "submit": "Dërgo Mesazhin",
+
+      "success": "Faleminderit! Mesazhi juaj u dërgua.",
+      "error": "Na vjen keq, diçka shkoi keq. Ju lutem provoni përsëri ose shkruani te info@zenitschool.org.",
+      "sending": "Duke dërguar…",
+      "phoneTitle": "Ju lutem shkruani një numër telefoni të vlefshëm",
+
       "placeholders": {
         "name": "Emri dhe mbiemri",
         "email": "emri.mbiemri@example.com",
-        "phone": "+383 49 123 456",
+        "phone": "+383 123 123",
         "message": "Na tregoni si mund t’ju ndihmojmë..."
       },
       "subjects": {

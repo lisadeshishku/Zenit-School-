@@ -52,3 +52,24 @@
 .contact-page .quick-info-section .quick-info-grid .info-card:hover p {
   color: #2563eb;
 }
+
+.form-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+.form-banner--success {
+  background: #ecfdf5;      /* green-50 */
+  color: #065f46;           /* green-800 */
+  border: 1px solid #a7f3d0;/* green-200 */
+}
+.form-banner--error {
+  background: #fef2f2;      /* red-50 */
+  color: #991b1b;           /* red-800 */
+  border: 1px solid #fecaca;/* red-200 */
+}
+

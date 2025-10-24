@@ -356,10 +356,6 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
-/* Page-specific styles */
-.home-page {
-  padding-top: 0;
-}
 
 .contact-page {
   min-height: 100vh;

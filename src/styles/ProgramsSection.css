@@ -1,7 +1,13 @@
-/* Updated styles/ProgramsSection.css */
+/* ProgramsSection.css */
 .programs-section {
   padding: 5rem 0;
   background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .section-header {
@@ -10,6 +16,10 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem 2rem;
+  position: relative;
+  z-index: 100;
+  background-color: #f9fafb;
 }
 
 .section-title {
@@ -17,18 +27,26 @@
   font-weight: bold;
   color: #111827;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 100;
 }
 
 .section-subtitle {
   font-size: 1.125rem;
   color: #6b7280;
   line-height: 1.6;
+  position: relative;
+  z-index: 100;
 }
 
 .programs-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 @media (min-width: 640px) {
@@ -42,3 +60,4 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
