@@ -155,6 +155,20 @@ main {
   padding-top: 5rem; /* Account for fixed navbar */
 }
 
+:root {
+  --navbar-height: 5rem;
+}
+
+/* Apply padding based on navbar height */
+.page-header,
+.programs-header,
+.admissions-header,
+.contact-header,
+.about-header {
+  padding-top: calc(var(--navbar-height) + 3rem);
+}
+
+
 /* Responsive Container */
 @media (min-width: 640px) {
   .container {

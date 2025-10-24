@@ -25,7 +25,7 @@ export default function Careers() {
               </div>
               <p className="job-meta">{j.location} • {j.department}</p>
               <ul className="job-reqs">
-                {j.requirements.map((r, k) => <li key={k}>• {r}</li>)}
+                {j.requirements.map((r, k) => <li key={k}> {r}</li>)}
               </ul>
               <a className="apply-btn" href={j.applyUrl} target="_blank" rel="noreferrer">
                 {t('careers.apply')}
@@ -39,7 +39,7 @@ export default function Careers() {
         <div className="container">
           <h2>{t('careers.how.title')}</h2>
           <p>{t('careers.how.text')}</p>
-          <a className="email-link" href="mailto:careers@zenitschool.edu">careers@zenitschool.edu</a>
+          <a className="email-link" href="mailto:careers@zenitschool.edu">hr@zenitschool.org</a>
         </div>
       </section>
     </div>

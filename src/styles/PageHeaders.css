@@ -1,5 +1,6 @@
-/* Additional CSS for styles/PageHeaders.css */
+/* === Additional CSS for styles/PageHeaders.css === */
 
+/* Program details blocks (unchanged) */
 .program-details {
   padding: 5rem 0;
   background-color: white;
@@ -75,8 +76,7 @@
   margin-top: 0.5rem;
 }
 
-/* Additional CSS for styles/Contact.css */
-
+/* Contact page additions (unchanged) */
 .social-section {
   text-align: center;
   margin-top: 3rem;
@@ -267,6 +267,51 @@
   height: 1.25rem;
 }
 
+/* --- Text color fix: make all header titles/subtitles dark --- */
+.page-header .page-title,
+.page-header .page-subtitle,
+.programs-header .page-title,
+.programs-header .page-subtitle,
+.admissions-header .page-title,
+.admissions-header .page-subtitle,
+.contact-header .page-title,
+.contact-header .page-subtitle,
+.about-header .page-title,
+.about-header .page-subtitle {
+  color: #111827 !important; /* titles */
+}
+
+.page-header .page-subtitle,
+.programs-header .page-subtitle,
+.admissions-header .page-subtitle,
+.contact-header .page-subtitle,
+.about-header .page-subtitle {
+  color: #4b5563 !important; /* subtitles */
+}
+
+/* --- NAVBAR SPACING FIX (adds space between navbar and big header text) --- */
+:root {
+  /* Adjust if your navbar is taller/shorter */
+  --navbar-offset: 6.5rem;
+}
+
+/* Push the entire header section down below the fixed navbar */
+.page-header,
+.programs-header,
+.admissions-header,
+.contact-header,
+.about-header {
+  margin-top: var(--navbar-offset) !important;
+}
+
+/* Optionally give a little more room on small screens (often taller nav) */
+@media (max-width: 768px) {
+  :root {
+    --navbar-offset: 7.5rem;
+  }
+}
+
+/* Responsive grids for contact (unchanged) */
 @media (min-width: 768px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);

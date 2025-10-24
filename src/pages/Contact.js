@@ -65,7 +65,6 @@ const Contact = () => {
         );
         formRef.current.reset();
 
-        // Scroll banner into view for clear feedback
         requestAnimationFrame(() => {
           bannerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
@@ -106,6 +105,7 @@ const Contact = () => {
         </div>
       </section>
 
+    
       {/* Contact Info */}
       <section className="contact-info-section">
         <div className="container">
@@ -157,7 +157,7 @@ const Contact = () => {
       </section>
 
       {/* Form */}
-      <section className="contact-form-section">
+      <section id="contact-form" className="contact-form-section">
         <div className="container">
           <div className="form-container">
             <h2>{t('contactPage.form.title')}</h2>

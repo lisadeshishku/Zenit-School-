@@ -1,25 +1,19 @@
-/* ProgramsSection.css */
+/* --- Programs Section (matches AboutSection look) --- */
 .programs-section {
   padding: 5rem 0;
-  background-color: #f9fafb;
+  background-color: white;
 }
 
-.container {
+.programs-section .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+/* Header */
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem 2rem;
-  position: relative;
-  z-index: 100;
-  background-color: #f9fafb;
+  margin-bottom: 3rem;
 }
 
 .section-title {
@@ -27,31 +21,112 @@
   font-weight: bold;
   color: #111827;
   margin-bottom: 1rem;
-  position: relative;
-  z-index: 100;
+  line-height: 1.2;
 }
 
 .section-subtitle {
   font-size: 1.125rem;
   color: #6b7280;
-  line-height: 1.6;
-  position: relative;
-  z-index: 100;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* Grid of cards */
 .programs-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  position: relative;
-  z-index: 1;
-  margin-top: 0;
-  padding-top: 0;
+  align-items: stretch;
 }
 
-@media (min-width: 640px) {
+/* Card (base visuals similar to About’s image card feel) */
+.program-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 40px -10px rgba(0,0,0,0.14);
+}
+
+/* Image with age badge */
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.age-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #2563eb;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+/* Content */
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* Learn more button (keeps to palette like About CTA but subtle) */
+.learn-more-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: #2563eb;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 700;
+}
+
+.learn-more-btn:hover {
+  color: #1d4ed8;
+  transform: translateX(2px);
+}
+
+/* Responsive like AboutSection */
+@media (min-width: 768px) {
   .programs-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
   }
 }
 
@@ -60,4 +135,3 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-

@@ -30,7 +30,6 @@ const Navbar = () => {
       { name: 'director', path: '/about/director' },
       { name: 'staff', path: '/about/staff' },
       { name: 'mission', path: '/about/mission' },
-      { name: 'history', path: '/about/history' },
       { name: 'careers', path: '/about/careers' }
     ],
     admissions: [
