@@ -217,13 +217,13 @@
   "director": {
     "title": "From the Director",
     "subtitle": "A message of welcome and purpose.",
-    "greeting": "Dear Families and Students,",
+    "greeting": "Dear Parents and Students,",
     "paragraphs": [
       "At Zenit, we believe every learner is capable of excellence with the right guidance and care.",
       "Our programs balance academic rigor with the arts, athletics, and character education.",
       "I invite you to visit our campus and experience our community first-hand."
     ],
-    "name": "Arben Kola, PhD",
+    "name": "Butrint Deshishku",
     "role": "School Director",
     "highlights": [
       { "kpi": "40+", "label": "Years Serving Families" },
@@ -372,8 +372,269 @@
         "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
       }
     ]
+  },
+
+  "aboutPage": {
+    "title": "About Zenit School",
+    "subtitle": "Discover our rich history, educational philosophy, and commitment to excellence that has shaped generations of leaders.",
+    "history": {
+      "heading": "Our Story Since 1985",
+      "paragraphs": [
+        "Zenit School was founded with a vision to prepare students not just for academic success, but for leadership in an ever-changing world. From our beginnings with 50 students, we have grown into a premier institution serving 450 students from 35 countries.",
+        "Our founders believed in combining rigorous academics with character development—a philosophy that still guides our mission. The addition of our half Olympic pool in 1995 marked our commitment to wellness and competitive excellence."
+      ],
+      "timeline": [
+        { "year": "1985", "title": "School Founded", "text": "Zenit School opens its doors with 50 students and a vision for excellence." },
+        { "year": "1995", "title": "Olympic Pool Added", "text": "Half Olympic pool constructed, establishing our aquatic program." },
+        { "year": "2005", "title": "International Recognition", "text": "Achieved international accreditation and expanded global partnerships." },
+        { "year": "2025", "title": "40 Years Strong", "text": "Celebrating four decades of educational excellence and innovation." }
+      ]
+    },
+    "mv": {
+      "missionTitle": "Our Mission",
+      "missionText": "To provide an exceptional educational experience that nurtures intellectual curiosity, develops character, and prepares students to be engaged global citizens.",
+      "visionTitle": "Our Vision",
+      "visionText": "To be a leading institution that inspires students to reach their full potential and contribute meaningfully through innovation, collaboration, and service."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        { "title": "Academic Excellence", "text": "We maintain the highest standards of learning and intellectual growth." },
+        { "title": "Character Development", "text": "We foster integrity, empathy, and ethical leadership." },
+        { "title": "Global Citizenship", "text": "We prepare students to thrive in an interconnected, diverse world." },
+        { "title": "Holistic Wellness", "text": "We promote physical, mental, and emotional well-being." }
+      ]
+    },
+    "faculty": {
+      "title": "Exceptional Faculty & Staff",
+      "text": "Our dedicated team of 56 faculty members brings expertise from around the globe. With advanced degrees and years of experience, our teachers inspire and challenge every student.",
+      "imageAlt": "Faculty and students",
+      "stats": [
+        { "number": "95%", "label": "Hold Advanced Degrees" },
+        { "number": "15", "label": "Average Years Experience" },
+        { "number": "12", "label": "Countries Represented" }
+      ]
+    },
+    "campus": {
+      "title": "Campus Life & Facilities",
+      "facilities": [
+        {
+          "image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Modern classrooms",
+          "title": "Modern Learning Spaces",
+          "text": "State-of-the-art classrooms with the latest technology for interactive learning."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Swimming pool",
+          "title": "Half Olympic Pool",
+          "text": "Professional facility for competitive training, lessons, and recreation."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Library",
+          "title": "Research Library",
+          "text": "Extensive books, digital resources, and quiet study spaces for research."
+        }
+      ]
+    }
+  }, 
+  "programsPage": {
+    "header": {
+      "title": "Our Programs",
+      "subtitle": "Comprehensive educational programs designed to challenge, inspire, and prepare students for success — from elementary through high school, plus our exciting Zenit Summer Camp."
+    },
+    "elementary": {
+      "title": "Elementary School",
+      "ages": "Ages 5-11",
+      "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Elementary students",
+      "desc": "Foundation years focused on creativity, exploration, and fundamental skills development.",
+      "points": [
+        "Small class sizes (12–15 students)",
+        "Integrated STEAM curriculum",
+        "Swimming lessons in our half Olympic pool",
+        "Art, music, and physical education",
+        "Character development programs",
+        "Field trips and hands-on learning"
+      ],
+      "highlight": {
+        "title": "Swimming Program:",
+        "text": "All elementary students receive weekly instruction focusing on water safety and basic strokes."
+      }
+    },
+    "middle": {
+      "title": "Middle School",
+      "ages": "Ages 11-14",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Middle school students",
+      "desc": "Transitional years emphasizing critical thinking, collaboration, and personal growth.",
+      "points": [
+        "Advanced academic courses",
+        "Leadership development programs",
+        "Competitive swimming team",
+        "Student clubs and organizations",
+        "Community service projects",
+        "Technology integration"
+      ],
+      "highlight": {
+        "title": "Competitive Swimming:",
+        "text": "Train in our half Olympic pool for regional and national competitions."
+      }
+    },
+    "high": {
+      "title": "High School",
+      "ages": "Ages 14-18",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "High school students",
+      "desc": "Advanced preparation for university with rigorous academics and leadership opportunities.",
+      "points": [
+        "Advanced Placement (AP) courses",
+        "International Baccalaureate (IB) program",
+        "Elite swimming program",
+        "University counseling",
+        "Study abroad opportunities",
+        "Research projects and internships"
+      ],
+      "highlight": {
+        "title": "Elite Swimming:",
+        "text": "Athletes compete at state and national levels; many receive college scholarships."
+      }
+    },
+    "summer": {
+      "title": "🏊‍♀️ Zenit Summer Camp",
+      "ages": "Ages 6-16",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Summer camp activities",
+      "desc": "An exciting summer program featuring our half Olympic pool and enriching activities.",
+      "points": [
+        "Daily swimming instruction and pool activities",
+        "Water safety and lifeguard training",
+        "Arts and crafts workshops",
+        "STEM camps and coding",
+        "Sports and outdoor adventures",
+        "Field trips and cultural experiences"
+      ],
+      "highlight": {
+        "title": "🏊‍♀️ Swimming Excellence:",
+        "text": "From beginner lessons to competitive training camps."
+      }
+    },
+    "results": {
+      "title": "Academic Excellence & Results",
+      "text": "Our rigorous academic programs consistently produce outstanding results. With a 98% university acceptance rate and graduates attending top institutions worldwide, our students are well-prepared for success.",
+      "items": [
+        { "number": "98%", "label": "University Acceptance" },
+        { "number": "85%", "label": "Honor Roll Students" },
+        { "number": "42",  "label": "AP Courses Offered" },
+        { "number": "15",  "label": "Swimming Records Held" }
+      ],
+      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Students celebrating success"
+    },
+    "extracurricular": {
+      "title": "Beyond the Classroom",
+      "categories": [
+        {
+          "icon": "🏊‍♀️",
+          "title": "Aquatic Programs",
+          "items": ["Competitive Swimming Team", "Water Polo", "Synchronized Swimming", "Lifeguard Certification", "Aqua Fitness Classes"]
+        },
+        {
+          "icon": "🎨",
+          "title": "Arts & Culture",
+          "items": ["Visual Arts Studio", "Theater Productions", "Music Ensembles", "Digital Media", "Creative Writing"]
+        },
+        {
+          "icon": "🔬",
+          "title": "STEM Clubs",
+          "items": ["Robotics Team", "Science Olympiad", "Coding Club", "Math Competition", "Environmental Club"]
+        },
+        {
+          "icon": "🌍",
+          "title": "Global Engagement",
+          "items": ["Model United Nations", "Language Clubs", "Cultural Exchange", "International Service", "Study Abroad"]
+        }
+      ]
+    }
+  }, 
+  "admissionsPage": {
+    "title": "Admissions",
+    "subtitle": "Join our community of learners and future leaders."
+  },
+  "contactPage": {
+    "header": {
+      "title": "Contact Us",
+      "subtitle": "Reach out to Zenit School for more information about our programs, admissions, summer camp, or to schedule a campus visit including a tour of our half Olympic pool."
+    },
+    "info": {
+      "visit": {
+        "title": "Visit Us",
+        "line1": "123 Education Boulevard",
+        "line2": "Academic Heights, AH 12345",
+        "country": "United States",
+        "poolNote": "Half Olympic pool on campus"
+      },
+      "call": {
+        "title": "Call Us",
+        "main": "Main: +1 (555) 123-4567",
+        "admissions": "Admissions: +1 (555) 123-4568",
+        "camp": "Summer Camp: +1 (555) 123-4569"
+      },
+      "email": {
+        "title": "Email Us",
+        "general": "info@zenitschool.edu",
+        "admissions": "admissions@zenitschool.edu",
+        "camp": "summercamp@zenitschool.edu"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Monday - Friday",
+        "weekdayTime": "8:00 AM - 5:00 PM",
+        "saturday": "Saturday: 9:00 AM - 1:00 PM"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "placeholders": {
+        "name": "Your full name",
+        "email": "firstname.lastname@example.com",
+        "phone": "+1 (555) 123-4567",
+        "message": "Tell us how we can help you..."
+      },
+      "subjects": {
+        "placeholder": "Select a subject",
+        "options": [
+          { "value": "admissions",  "label": "Admissions Inquiry" },
+          { "value": "programs",    "label": "Program Information" },
+          { "value": "summer-camp", "label": "Zenit Summer Camp" },
+          { "value": "visit",       "label": "Campus Visit" },
+          { "value": "swimming",    "label": "Swimming Program" },
+          { "value": "financial",   "label": "Financial Aid" },
+          { "value": "general",     "label": "General Information" },
+          { "value": "other",       "label": "Other" }
+        ]
+      }
+    },
+    "quick": {
+      "pool":      { "title": "Swimming Facilities", "text": "Visit our half Olympic pool—perfect for competitive swimming, lessons, and summer camp activities." },
+      "parking":   { "title": "Parking", "text": "Free parking available on campus for all visitors and families." },
+      "access":    { "title": "Accessibility", "text": "All facilities are wheelchair accessible with accommodations available." },
+      "languages": { "title": "Languages", "text": "Translation services available upon request for non-English speaking families." }
+    }
   }
 }
+
+
+
+
+
 
 
 

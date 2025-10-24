@@ -1,246 +1,256 @@
-// Replace your Contact.js with this version that has inline styles
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import '../styles/Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
+  const { t, i18n } = useTranslation();
+  const subjectOptions = t('contactPage.form.subjects.options', { returnObjects: true }) || [];
+  const formRef = useRef(null);
 
-  const [hoveredIcon, setHoveredIcon] = useState(null);
+  // Helper: sanitize phone to only allow digits, +, (), -, and spaces
+  const sanitizePhone = (value) => value.replace(/[^\d+\s()-]/g, '');
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
+  // Helper: change text color on hover (fixes stubborn CSS overrides)
+  const setCardColor = (card, color) => {
+    if (!card) return;
+    card.style.color = color;
+    card.querySelectorAll('h4, p, span, strong, em').forEach((el) => {
+      el.style.color = color;
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
-  };
-
-  // Inline styles for social icons (this will override any CSS)
-  const socialLinkStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '2.5rem',
-    height: '2.5rem',
-    backgroundColor: '#374151',
-    color: '#9ca3af',
-    borderRadius: '0.5rem',
-    textDecoration: 'none',
-    transition: 'all 0.3s ease',
-    transform: 'translateY(0)'
-  };
-
-  const socialLinkHoverStyle = {
-    ...socialLinkStyle,
-    backgroundColor: '#2563eb',
-    color: 'white',
-    transform: 'translateY(-2px)'
-  };
-
-  const socialLinksContainerStyle = {
-    display: 'flex',
-    gap: '1rem',
-    alignItems: 'center',
-    justifyContent: 'center'
-  };
+  // Reset form when user navigates back to this page
+  useEffect(() => {
+    const handlePageShow = () => {
+      if (formRef.current) formRef.current.reset();
+    };
+    window.addEventListener('pageshow', handlePageShow);
+    return () => window.removeEventListener('pageshow', handlePageShow);
+  }, []);
 
   return (
     <div className="contact-page">
-      {/* Page Header */}
+      {/* Header */}
       <section className="page-header">
         <div className="container">
-          <h1 className="page-title">Contact Us</h1>
-          <p className="page-subtitle">
-            Reach out to Zenit School for more information about our programs, admissions, 
-            summer camp, or to schedule a campus visit including a tour of our half Olympic pool.
-          </p>
+          <h1 className="page-title">{t('contactPage.header.title')}</h1>
+          <p className="page-subtitle">{t('contactPage.header.subtitle')}</p>
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="contact-info-section">
-        <div className="container">
-          <div className="contact-grid">
-            <div className="contact-item">
-              <div className="contact-icon">
-                <MapPin />
-              </div>
-              <h3>Visit Us</h3>
-              <p>
-                123 Education Boulevard<br />
-                Academic Heights, AH 12345<br />
-                United States
-              </p>
-              <p className="facility-note">🏊‍♀️ Half Olympic pool on campus</p>
-            </div>
+     {/* Contact Info */}
+{/* Contact Info */}
+<section className="contact-info-section">
+  <div className="container">
+    <div className="contact-grid">
 
-            <div className="contact-item">
-              <div className="contact-icon">
-                <Phone />
-              </div>
-              <h3>Call Us</h3>
-              <p>
-                Main: +1 (555) 123-4567<br />
-                Admissions: +1 (555) 123-4568<br />
-                Summer Camp: +1 (555) 123-4569
-              </p>
-            </div>
+      {/* Address */}
+      <div className="contact-item">
+        <div className="contact-icon"><MapPin /></div>
+        <h3>{t('contactPage.info.visit.title')}</h3>
+        <p>
+          <a
+            href="https://www.google.com/maps/place/Shkolla+Zenit/@42.7507188,21.1392983,17z/data=!3m1!4b1!4m6!3m5!1s0x1354a0fd88b40665:0xb32bc8606d91da68!8m2!3d42.7507149!4d21.1418732!16s%2Fg%2F11bwyxr1hz?entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'inherit', textDecoration: 'none' }}
+          >
+            Fshati Prugoc, Kampusi i Zenit School, Prishtinë, Kosovë, 10000
+          </a>
+        </p>
+      </div>
 
-            <div className="contact-item">
-              <div className="contact-icon">
-                <Mail />
-              </div>
-              <h3>Email Us</h3>
-              <p>
-                info@zenitschool.edu<br />
-                admissions@zenitschool.edu<br />
-                summercamp@zenitschool.edu
-              </p>
-            </div>
 
-            <div className="contact-item">
-              <div className="contact-icon">
-                <Clock />
-              </div>
-              <h3>Office Hours</h3>
-              <p>
-                Monday - Friday<br />
-                8:00 AM - 5:00 PM<br />
-                Saturday: 9:00 AM - 1:00 PM
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Phone Numbers */}
+      <div className="contact-item">
+        <div className="contact-icon"><Phone /></div>
+        <h3>{t('contactPage.info.call.title')}</h3>
+        <p>
+          {t('contactPage.info.call.admissions')}: +383 49 959 435<br />
+          {t('contactPage.info.call.camp')}: +383 49 959 430
+        </p>
+      </div>
 
-      {/* Contact Form */}
+
+      {/* Email */}
+      <div className="contact-item">
+        <div className="contact-icon"><Mail /></div>
+        <h3>{t('contactPage.info.email.title')}</h3>
+        <p>info@zenitschool.org</p>
+      </div>
+
+      {/* Office Hours */}
+      <div className="contact-item">
+        <div className="contact-icon"><Clock /></div>
+        <h3>{t('contactPage.info.hours.title')}</h3>
+        <p>
+          {t('contactPage.info.hours.weekdays')}<br />
+          {t('contactPage.info.hours.weekdayTime')}
+        </p>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+      {/* Contact Form (Formspree) */}
       <section className="contact-form-section">
         <div className="container">
           <div className="form-container">
-            <h2>Send us a Message</h2>
-            <form onSubmit={handleSubmit} className="contact-form">
+            <h2>{t('contactPage.form.title')}</h2>
+
+            <form
+              ref={formRef}
+              action="https://formspree.io/f/xdkwqjjk"
+              method="POST"
+              className="contact-form"
+              autoComplete="off"
+              onSubmit={() => {
+                if (formRef.current) formRef.current.reset();
+              }}
+            >
+              <input type="hidden" name="_language" value={i18n.language} />
+              <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
+
               <div className="form-row">
+                {/* Full Name */}
                 <div className="form-group">
-                  <label htmlFor="name">Full Name *</label>
+                  <label htmlFor="name">{t('contactPage.form.name')} *</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your full name"
+                    placeholder={t('contactPage.form.placeholders.name')}
+                    autoComplete="off"
                   />
                 </div>
+
+                {/* Email */}
                 <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
+                  <label htmlFor="email">{t('contactPage.form.email')} *</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your.email@example.com"
+                    placeholder={t('contactPage.form.placeholders.email')}
+                    autoComplete="off"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Please enter a valid email address (example@domain.com)"
                   />
                 </div>
               </div>
 
               <div className="form-row">
+                {/* Phone */}
                 <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
+                  <label htmlFor="phone">{t('contactPage.form.phone')}</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+1 (555) 123-4567"
+                    placeholder={t('contactPage.form.placeholders.phone')}
+                    autoComplete="off"
+                    inputMode="numeric"
+                    pattern="^\+?\d[\d\s()-]{6,}$"
+                    title="Please enter a valid phone number (numbers only)"
+                    onInput={(e) => {
+                      e.currentTarget.value = sanitizePhone(e.currentTarget.value);
+                    }}
                   />
                 </div>
+
+                {/* Subject */}
                 <div className="form-group">
-                  <label htmlFor="subject">Subject *</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="admissions">Admissions Inquiry</option>
-                    <option value="programs">Program Information</option>
-                    <option value="summer-camp">Zenit Summer Camp</option>
-                    <option value="visit">Campus Visit</option>
-                    <option value="swimming">Swimming Program</option>
-                    <option value="financial">Financial Aid</option>
-                    <option value="general">General Information</option>
-                    <option value="other">Other</option>
+                  <label htmlFor="subject">{t('contactPage.form.subject')} *</label>
+                  <select id="subject" name="subject" required defaultValue="">
+                    <option value="" disabled>
+                      {t('contactPage.form.subjects.placeholder')}
+                    </option>
+                    {subjectOptions.map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>
 
+              {/* Message */}
               <div className="form-group">
-                <label htmlFor="message">Message *</label>
+                <label htmlFor="message">{t('contactPage.form.message')} *</label>
                 <textarea
                   id="message"
                   name="message"
                   required
                   rows={6}
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Tell us how we can help you..."
+                  placeholder={t('contactPage.form.placeholders.message')}
+                  autoComplete="off"
                 />
               </div>
 
+              <input type="hidden" name="_subject" value="New message from Zenit School website" />
+
               <button type="submit" className="submit-btn">
                 <Send className="btn-icon" />
-                Send Message
+                {t('contactPage.form.submit')}
               </button>
             </form>
           </div>
         </div>
       </section>
 
-      {/* Quick Information Section */}
+      {/* Quick Info (with JS hover color) */}
       <section className="quick-info-section">
         <div className="container">
           <div className="quick-info-grid">
-            <div className="info-card">
-              <h4>🏊 Swimming Facilities</h4>
-              <p>Visit our half Olympic pool - perfect for competitive swimming, lessons, and summer camp activities.</p>
+
+            <div
+              className="info-card"
+              onMouseEnter={(e) => setCardColor(e.currentTarget, '#2563eb')}
+              onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
+              style={{ cursor: 'pointer' }}
+            >
+              <h4>🏊 {t('contactPage.quick.pool.title')}</h4>
+              <p>{t('contactPage.quick.pool.text')}</p>
             </div>
-            <div className="info-card">
-              <h4>🚗 Parking</h4>
-              <p>Free parking available on campus for all visitors and families.</p>
+
+            <div
+              className="info-card"
+              onMouseEnter={(e) => setCardColor(e.currentTarget, '#2563eb')}
+              onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
+              style={{ cursor: 'pointer' }}
+            >
+              <h4>🚗 {t('contactPage.quick.parking.title')}</h4>
+              <p>{t('contactPage.quick.parking.text')}</p>
             </div>
-            <div className="info-card">
-              <h4>♿ Accessibility</h4>
-              <p>All facilities are wheelchair accessible with accommodations available.</p>
+
+            <div
+              className="info-card"
+              onMouseEnter={(e) => setCardColor(e.currentTarget, '#2563eb')}
+              onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
+              style={{ cursor: 'pointer' }}
+            >
+              <h4>♿ {t('contactPage.quick.access.title')}</h4>
+              <p>{t('contactPage.quick.access.text')}</p>
             </div>
-            <div className="info-card">
-              <h4>🌐 Languages</h4>
-              <p>Translation services available upon request for non-English speaking families.</p>
+
+            <div
+              className="info-card"
+              onMouseEnter={(e) => setCardColor(e.currentTarget, '#2563eb')}
+              onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
+              style={{ cursor: 'pointer' }}
+            >
+              <h4>🌐 {t('contactPage.quick.languages.title')}</h4>
+              <p>{t('contactPage.quick.languages.text')}</p>
             </div>
+
           </div>
         </div>
       </section>

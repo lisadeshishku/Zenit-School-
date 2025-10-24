@@ -217,13 +217,13 @@
   "director": {
     "title": "Nga Drejtori",
     "subtitle": "Një mesazh mirëseardhjeje dhe vizioni.",
-    "greeting": "Të dashura familje dhe nxënës,",
+    "greeting": "Të dashur Prindër dhe Nxënës,",
     "paragraphs": [
       "Në Zenit besojmë se çdo nxënës mund të arrijë ekselencë me udhëheqjen dhe kujdesin e duhur.",
       "Programet tona balancojnë rreptësinë akademike me artet, sportin dhe edukimin e karakterit.",
       "Ju ftoj të vizitoni kampusin për të përjetuar nga afër komunitetin tonë."
     ],
-    "name": "Arben Kola, PhD",
+    "name": "Butrint Deshishku",
     "role": "Drejtori i Shkollës",
     "highlights": [
       { "kpi": "40+", "label": "Vite në Shërbim të Familjeve" },
@@ -372,8 +372,261 @@
         "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
       }
     ]
+  },
+
+  "aboutPage": {
+    "title": "Rreth Zenit School",
+    "subtitle": "Zbuloni historinë tonë, filozofinë arsimore dhe angazhimin për ekselencë që ka formuar breza liderësh.",
+    "history": {
+      "heading": "Historia Jonë që nga 1985",
+      "paragraphs": [
+        "Zenit School u themelua me vizionin për t’i përgatitur nxënësit jo vetëm për sukses akademik, por edhe për lidership në një botë që ndryshon vazhdimisht. Nga fillimet me 50 nxënës, sot shërbejmë 450 nxënës nga 35 vende.",
+        "Themeluesit tanë besuan në bashkimin e akademikut rigoroz me zhvillimin e karakterit—një filozofi që na udhëheq edhe sot. Shtimi i pishinës gjysmë-olimpike në 1995 shënoi angazhimin tonë për mirëqenie dhe ekselencë sportive."
+      ],
+      "timeline": [
+        { "year": "1985", "title": "Themelimi i Shkollës", "text": "Zenit hap dyert me 50 nxënës dhe një vizion për ekselencë." },
+        { "year": "1995", "title": "Shtohet Pishina", "text": "Ndërtohet pishina gjysmë-olimpike, duke ngritur programin akuatik." },
+        { "year": "2005", "title": "Njohje Ndërkombëtare", "text": "Akkreditim ndërkombëtar dhe zgjerim i partneriteteve." },
+        { "year": "2025", "title": "40 Vite Sukses", "text": "Festohet katër dekada ekselence dhe inovacioni." }
+      ]
+    },
+    "mv": {
+      "missionTitle": "Misioni Ynë",
+      "missionText": "Të ofrojmë arsim të shkëlqyer që ushqen kureshtjen, zhvillon karakterin dhe përgatit qytetarë aktivë globalë.",
+      "visionTitle": "Vizioni Ynë",
+      "visionText": "Të jemi institucion udhëheqës që frymëzon nxënësit të arrijnë potencialin dhe të kontribuojnë me kuptim përmes inovacionit, bashkëpunimit dhe shërbimit."
+    },
+    "values": {
+      "title": "Vlerat Tona Themelore",
+      "items": [
+        { "title": "Ekselencë Akademike", "text": "Mbajmë standardet më të larta të të nxënit dhe rritjes intelektuale." },
+        { "title": "Zhvillim i Karakterit", "text": "Nxisim integritetin, empatinë dhe lidershipin etik." },
+        { "title": "Qytetari Globale", "text": "Përgatisim nxënësit të lulëzojnë në një botë të larmishme e të ndërlidhur." },
+        { "title": "Mirëqenie Holistike", "text": "Promovojmë shëndetin fizik, mendor dhe emocional." }
+      ]
+    },
+    "faculty": {
+      "title": "Staf & Mësues të Përjashtëm",
+      "text": "Ekipi ynë prej 56 mësuesish sjell eksperiencë globale. Me diploma të avancuara dhe vite përvoje, ata frymëzojnë dhe sfidojnë çdo nxënës.",
+      "imageAlt": "Stafi dhe nxënësit",
+      "stats": [
+        { "number": "95%", "label": "Me Diploma të Avancuara" },
+        { "number": "15", "label": "Vite Mesatare Eksperience" },
+        { "number": "12", "label": "Vende të Përfaqësuara" }
+      ]
+    },
+    "campus": {
+      "title": "Jeta në Kampus & Facilitetet",
+      "facilities": [
+        {
+          "image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Klasa moderne",
+          "title": "Hapësira Moderne Mësimore",
+          "text": "Klasa të pajisura me teknologji bashkëkohore për të nxitur ndërveprimin."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Pishinë",
+          "title": "Pishinë Gjysmë-Olimpike",
+          "text": "Facilitet profesional për stërvitje konkurruese, mësime dhe rekreacion."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Bibliotekë",
+          "title": "Bibliotekë Kërkimore",
+          "text": "Libra, burime digjitale dhe hapësira të qeta për studim."
+        }
+      ]
+    }
+  },
+  "programsPage": {
+    "header": {
+      "title": "Programet Tona",
+      "subtitle": "Programe gjithëpërfshirëse për të sfiduar, frymëzuar dhe përgatitur nxënësit për sukses — nga cikli fillor deri në të mesmen, si dhe kampi ynë veror Zenit."
+    },
+    "elementary": {
+      "title": "Shkolla Fillore",
+      "ages": "Mosha 5–11",
+      "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Nxënës të ciklit fillor",
+      "desc": "Vitet themeluese me fokus në kreativitet, eksplorim dhe zhvillim të aftësive bazë.",
+      "points": [
+        "Klasa të vogla (12–15 nxënës)",
+        "Kurrikulë e integruar STEAM",
+        "Mësime noti në pishinën tonë gjysmë-olimpike",
+        "Arte, muzikë dhe edukim fizik",
+        "Programe të zhvillimit të karakterit",
+        "Ekskursione dhe të nxënë praktik"
+      ],
+      "highlight": {
+        "title": "Programi i Notit:",
+        "text": "Të gjithë nxënësit e ciklit fillor zhvillojnë orë javore me fokus te siguria në ujë dhe teknikat bazë."
+      }
+    },
+    "middle": {
+      "title": "Shkolla e Mesme e Ulët",
+      "ages": "Mosha 11–14",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Nxënës të ciklit të mesëm të ulët",
+      "desc": "Vite tranzicioni që theksojnë mendimin kritik, bashkëpunimin dhe rritjen personale.",
+      "points": [
+        "Kurse akademike të avancuara",
+        "Programe zhvillimi lidershipi",
+        "Ekip noti konkurrues",
+        "Klube dhe organizata të nxënësve",
+        "Projekte shërbimi në komunitet",
+        "Integrim i teknologjisë"
+      ],
+      "highlight": {
+        "title": "Not Konkurrues:",
+        "text": "Stërvitje në pishinën gjysmë-olimpike për gara rajonale dhe kombëtare."
+      }
+    },
+    "high": {
+      "title": "Shkolla e Mesme e Lartë",
+      "ages": "Mosha 14–18",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Nxënës të shkollës së mesme",
+      "desc": "Përgatitje e avancuar për universitet me akademikë të fortë dhe mundësi lidershipi.",
+      "points": [
+        "Kurse AP (Advanced Placement)",
+        "Program IB (International Baccalaureate)",
+        "Program elitar noti",
+        "Këshillim universitar",
+        "Mundësi shkëmbimi ndërkombëtar",
+        "Projekte kërkimore dhe praktika"
+      ],
+      "highlight": {
+        "title": "Not Elitar:",
+        "text": "Sportistë që konkurrojnë në nivele shtetërore e kombëtare; shumë prej tyre fitojnë bursa universitare."
+      }
+    },
+    "summer": {
+      "title": "🏊‍♀️ Kampi Veror Zenit",
+      "ages": "Mosha 6–16",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Aktivitete kampi veror",
+      "desc": "Një program veror emocionues me pishinën tonë gjysmë-olimpike dhe aktivitete pasuruese.",
+      "points": [
+        "Mësime ditore noti dhe aktivitete në pishinë",
+        "Siguria në ujë dhe certifikim roje plazhi",
+        "Punëtori arti dhe zeje",
+        "Kampi STEM dhe kodim",
+        "Sport dhe aventura në natyrë",
+        "Ekskursione dhe përvoja kulturore"
+      ],
+      "highlight": {
+        "title": "🏊‍♀️ Ekselencë në Not:",
+        "text": "Nga mësime për fillestarë deri te kampe stërvitore konkurruese."
+      }
+    },
+    "results": {
+      "title": "Ekselencë Akademike & Rezultate",
+      "text": "Programet tona rigoroze prodhojnë vazhdimisht rezultate të shkëlqyera. Me 98% pranim në universitet dhe të diplomuar në institucione elitare, nxënësit tanë janë të përgatitur për sukses.",
+      "items": [
+        { "number": "98%", "label": "Pranim në Universitet" },
+        { "number": "85%", "label": "Nxënës në Honor Roll" },
+        { "number": "42",  "label": "Kurse AP të ofruara" },
+        { "number": "15",  "label": "Rekorde në Not" }
+      ],
+      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "alt": "Nxënës që festojnë suksesin"
+    },
+    "extracurricular": {
+      "title": "Përtej Klasës",
+      "categories": [
+        {
+          "icon": "🏊‍♀️",
+          "title": "Programe Akuatike",
+          "items": ["Ekip Noti Konkurrues", "Ujëpolo", "Not Sinkron", "Certifikim Roje Plazhi", "Klase Aqua Fitness"]
+        },
+        {
+          "icon": "🎨",
+          "title": "Arte & Kulturë",
+          "items": ["Studio Arte Pamore", "Produksione Teatri", "Ansamble Muzikore", "Media Digjitale", "Shkrim Kreativ"]
+        },
+        {
+          "icon": "🔬",
+          "title": "Klube STEM",
+          "items": ["Ekip Robotike", "Olimpiada e Shkencës", "Klubi i Kodimit", "Gara Matematike", "Klubi Mjedisor"]
+        },
+        {
+          "icon": "🌍",
+          "title": "Angazhim Global",
+          "items": ["Model United Nations", "Klube Gjuhe", "Shkëmbim Kulturor", "Shërbim Ndërkombëtar", "Studime Jashtë"]
+        }
+      ]
+    }
+  },
+  "admissionsPage": {
+    "title": "Pranime",
+    "subtitle": "Bëhu pjesë e komunitetit tonë të nxënësve dhe liderëve të ardhshëm."
+  },
+  "contactPage": {
+    "header": {
+      "title": "Kontakt",
+      "subtitle": "Na kontaktoni për informacione rreth programeve, pranimeve, kampit veror ose për të rezervuar një vizitë në kampus me tur në pishinën tonë gjysmë-olimpike."
+    },
+    "info": {
+      "visit": {
+        "title": "Na Vizitoni",
+        "line1": "Bulevardi i Arsimit 123",
+        "line2": "Lartësitë Akademike, AH 12345",
+        "country": "ShBA",
+        "poolNote": "Pishinë gjysmë-olimpike në kampus"
+      },
+      "call": {
+        "title": "Na Telefononi",
+        "main": "Kryesor: +1 (555) 123-4567",
+        "admissions": "Pranime: +1 (555) 123-4568",
+        "camp": "Kampi Veror: +1 (555) 123-4569"
+      },
+      "email": {
+        "title": "Na dërgoni Email",
+        "general": "info@zenitschool.edu",
+        "admissions": "admissions@zenitschool.edu",
+        "camp": "summercamp@zenitschool.edu"
+      },
+      "hours": {
+        "title": "Orari i Zyrës",
+        "weekdays": "E hënë - E premte",
+        "weekdayTime": "08:00 - 17:00",
+        "saturday": "E shtunë: 09:00 - 13:00"
+      }
+    },
+    "form": {
+      "title": "Na dërgoni një Mesazh",
+      "name": "Emri i Plotë",
+      "email": "Adresa e Emailit",
+      "phone": "Numri i Telefonit",
+      "subject": "Subjekti",
+      "message": "Mesazhi",
+      "submit": "Dërgo Mesazhin",
+      "placeholders": {
+        "name": "Emri dhe mbiemri",
+        "email": "emri.mbiemri@example.com",
+        "phone": "+383 49 123 456",
+        "message": "Na tregoni si mund t’ju ndihmojmë..."
+      },
+      "subjects": {
+        "placeholder": "Zgjidhni një subjekt",
+        "options": [
+          { "value": "admissions",  "label": "Pyetje për Pranime" },
+          { "value": "programs",    "label": "Informacione për Programe" },
+          { "value": "summer-camp", "label": "Kampi Veror Zenit" },
+          { "value": "visit",       "label": "Vizitë në Kampus" },
+          { "value": "swimming",    "label": "Programi i Notit" },
+          { "value": "financial",   "label": "Ndihmë Financiare" },
+          { "value": "general",     "label": "Informacion i Përgjithshëm" },
+          { "value": "other",       "label": "Tjetër" }
+        ]
+      }
+    },
+    "quick": {
+      "pool":      { "title": "Facilitete Noti", "text": "Vizitoni pishinën tonë gjysmë-olimpike — ideale për gara, mësime dhe aktivitete kampi." },
+      "parking":   { "title": "Parkimi", "text": "Parkim falas në kampus për vizitorë dhe familje." },
+      "access":    { "title": "Aksesueshmëri", "text": "Të gjitha ambientet janë të aksesueshme me karrocë, me akomodime sipas nevojës." },
+      "languages": { "title": "Gjuhët", "text": "Shërbime përkthimi me kërkesë për familjet jo-anglishtfolëse." }
+    }
   }
 }
-
-
-

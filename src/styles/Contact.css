@@ -1,58 +1,54 @@
-/* Add this to the END of your Contact.css file */
-
-/* Social Media Section - Clean implementation */
-.contact-page .social-section {
-  text-align: center;
-  margin-top: 40px;
-  padding: 40px 20px;
-  background-color: #f8fafc;
-  border-radius: 12px;
+/* CONTACT INFO hover color fix */
+.contact-page .contact-info-section .contact-item {
+  cursor: pointer;
+  color: #1f2937; /* Default text color */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-page .social-section h3 {
-  margin-bottom: 20px;
+.contact-page .contact-info-section .contact-item h3,
+.contact-page .contact-info-section .contact-item p,
+.contact-page .contact-info-section .contact-item a,
+.contact-page .contact-info-section .contact-item svg {
+  color: inherit;
+  stroke: currentColor;
+  transition: color 0.3s ease, stroke 0.3s ease;
+}
+
+/* Hover turns everything blue */
+.contact-page .contact-info-section .contact-item:hover {
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Reset hover state automatically */
+.contact-page .contact-info-section .contact-item:hover h3,
+.contact-page .contact-info-section .contact-item:hover p,
+.contact-page .contact-info-section .contact-item:hover a,
+.contact-page .contact-info-section .contact-item:hover svg {
+  color: #2563eb;
+  stroke: currentColor;
+}
+
+/* QUICK INFO hover fix */
+.contact-page .quick-info-section .quick-info-grid .info-card {
+  cursor: pointer;
   color: #1f2937;
-  font-size: 1.5rem;
-  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-page .social-links {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
+.contact-page .quick-info-section .quick-info-grid .info-card h4,
+.contact-page .quick-info-section .quick-info-grid .info-card p {
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-/* Force exact Footer styling */
-.contact-page .social-links .social-link {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 2.5rem !important;
-  height: 2.5rem !important;
-  background-color: #374151 !important;
-  color: #9ca3af !important;
-  border-radius: 0.5rem !important;
-  text-decoration: none !important;
-  transition: all 0.3s ease !important;
-  transform: translateY(0) !important;
+/* Hover turns text blue */
+.contact-page .quick-info-section .quick-info-grid .info-card:hover {
+  color: #2563eb;
+  transform: translateY(-3px);
 }
 
-.contact-page .social-links .social-link:hover {
-  background-color: #2563eb !important;
-  color: white !important;
-  transform: translateY(-2px) !important;
-}
-
-/* Override any conflicting styles */
-.contact-page .social-links a[href*="instagram"],
-.contact-page .social-links a[href*="facebook"] {
-  background-color: #374151 !important;
-  color: #9ca3af !important;
-}
-
-.contact-page .social-links a[href*="instagram"]:hover,
-.contact-page .social-links a[href*="facebook"]:hover {
-  background-color: #2563eb !important;
-  color: white !important;
+.contact-page .quick-info-section .quick-info-grid .info-card:hover h4,
+.contact-page .quick-info-section .quick-info-grid .info-card:hover p {
+  color: #2563eb;
 }
