@@ -129,33 +129,6 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          
-          {/* Social Media Links with inline styles */}
-          <div className="social-section">
-            <h3>Follow Us</h3>
-            <div style={socialLinksContainerStyle}>
-              <a 
-                href="https://www.instagram.com/shkollazenit/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={hoveredIcon === 'instagram' ? socialLinkHoverStyle : socialLinkStyle}
-                onMouseEnter={() => setHoveredIcon('instagram')}
-                onMouseLeave={() => setHoveredIcon(null)}
-              >
-                <Instagram size={24} />
-              </a>
-              <a 
-                href="https://www.facebook.com/shkollazenit" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={hoveredIcon === 'facebook' ? socialLinkHoverStyle : socialLinkStyle}
-                onMouseEnter={() => setHoveredIcon('facebook')}
-                onMouseLeave={() => setHoveredIcon(null)}
-              >
-                <Facebook size={24} />
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 

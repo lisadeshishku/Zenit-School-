@@ -132,5 +132,248 @@
     "facilitiesDesc": "Kampusi ynë ofron hapësira moderne mësimore, përfshirë një pishinë gjysmë olimpike për programe ujore dhe not garues.",
     "cta": "Mëso Më Shumë Rreth Misionit Tonë",
     "years": "Vite Ekselence"
+  },
+
+  "whyZenit": {
+    "title": "Pse Zenit?",
+    "subtitle": "Çfarë e veçon Zenit School për nxënësit dhe familjet.",
+    "reasons": [
+      { "icon": "🎓", "title": "Përsosmëri Akademike", "text": "Kurrikulë sfiduese, mësues të përkushtuar dhe mbështetje individuale." },
+      { "icon": "🏊‍♀️", "title": "Ambiente", "text": "Klasa moderne, laboratorë dhe pishinë gjysmë-olimpike." },
+      { "icon": "🌍", "title": "Komunitet i Larmishëm", "text": "Nxënës nga shumë prejardhje mësojnë e rriten së bashku." },
+      { "icon": "🤝", "title": "Mbështetje e Fortë", "text": "Bashkëpunim i ngushtë me familjet për mirëqenien e çdo nxënësi." },
+      { "icon": "💡", "title": "Aftësi për të Ardhmen", "text": "Fokus në STEAM, të menduar kritik, kreativitet dhe lidership." }
+    ],
+    "highlights": [
+      { "kpi": "98%", "label": "Pranim në Universitet" },
+      { "kpi": "8:1", "label": "Raporti Nxënës–Mësues" },
+      { "kpi": "35+", "label": "Vende të Përfaqësuara" },
+      { "kpi": "40+", "label": "Vite Ekselence" }
+    ]
+  },
+  "classroom": {
+    "title": "Brenda Klasës",
+    "subtitle": "Si ndodh mësimi në Zenit: angazhues, praktik dhe i fokusuar te nxënësi.",
+    "hero": {
+      "title": "Mësim Aktiv & Praktik",
+      "text": "Orët ndërthurin projekte, laboratorë dhe diskutime, të mbështetura nga teknologjia dhe objektiva të qarta."
+    },
+    "features": [
+      { "icon": "🧪", "title": "Laboratorë & Projekte", "text": "Eksperimente shkencore, ndërtim në makerspace dhe zgjidhje të problemeve reale." },
+      { "icon": "💻", "title": "Mjete Digjitale", "text": "Tabela interaktive, tableta dhe platforma mësimore rrisin pjesëmarrjen." },
+      { "icon": "🧠", "title": "Mbështetje e Personalizuar", "text": "Feedback formues dhe mentorim në grupe të vogla." },
+      { "icon": "🤝", "title": "Bashkëpunim", "text": "Puna në grup, prezantime dhe feedback mes bashkëmoshatarëve." }
+    ]
+  },
+  "activities": {
+    "title": "Aktivitete & Klube",
+    "subtitle": "Mundësi për të zbuluar pasione jashtë klasës.",
+    "categories": [
+      { "icon": "🏊‍♀️", "title": "Akuatika", "items": ["Not Garash", "Siguria në Ujë", "Aqua Fitness"] },
+      { "icon": "🎨", "title": "Arte & Kulturë", "items": ["Arte Pamore", "Teatër", "Ansamble Muzikore", "Media Digjitale"] },
+      { "icon": "🔬", "title": "STEM", "items": ["Robotikë", "Klubi i Kodimit", "Olimpiada e Shkencës", "Ekipi i Matematikës"] },
+      { "icon": "🌍", "title": "Global & Shërbim", "items": ["Model UN", "Klube Gjuhe", "Projekte Komunitare"] }
+    ]
+  },
+  "culture": {
+    "title": "Kultura e Shkollës",
+    "subtitle": "Vlerat që formësojnë jetën e përditshme në Zenit.",
+    "pillars": [
+      { "icon": "🤗", "title": "Respekt & Përfshirje", "text": "Çdo kush pritet dhe mbështetet." },
+      { "icon": "📈", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
+      { "icon": "🤝", "title": "Komunitet", "text": "Nxënës, familje dhe staf punojnë së bashku." },
+      { "icon": "🧭", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
+    ],
+    "cta": { "title": "Bëhu Pjesë", "text": "Bashkohu në aktivitete, vullnetarizo dhe bëhu pjesë e komunitetit.", "btn": "Vullnetarizo" }
+  },
+  "news": {
+    "title": "Lajme & Përditësime",
+    "subtitle": "Të rejat nga jeta në kampus.",
+    "readMore": "Lexo më shumë",
+    "posts": [
+      {
+        "title": "Ekipi i Notit të Zenit fiton Kupën Rajonale",
+        "date": "15 Sht 2025",
+        "tag": "Sport",
+        "excerpt": "Notarët tanë patën rezultate të shkëlqyera në finalet rajonale këtë fundjavë.",
+        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Hapet Laboratori i Ri i Robotikës",
+        "date": "02 Sht 2025",
+        "tag": "STEM",
+        "excerpt": "Hapësirë moderne me printera 3D dhe mikrokontrollerë tani në dispozicion të nxënësve.",
+        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Dita e Komunitetit me Prindërit",
+        "date": "22 Gsh 2025",
+        "tag": "Komunitet",
+        "excerpt": "Punëtori dhe aktivitete për të njohur mësuesit dhe programet e vitit të ri.",
+        "image": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "director": {
+    "title": "Nga Drejtori",
+    "subtitle": "Një mesazh mirëseardhjeje dhe vizioni.",
+    "greeting": "Të dashura familje dhe nxënës,",
+    "paragraphs": [
+      "Në Zenit besojmë se çdo nxënës mund të arrijë ekselencë me udhëheqjen dhe kujdesin e duhur.",
+      "Programet tona balancojnë rreptësinë akademike me artet, sportin dhe edukimin e karakterit.",
+      "Ju ftoj të vizitoni kampusin për të përjetuar nga afër komunitetin tonë."
+    ],
+    "name": "Arben Kola, PhD",
+    "role": "Drejtori i Shkollës",
+    "highlights": [
+      { "kpi": "40+", "label": "Vite në Shërbim të Familjeve" },
+      { "kpi": "98%", "label": "Pranim në Universitet" },
+      { "kpi": "8:1", "label": "Raport Nxënës–Mësues" }
+    ]
+  },
+  "staff": {
+    "title": "Njoftohu me Stafin",
+    "subtitle": "Edukatore dhe profesionistë të përkushtuar për çdo nxënës.",
+    "members": [
+      {
+        "name": "Elira D.",
+        "role": "Drejtore e Ciklit Fillor",
+        "bio": "15 vite eksperiencë; e pasionuar pas mësimit përmes hulumtimit.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Gentian M.",
+        "role": "Mësues i Shkencave",
+        "bio": "Drejon robotikën dhe panairet shkencore me laboratorë praktikë.",
+        "photo": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Arta K.",
+        "role": "Këshilluese Shkollore",
+        "bio": "Mbështet mirëqenien, strategjitë e të nxënit dhe orientimin universitar.",
+        "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Misioni & Vizioni",
+    "subtitle": "Qëllimi ynë dhe e ardhmja që synojmë.",
+    "missionTitle": "Misioni ynë",
+    "missionText": "Të ofrojmë arsim të shkëlqyer që ushqen kureshtjen, integritetin dhe shërbimin.",
+    "visionTitle": "Vizioni ynë",
+    "visionText": "Të frymëzojmë nxënësit të arrijnë potencialin e tyre dhe të kontribuojnë në shoqëri.",
+    "values": [
+      { "icon": "🎓", "title": "Ekselencë", "text": "Standarde të larta, përmirësim i vazhdueshëm." },
+      { "icon": "🤝", "title": "Komunitet", "text": "Partneritet me familjet dhe organizatat lokale." },
+      { "icon": "🌍", "title": "Qytetari Globale", "text": "Respekt, përfshirje, mirëkuptim kulturor." },
+      { "icon": "🧠", "title": "Rritje", "text": "Qëndrueshmëri, reflektim dhe dashuri për dijen." }
+    ]
+  },
+  "history": {
+    "title": "Historia Jonë",
+    "subtitle": "Pikat kyçe që formësuan Zenit School.",
+    "timeline": [
+      { "year": "1985", "title": "Themelimi", "text": "Zenit hapet me 50 nxënës dhe një vizion ambicioz." },
+      { "year": "1995", "title": "Pishina Gjysmë-Olimpike", "text": "Investim në mirëqenie dhe sport konkurrues." },
+      { "year": "2005", "title": "Akkreditim Ndërkombëtar", "text": "Partneritete dhe njohje globale." },
+      { "year": "2025", "title": "40 Vite", "text": "Festojmë dekada ekselence dhe inovacioni." }
+    ]
+  },
+  "careers": {
+    "title": "Vende Pune",
+    "subtitle": "Bëhu pjesë e një ekipi me mision.",
+    "apply": "Apliko Tani",
+    "how": {
+      "title": "Si të Aplikoni",
+      "text": "Dërgoni CV dhe një letër interesi. Aplikimet shqyrtohen vazhdimisht."
+    },
+    "jobs": [
+      {
+        "title": "Mësues/e i/e Ciklit Fillor",
+        "type": "Kohë e plotë",
+        "location": "Tiranë",
+        "department": "Fillor",
+        "requirements": ["Diplomë në Arsim", "2+ vite përvojë", "Anglisht e mirë"],
+        "applyUrl": "https://forms.gle/your-form-1"
+      },
+      {
+        "title": "Këshillues/e Shkollor/e",
+        "type": "Kohë e plotë",
+        "location": "Tiranë",
+        "department": "Mbështetje Nxënësish",
+        "requirements": ["Diplomë në Këshillim", "Përvojë me adoleshentë", "Komunikim i fortë"],
+        "applyUrl": "https://forms.gle/your-form-2"
+      }
+    ]
+  },
+  "scholarships": {
+    "title": "Bursa dhe Çmime",
+    "subtitle": "Mundësi mbi meritë dhe nevojë që mbështesin nxënësit tanë.",
+    "apply": "Apliko Tani",
+    "programs": [
+      {
+        "name": "Bursa e Meritës Akademike",
+        "eligibility": "Klasat 8–12 • GPA 3.8+",
+        "benefits": ["Deri në 50% të tarifës", "Mentorim", "Seminar lidershipi"],
+        "applyUrl": "https://forms.gle/your-form-merit"
+      },
+      {
+        "name": "Sport – Ekselencë në Not",
+        "eligibility": "Notarë konkurrues • Rekomandim trajneri",
+        "benefits": ["Mbështetje trajnimi", "Tarifa garash", "Prioritet korsi"],
+        "applyUrl": "https://forms.gle/your-form-swim"
+      },
+      {
+        "name": "Ndihmë Financiare",
+        "eligibility": "Bazuar në nevojë të provuar",
+        "benefits": ["Tarifë sipas shkallës", "Ndihmë për tekste"],
+        "applyUrl": "https://forms.gle/your-form-aid"
+      }
+    ],
+    "faq": {
+      "title": "Pyetje të Shpeshta",
+      "items": [
+        { "q": "Kur është afati?", "a": "Vlerësojmë vazhdimisht; prioritet deri më 31 Maj." },
+        { "q": "A mund të aplikoj për disa bursa?", "a": "Po, por grantet nuk kombinohen mbi 50%." }
+      ]
+    }
+  },
+  "digitalEducation": {
+    "title": "Edukimi Digjital",
+    "subtitle": "Mjete dhe metoda moderne që pasurojnë të nxënit.",
+    "pillars": [
+      { "icon": "💻", "title": "Pajisje 1:1", "text": "Laptopë ose tableta për projekte dhe kërkime." },
+      { "icon": "☁️", "title": "Mësim në Cloud", "text": "Detyra, feedback dhe bashkëpunim online." },
+      { "icon": "🧠", "title": "Aftësi Digjitale", "text": "Edukim mediatik, bazat e kodimit dhe siguria online." }
+    ],
+    "platforms": [
+      { "name": "Google Workspace", "use": "Docs, Classroom, Drive për kursin dhe feedback." },
+      { "name": "Platforma Kodimi", "use": "Scratch/Code.org për kodim hyrës." },
+      { "name": "LMS", "use": "Materiale të centralizuara, afate dhe njoftime." }
+    ]
+  },
+  "campus": {
+    "title": "Kampusi Akademik",
+    "subtitle": "Hapësira mësimore për fokus, krijimtari dhe mirëqenie.",
+    "zones": [
+      {
+        "name": "Laboratorë Shkence & Teknologjie",
+        "text": "Eksperimente praktike, robotikë dhe makerspace.",
+        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Qendra Akuatike (Pishinë Gjysmë-Olimpike)",
+        "text": "Not në kurrikulë, ekip gare dhe siguri në ujë.",
+        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Bibliotekë & Qendër Studimi",
+        "text": "Studim i qetë, salla grupesh dhe burime digjitale.",
+        "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
   }
 }
+
+
+

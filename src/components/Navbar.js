@@ -33,22 +33,13 @@ const Navbar = () => {
       { name: 'history', path: '/about/history' },
       { name: 'careers', path: '/about/careers' }
     ],
-    community: [
-      { name: 'volunteer', path: '/community/volunteer' },
-      { name: 'charity', path: '/community/charity' },
-      { name: 'solidarity', path: '/community/solidarity' }
-    ],
     admissions: [
       { name: 'admission', path: '/admissions' },
-      { name: 'aid', path: '/admissions/financial-aid' },
       { name: 'scholarships', path: '/admissions/scholarships' },
-      { name: 'fees', path: '/admissions/fees' }
     ],
     digitalEducation: [
       { name: 'digitalEducation', path: '/digital-education' },
       { name: 'campus', path: '/digital-education/campus' },
-      { name: 'curriculum', path: '/digital-education/curriculum' },
-      { name: 'results', path: '/digital-education/results' }
     ],
     contact: [
       { name: 'contact', path: '/contact' }
@@ -56,7 +47,7 @@ const Navbar = () => {
   };
 
   const sectionOrder = [
-    'about', 'programs', 'leadership', 'community', 'admissions', 'digitalEducation', 'contact'
+    'about', 'programs', 'leadership', 'admissions', 'digitalEducation', 'contact'
   ];
 
   const closeMenu = () => {

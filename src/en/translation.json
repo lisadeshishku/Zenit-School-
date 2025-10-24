@@ -132,5 +132,248 @@
     "facilitiesDesc": "Our campus features state-of-the-art learning spaces, including a half Olympic pool for aquatic programs and competitive swimming.",
     "cta": "Learn More About Our Mission",
     "years": "Years of Excellence"
+  },
+
+  "whyZenit": {
+    "title": "Why Choose Zenit?",
+    "subtitle": "What makes Zenit School stand out for students and families.",
+    "reasons": [
+      { "icon": "🎓", "title": "Academic Excellence", "text": "Challenging curriculum, dedicated teachers, and individual support." },
+      { "icon": "🏊‍♀️", "title": "Facilities", "text": "Modern classrooms, labs, and a half Olympic swimming pool." },
+      { "icon": "🌍", "title": "Diverse Community", "text": "Students from many backgrounds learn and grow together." },
+      { "icon": "🤝", "title": "Strong Support", "text": "Close collaboration with families to help every student thrive." },
+      { "icon": "💡", "title": "Future Skills", "text": "STEAM focus, critical thinking, creativity and leadership." }
+    ],
+    "highlights": [
+      { "kpi": "98%", "label": "University Acceptance" },
+      { "kpi": "8:1", "label": "Student–Teacher Ratio" },
+      { "kpi": "35+", "label": "Countries Represented" },
+      { "kpi": "40+", "label": "Years of Excellence" }
+    ]
+  },
+  "classroom": {
+    "title": "Inside the Classroom",
+    "subtitle": "How learning happens at Zenit: engaging, practical and student-centered.",
+    "hero": {
+      "title": "Active, Hands-On Learning",
+      "text": "Lessons combine projects, labs and discussions, supported by technology and clear learning goals."
+    },
+    "features": [
+      { "icon": "🧪", "title": "Labs & Projects", "text": "Science experiments, makerspace builds, and real-world problem solving." },
+      { "icon": "💻", "title": "Digital Tools", "text": "Interactive boards, tablets and learning platforms enhance participation." },
+      { "icon": "🧠", "title": "Personalised Support", "text": "Formative feedback and small group coaching." },
+      { "icon": "🤝", "title": "Collaboration", "text": "Teamwork, presentations and peer feedback." }
+    ]
+  },
+  "activities": {
+    "title": "Activities & Clubs",
+    "subtitle": "Opportunities to discover passions beyond the classroom.",
+    "categories": [
+      { "icon": "🏊‍♀️", "title": "Aquatics", "items": ["Competitive Swimming", "Water Safety", "Aqua Fitness"] },
+      { "icon": "🎨", "title": "Arts & Culture", "items": ["Visual Arts", "Theatre", "Music Ensembles", "Digital Media"] },
+      { "icon": "🔬", "title": "STEM", "items": ["Robotics", "Coding Club", "Science Olympiad", "Math Team"] },
+      { "icon": "🌍", "title": "Global & Service", "items": ["Model UN", "Language Clubs", "Community Projects"] }
+    ]
+  },
+  "culture": {
+    "title": "School Culture",
+    "subtitle": "Values that shape daily life at Zenit.",
+    "pillars": [
+      { "icon": "🤗", "title": "Respect & Inclusion", "text": "Everyone is welcomed and supported." },
+      { "icon": "📈", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
+      { "icon": "🤝", "title": "Community", "text": "Students, families and staff work together." },
+      { "icon": "🧭", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
+    ],
+    "cta": { "title": "Get Involved", "text": "Join events, volunteer and be part of our community.", "btn": "Volunteer" }
+  },
+  "news": {
+    "title": "News & Updates",
+    "subtitle": "The latest from campus life.",
+    "readMore": "Read more",
+    "posts": [
+      {
+        "title": "Zenit Swim Team Wins Regional Cup",
+        "date": "Sep 15, 2025",
+        "tag": "Athletics",
+        "excerpt": "Our swimmers achieved outstanding results in the regional finals held this weekend.",
+        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "New Robotics Lab Opens",
+        "date": "Sep 02, 2025",
+        "tag": "STEM",
+        "excerpt": "A modern robotics space with 3D printers and microcontrollers is now open to students.",
+        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Parent Community Day",
+        "date": "Aug 22, 2025",
+        "tag": "Community",
+        "excerpt": "Workshops and activities to meet teachers and discover programs for the new year.",
+        "image": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "director": {
+    "title": "From the Director",
+    "subtitle": "A message of welcome and purpose.",
+    "greeting": "Dear Families and Students,",
+    "paragraphs": [
+      "At Zenit, we believe every learner is capable of excellence with the right guidance and care.",
+      "Our programs balance academic rigor with the arts, athletics, and character education.",
+      "I invite you to visit our campus and experience our community first-hand."
+    ],
+    "name": "Arben Kola, PhD",
+    "role": "School Director",
+    "highlights": [
+      { "kpi": "40+", "label": "Years Serving Families" },
+      { "kpi": "98%", "label": "University Acceptance" },
+      { "kpi": "8:1", "label": "Student–Teacher Ratio" }
+    ]
+  },
+  "staff": {
+    "title": "Meet the Staff",
+    "subtitle": "Dedicated educators and professionals supporting every student.",
+    "members": [
+      {
+        "name": "Elira D.",
+        "role": "Head of Elementary",
+        "bio": "15 years of experience; passionate about inquiry-based learning.",
+        "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Gentian M.",
+        "role": "Science Teacher",
+        "bio": "Leads robotics and science fairs with hands-on labs.",
+        "photo": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Arta K.",
+        "role": "Counselor",
+        "bio": "Supports student wellbeing, study skills and university guidance.",
+        "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission & Vision",
+    "subtitle": "Our purpose and the future we strive to create.",
+    "missionTitle": "Our Mission",
+    "missionText": "Provide an exceptional education that nurtures curiosity, integrity and service.",
+    "visionTitle": "Our Vision",
+    "visionText": "Inspire students to reach their full potential and contribute meaningfully to society.",
+    "values": [
+      { "icon": "🎓", "title": "Excellence", "text": "High standards, continuous improvement." },
+      { "icon": "🤝", "title": "Community", "text": "Partnership with families and local organizations." },
+      { "icon": "🌍", "title": "Global Citizenship", "text": "Respect, inclusion, cultural understanding." },
+      { "icon": "🧠", "title": "Growth", "text": "Resilience, reflection and a love of learning." }
+    ]
+  },
+  "history": {
+    "title": "Our History",
+    "subtitle": "Milestones that shaped Zenit School.",
+    "timeline": [
+      { "year": "1985", "title": "Founded", "text": "Zenit opens with 50 students and a bold vision." },
+      { "year": "1995", "title": "Half Olympic Pool", "text": "Investing in wellness and competitive sports." },
+      { "year": "2005", "title": "International Accreditation", "text": "Partnerships and global recognition." },
+      { "year": "2025", "title": "40 Years", "text": "Celebrating decades of excellence and innovation." }
+    ]
+  },
+  "careers": {
+    "title": "Employment Opportunities",
+    "subtitle": "Join a mission-driven team of educators and professionals.",
+    "apply": "Apply Now",
+    "how": {
+      "title": "How to Apply",
+      "text": "Submit your resume and a brief letter of intent. We review applications on a rolling basis."
+    },
+    "jobs": [
+      {
+        "title": "Elementary Teacher",
+        "type": "Full-time",
+        "location": "Tirana",
+        "department": "Elementary",
+        "requirements": ["Bachelor’s in Education", "2+ years teaching", "English proficiency"],
+        "applyUrl": "https://forms.gle/your-form-1"
+      },
+      {
+        "title": "School Counselor",
+        "type": "Full-time",
+        "location": "Tirana",
+        "department": "Student Support",
+        "requirements": ["Counseling degree", "Experience with adolescents", "Strong communication"],
+        "applyUrl": "https://forms.gle/your-form-2"
+      }
+    ]
+  },
+  "scholarships": {
+    "title": "Scholarships and Awards",
+    "subtitle": "Merit- and need-based opportunities that support our learners.",
+    "apply": "Apply Now",
+    "programs": [
+      {
+        "name": "Academic Merit Scholarship",
+        "eligibility": "Grades 8–12 • GPA 3.8+",
+        "benefits": ["Up to 50% tuition", "Mentor support", "Leadership seminar"],
+        "applyUrl": "https://forms.gle/your-form-merit"
+      },
+      {
+        "name": "Athletics – Swimming Excellence",
+        "eligibility": "Competitive swimmers • Coach recommendation",
+        "benefits": ["Training support", "Competition fees", "Pool lane priority"],
+        "applyUrl": "https://forms.gle/your-form-swim"
+      },
+      {
+        "name": "Financial Aid",
+        "eligibility": "Based on demonstrated need",
+        "benefits": ["Sliding-scale tuition", "Textbook assistance"],
+        "applyUrl": "https://forms.gle/your-form-aid"
+      }
+    ],
+    "faq": {
+      "title": "Scholarship FAQs",
+      "items": [
+        { "q": "When are applications due?", "a": "We review on a rolling basis; priority by May 31." },
+        { "q": "Can I apply to multiple programs?", "a": "Yes, you may apply to more than one; awards cannot be stacked beyond 50%." }
+      ]
+    }
+  },
+    "digitalEducation": {
+    "title": "Digital Education",
+    "subtitle": "Modern tools and methods that enhance learning.",
+    "pillars": [
+      { "icon": "💻", "title": "1:1 Devices", "text": "Students use laptops or tablets daily for projects and research." },
+      { "icon": "☁️", "title": "Cloud Learning", "text": "Assignments, feedback and collaboration live in the cloud." },
+      { "icon": "🧠", "title": "Digital Skills", "text": "Media literacy, coding basics and online safety." }
+    ],
+    "platforms": [
+      { "name": "Google Workspace", "use": "Docs, Classroom, Drive for coursework and feedback." },
+      { "name": "Coding Platforms", "use": "Scratch/Code.org for block-based and introductory coding." },
+      { "name": "LMS", "use": "Centralized materials, deadlines and announcements." }
+    ]
+  },
+  "campus": {
+    "title": "Academic Campus",
+    "subtitle": "Learning spaces designed for focus, creativity and wellbeing.",
+    "zones": [
+      {
+        "name": "Science & Technology Labs",
+        "text": "Hands-on experiments, robotics, and makerspace.",
+        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Aquatic Center (Half Olympic Pool)",
+        "text": "Curricular swimming, team training and safety programs.",
+        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Library & Study Hub",
+        "text": "Quiet study, group rooms and digital resources.",
+        "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
   }
 }
+
+
+
