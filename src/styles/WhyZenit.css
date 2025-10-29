@@ -1,26 +1,43 @@
 /* =========================
-   Why Zenit — Text-Heavy Page (Updated)
+   Why Zenit — Text-Heavy Page (Mobile-friendly)
    ========================= */
 
 .why-zenit-page {
   background: #ffffff;
   color: #111827;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Shared container with mobile gutters so media/cards never touch edges */
+.why-zenit-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: max(1rem, env(safe-area-inset-left), 16px);
+}
+
+@media (min-width: 768px) {
+  .why-zenit-page .container { padding-inline: 1.25rem; }
+}
+@media (min-width: 1200px) {
+  .why-zenit-page .container { padding-inline: 2rem; }
 }
 
 /* Sections */
 .wz-section {
-  padding: 4.75rem 0;        /* a touch more air */
-  background: #ffffff;       /* keep canvas white; cards provide contrast */
+  padding: 4.75rem 0;
+  background: #ffffff;
 }
 
 /* -----------------------
    Headings / Shared typographic scale
    ----------------------- */
 .wz-h2 {
-  font-size: 2.15rem;        /* larger than before */
+  font-size: 2.15rem;
   font-weight: 800;
   color: #111827;
-  margin-bottom: 1.75rem;    /* more breathing room under heading */
+  margin-bottom: 1.75rem;
   position: relative;
   line-height: 1.25;
 }
@@ -36,53 +53,101 @@
 }
 
 /* -----------------------
-   Intro / Lead text
+   Intro / Lead text (harmonized)
    ----------------------- */
-.wz-lead {
-  max-width: 720px;          /* comfortable measure */
-  margin: 0 auto;
-}
-
 .wz-lead p {
-  font-size: 1.18rem;        /* larger intro */
+  font-size: 1.16rem;
   line-height: 1.9;
-  text-emphasis: bold;
   color: #374151;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.05rem;
+  font-weight: 500;         /* subtle emphasis for opening copy */
+  letter-spacing: 0.005em;
 }
 
 @media (min-width: 992px) {
-  .wz-lead p {
-    font-size: 1.24rem;      /* a touch larger on desktop */
+  .wz-lead p { font-size: 1.22rem; }
+}
+
+/* Base text in side-by-side sections */
+.wz-section .wz-text p { font-weight: 400; }
+
+/* -----------------------
+   Side-by-side sections (image + text)
+   ----------------------- */
+.wz-section.with-image .wz-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;                     /* comfortable mobile spacing */
+  align-items: stretch;
+}
+
+.wz-section.with-image .wz-flex.reverse {
+  /* reverse on desktop only; mobile stays stacked */
+}
+
+@media (min-width: 992px) {
+  .wz-section.with-image .wz-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;                     /* wide, airy gap on desktop */
   }
+  .wz-section.with-image .wz-flex.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Text column */
+.wz-section.with-image .wz-text {
+  flex: 1 1 0;
+  max-width: 720px;
+  margin-inline: auto;             /* center on mobile */
+}
+
+/* Image column */
+.wz-section.with-image .wz-side-image {
+  flex: 1 1 0;
+  max-width: 520px;
+  margin: 0 auto;                  /* center on mobile */
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.wz-section.with-image .wz-side-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.3);
+}
+
+.wz-side-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Extra breathing room so images/cards never feel "cut off" on mobile */
+@media (max-width: 768px) {
+  .wz-section.with-image { padding: 3.5rem 0; }
+  .wz-section.with-image .wz-side-image { margin-top: 0.25rem; }
 }
 
 /* -----------------------
    Pillars (Reasons)
    ----------------------- */
-.wz-pillars-grid {
+.wz-pillars-stack {
   display: grid;
-  gap: 1.75rem;                          /* more space between cards */
-  grid-template-columns: 1fr;
+  gap: 1.25rem;                  /* spacing between boxes */
+  margin-top: 0.5rem;
 }
-
-@media (min-width: 900px) {
-  .wz-pillars-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* If you want 2-up instead of 3-up for extra air, uncomment:
-@media (min-width: 992px) {
-  .wz-pillars-grid { grid-template-columns: repeat(2, 1fr); }
-}
-*/
+@media (min-width: 768px) { .wz-pillars-stack { gap: 1.5rem; } }
+@media (min-width: 992px) { .wz-pillars-stack { gap: 1.75rem; } }
 
 .wz-pillar {
   background: #f9fafb;
   border-radius: 1rem;
-  padding: 1.5rem 1.4rem;                /* roomier interior */
-  border-left: 5px solid #1d4ed8;        /* slightly stronger accent */
+  padding: 1.5rem 1.4rem;
+  border-left: 5px solid #1d4ed8;
   box-shadow: 0 6px 16px -10px rgba(0, 0, 0, 0.2);
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
 }
@@ -94,12 +159,13 @@
 }
 
 .wz-pillar-eyebrow {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: .25rem;
+  color: #1f2937;
 }
 
 .wz-pillar-title {
-  font-size: 1.3rem;                     /* slightly larger */
+  font-size: 1.22rem;
   font-weight: 800;
   color: #111827;
   margin-bottom: .4rem;
@@ -108,21 +174,9 @@
 
 .wz-pillar-text {
   color: #374151;
-  margin-bottom: .75rem;
+  margin-bottom: 0;
   line-height: 1.8;
   font-size: 1.02rem;
-}
-
-.wz-list {
-  list-style: none;
-  margin: .5rem 0 0;
-  padding: 0;
-}
-
-.wz-list li {
-  color: #6b7280;
-  padding: 0.45rem 0;                    /* looser bullets */
-  line-height: 1.7;
 }
 
 /* -----------------------
@@ -136,7 +190,7 @@
 .wz-steps {
   counter-reset: step;
   display: grid;
-  gap: 1.15rem;                           /* more vertical rhythm */
+  gap: 1.15rem;
   margin-top: 1.25rem;
   padding-left: 0;
 }
@@ -145,7 +199,7 @@
   list-style: none;
   background: #f9fafb;
   border-radius: .75rem;
-  padding: 1.1rem 1rem 1.1rem 3.35rem;    /* a bit more padding */
+  padding: 1.1rem 1rem 1.1rem 3.35rem;
   position: relative;
   box-shadow: 0 6px 16px -12px rgba(0, 0, 0, 0.2);
 }
@@ -198,9 +252,7 @@
 }
 
 @media (min-width: 900px) {
-  .wz-outcomes-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .wz-outcomes-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 .wz-outcome {
@@ -213,7 +265,7 @@
 
 .wz-outcome-number {
   font-weight: 900;
-  font-size: 1.95rem;                    /* slightly larger metric */
+  font-size: 1.95rem;
   color: #1d4ed8;
   line-height: 1.1;
 }
@@ -261,84 +313,6 @@
   background: #1d4ed8;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(29, 78, 216, 0.25);
-}
-
-/* -----------------------
-   Elegant side-by-side image layout
-   ----------------------- */
-
-/* Shared container for image + text sections */
-.wz-section.with-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.25rem;                           /* wider gutter by default */
-  padding: 4.85rem 0;
-}
-
-@media (min-width: 992px) {
-  .wz-section.with-image {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3.25rem;                         /* wider on desktop */
-    padding: 5.25rem 0;
-  }
-
-  /* Alternate direction for variety */
-  .wz-section.with-image.reverse {
-    flex-direction: row-reverse;
-  }
-}
-
-/* Text area */
-.wz-section.with-image .wz-text {
-  flex: 1;
-  max-width: 720px;                       /* match intro measure for readability */
-}
-
-.wz-section.with-image .wz-text p {
-  font-size: 1.16rem;                     /* larger body in side-by-side sections */
-  line-height: 1.9;
-  color: #374151;
-  margin-bottom: 1.05rem;
-}
-
-@media (min-width: 992px) {
-  .wz-section.with-image .wz-text p {
-    font-size: 1.22rem;
-  }
-}
-
-/* Image area */
-.wz-section.with-image .wz-side-image {
-  flex: 1;
-  max-width: 460px;                       /* a bit wider than before */
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.wz-section.with-image .wz-side-image:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.3);
-}
-
-.wz-side-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 1rem;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .wz-section.with-image {
-    text-align: center;
-    padding: 3.5rem 0;
-  }
 }
 
 /* -----------------------

@@ -1,4 +1,4 @@
-// src/pages/why/WhyZenit.js (updated structure for images)
+// src/pages/why/WhyZenit.js
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../../styles/WhyZenit.css";
@@ -7,9 +7,9 @@ const WhyZenit = () => {
   const { t } = useTranslation();
 
   const introParas = t("whyZenit.intro.paragraphs", { returnObjects: true }) || [];
-  const reasons = t("whyZenit.reasons", { returnObjects: true }) || [];
-  const approach = t("whyZenit.approach.steps", { returnObjects: true }) || [];
-  const highlights = t("whyZenit.highlights", { returnObjects: true }) || [];
+  const reasons    = t("whyZenit.reasons",          { returnObjects: true }) || [];
+  const approach   = t("whyZenit.approach.steps",   { returnObjects: true }) || [];
+  const highlights = t("whyZenit.highlights",       { returnObjects: true }) || [];
 
   const bannerImage =
     "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=80";
@@ -30,58 +30,72 @@ const WhyZenit = () => {
 
       {/* Intro with image on side */}
       <section className="wz-section with-image">
-        <div className="wz-text">
-          {introParas.map((p, i) => <p key={i}>{p}</p>)}
-        </div>
-        <div className="wz-side-image">
-          <img
-            src={bannerImage}
-            alt={t("whyZenit.images.bannerAlt", { defaultValue: "Zenit School exterior" })}
-            loading="lazy"
-          />
+        <div className="container">
+          <div className="wz-flex">
+            <div className="wz-text wz-lead">
+              {introParas.map((p, i) => <p key={i}>{p}</p>)}
+            </div>
+            <figure className="wz-side-image">
+              <img
+                src={bannerImage}
+                alt={t("whyZenit.images.bannerAlt", { defaultValue: "Zenit School exterior" })}
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
       </section>
 
       {/* Pillars / Reasons with side image */}
-      <section className="wz-section with-image reverse">
-        <div className="wz-text">
-          <h2 className="wz-h2">{t("whyZenit.pillarsTitle")}</h2>
-          {reasons.map((r, i) => (
-            <article className="wz-pillar" key={i}>
-              {r.icon && <div className="wz-pillar-eyebrow">{r.icon}</div>}
-              <h3 className="wz-pillar-title">{r.title}</h3>
-              <p className="wz-pillar-text">{r.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="wz-side-image">
-          <img
-            src={classroomImage}
-            alt={t("whyZenit.images.classroomAlt", { defaultValue: "Students in classroom" })}
-            loading="lazy"
-          />
+      <section className="wz-section with-image">
+        <div className="container">
+          <div className="wz-flex reverse">
+            <div className="wz-text">
+              <h2 className="wz-h2">{t("whyZenit.pillarsTitle")}</h2>
+              <div className="wz-pillars-stack">
+                {reasons.map((r, i) => (
+                  <article className="wz-pillar" key={i}>
+                    {r.icon && <div className="wz-pillar-eyebrow">{r.icon}</div>}
+                    <h3 className="wz-pillar-title">{r.title}</h3>
+                    <p className="wz-pillar-text">{r.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <figure className="wz-side-image">
+              <img
+                src={classroomImage}
+                alt={t("whyZenit.images.classroomAlt", { defaultValue: "Students in classroom" })}
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
       </section>
 
       {/* Approach with image side-by-side */}
       <section className="wz-section with-image">
-        <div className="wz-text">
-          <h2 className="wz-h2">{t("whyZenit.approach.title")}</h2>
-          <ol className="wz-steps">
-            {approach.map((s, i) => (
-              <li key={i}>
-                <strong>{s.title}</strong>
-                <p>{s.text}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-        <div className="wz-side-image">
-          <img
-            src={studentsImage}
-            alt={t("whyZenit.images.studentsAlt", { defaultValue: "Students collaborating" })}
-            loading="lazy"
-          />
+        <div className="container">
+          <div className="wz-flex">
+            <div className="wz-text">
+              <h2 className="wz-h2">{t("whyZenit.approach.title")}</h2>
+              <ol className="wz-steps">
+                {approach.map((s, i) => (
+                  <li key={i}>
+                    <strong>{s.title}</strong>
+                    <p>{s.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <figure className="wz-side-image">
+              <img
+                src={studentsImage}
+                alt={t("whyZenit.images.studentsAlt", { defaultValue: "Students collaborating" })}
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
       </section>
 

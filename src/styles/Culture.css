@@ -86,9 +86,6 @@
 .pillar-emoji {
   font-size: 2rem;
   margin-bottom: .5rem;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .pillar-card h3 {
   font-size: 1.15rem;
@@ -182,7 +179,6 @@
   transition: all .3s ease;
 }
 .cta-btn:hover {
-  background: #1e40af;
   transform: translateY(-2px);
 }
 

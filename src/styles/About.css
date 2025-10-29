@@ -452,3 +452,44 @@
 .about-page .delay-1 { animation-delay: 0.2s; }
 .about-page .delay-2 { animation-delay: 0.4s; }
 .about-page .delay-3 { animation-delay: 0.6s; }
+
+
+/* --- Mobile overflow fix (Faculty image + all media on About page) --- */
+.about-page {
+  overflow-x: hidden; /* belt-and-braces guard */
+}
+
+/* Make every image on the About page shrink to its container */
+.about-page img,
+.about-page video,
+.about-page svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Faculty image wrapper: prevent spill + add nice rounding */
+.about-page .faculty-image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* The image itself: fill width, never exceed container */
+.about-page .faculty-image img {
+  width: 100%;
+  height: auto;        /* natural height on mobile (prevents overflow) */
+  object-fit: cover;   /* looks good when we give it a fixed height on larger screens */
+  display: block;
+}
+
+/* Optional: give a consistent, elegant height on wider screens */
+@media (min-width: 768px) {
+  .about-page .faculty-content {
+    align-items: center; /* keeps text and image vertically tidy in the grid */
+  }
+  .about-page .faculty-image img {
+    height: 380px;       /* pick a height that feels right for your layout */
+  }
+}
