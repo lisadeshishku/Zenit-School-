@@ -114,11 +114,10 @@
 
 .program-highlight {
   background: #eff6ff;
-  border-left: 4px solid #2563eb;
   border-radius: 0.75rem;
   padding: 1rem 1.25rem;
   font-weight: 500;
-  color: #1e40af;
+
 }
 
 /* Responsive Layout */

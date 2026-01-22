@@ -14,7 +14,7 @@ const WhyZenit = () => {
   const bannerImage =
     "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=80";
   const classroomImage =
-    "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80";
+    "https://images.unsplash.com/photo-155593-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80";
   const studentsImage =
     "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80";
 
