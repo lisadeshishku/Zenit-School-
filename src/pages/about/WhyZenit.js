@@ -37,7 +37,7 @@ const WhyZenit = () => {
             </div>
             <figure className="wz-side-image">
               <img
-                src={bannerImage}
+                src="/whyzenit/whyzenit1.jpg"
                 alt={t("whyZenit.images.bannerAlt", { defaultValue: "Zenit School exterior" })}
                 loading="lazy"
               />
@@ -64,7 +64,7 @@ const WhyZenit = () => {
             </div>
             <figure className="wz-side-image">
               <img
-                src={classroomImage}
+                src="/whyzenit/whyzenit2.jpg"
                 alt={t("whyZenit.images.classroomAlt", { defaultValue: "Students in classroom" })}
                 loading="lazy"
               />
@@ -90,7 +90,7 @@ const WhyZenit = () => {
             </div>
             <figure className="wz-side-image">
               <img
-                src={studentsImage}
+                src="/whyzenit/IMG_7629.jpg"
                 alt={t("whyZenit.images.studentsAlt", { defaultValue: "Students collaborating" })}
                 loading="lazy"
               />

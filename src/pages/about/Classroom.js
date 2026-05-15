@@ -13,12 +13,13 @@ const Classroom = () => {
   // and change to src="/classroom/1.jpg", "/classroom/2.jpg", etc.
   const heroImage = 'https://picsum.photos/seed/zenit-classroom-hero/1200/700';
   const galleryImages = [
-    'https://picsum.photos/seed/zenit-classroom-1/900/600',
-    'https://picsum.photos/seed/zenit-classroom-2/900/600',
-    'https://picsum.photos/seed/zenit-classroom-3/900/600',
-    'https://picsum.photos/seed/zenit-classroom-4/900/600',
-    'https://picsum.photos/seed/zenit-classroom-5/900/600',
-    'https://picsum.photos/seed/zenit-classroom-6/900/600',
+    '/insidetheclass/insideclass3304.jpg',
+    '/insidetheclass/insideclass341.jpg',
+    '/insidetheclass/insideclass3455.jpg',
+    '/insidetheclass/insideclass5876.jpg',
+    '/insidetheclass/insideclass8665.jpg',
+    '/insidetheclass/insideclass9880.jpg'
+  
   ];
 
   return (
@@ -40,7 +41,7 @@ const Classroom = () => {
           </div>
           <div className="hero-image">
             <img
-              src={heroImage}
+              src="/insidetheclass/insideclass6820.jpg"
               alt={t('classroom.title')}
               loading="lazy"
               onError={(e) => {
