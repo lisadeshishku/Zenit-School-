@@ -393,3 +393,162 @@ main {
     text-shadow: none !important;
   }
 }
+
+
+/* Coming Soon Page */
+
+.coming-soon-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: #142447;
+  text-align: center;
+}
+
+.coming-soon-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 680px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.coming-soon-logo {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0 auto 2rem;
+  object-fit: contain;
+  animation: logoFloat 4s ease-in-out infinite;
+}
+
+.coming-soon-divider {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.coming-soon-divider span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d5bb79;
+}
+
+.coming-soon-label {
+  margin-bottom: 1rem;
+  color: #d5bb79;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.coming-soon-page h1 {
+  margin: 0 0 1.25rem;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 6vw, 4.2rem);
+  line-height: 1.1;
+}
+
+.coming-soon-message {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.coming-soon-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d5bb79;
+  animation: pulse 2s infinite;
+}
+
+/* Hide the decorative background shapes */
+
+.background-shape {
+  display: none;
+}
+
+/* Simple animations */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .coming-soon-page {
+    padding: 1.5rem;
+  }
+
+  .coming-soon-logo {
+    width: 180px;
+  }
+
+  .coming-soon-page h1 {
+    font-size: 2.3rem;
+  }
+
+  .coming-soon-message {
+    font-size: 1rem;
+  }
+
+  .coming-soon-message br {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coming-soon-card,
+  .coming-soon-logo,
+  .status-dot {
+    animation: none;
+  }
+}
