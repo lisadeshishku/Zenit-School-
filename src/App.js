@@ -1,5 +1,4 @@
-// src/App.js
-
+// src/App.js - Updated with About subpages + scroll to top
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -13,46 +12,24 @@ import Programs from './pages/programs/Programs';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 
-// Change this to false when the full website is ready.
-const SITE_UNDER_CONSTRUCTION = false;
+// NEW: About subpages
+import WhyZenit from './pages/about/WhyZenit';
+import Classroom from './pages/about/Classroom';
+import Activities from './pages/about/Activities';
+import Culture from './pages/about/Culture';
+import News from './pages/about/News';
 
-function ComingSoon() {
-  return (
-    <main className="coming-soon-page">
-      <div className="background-shape shape-one" />
-      <div className="background-shape shape-two" />
+import Director from './pages/about/Director';
+import Staff from './pages/about/Staff';
+import Mission from './pages/about/Mission';
+import History from './pages/about/History';
+import Careers from './pages/about/Careers';
 
-      <section className="coming-soon-card">
-        <img
-          src="/zenitschoollogo.jpeg"
-          alt="Zenit School"
-          className="coming-soon-logo"
-        />
+import Scholarships from './pages/admissions/Scholarships';
+import DigitalEducation from './pages/digital-education/DigitalEducation';
+import Campus from './pages/digital-education/Campus';
 
-        <div className="coming-soon-divider">
-          <span />
-          <span />
-          <span />
-        </div>
 
-        <h1>
-          Faqja jonë e re
-          <br />
-          po vjen së shpejti
-        </h1>
-
-        <p className="coming-soon-message">
-          Ju falënderojmë për mirëkuptimin.
-        </p>
-
-        <div className="coming-soon-status">
-          <span className="status-dot" />
-          Faqja është duke u përgatitur
-        </div>
-      </section>
-    </main>
-  );
-}
 function App() {
   const { pathname } = useLocation();
 
@@ -60,24 +37,39 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  if (SITE_UNDER_CONSTRUCTION) {
-    return <ComingSoon />;
-  }
-
   return (
     <div className="App">
       <Navbar />
-
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+
+          {/* About + subpages */}
           <Route path="/about" element={<About />} />
+          <Route path="/about/why-zenit" element={<WhyZenit />} />
+          <Route path="/about/classroom" element={<Classroom />} />
+          <Route path="/about/activities" element={<Activities />} />
+          <Route path="/about/culture" element={<Culture />} />
+          <Route path="/about/news" element={<News />} />
+          <Route path="/about/director" element={<Director />} />
+          <Route path="/about/staff" element={<Staff />} />
+          <Route path="/about/mission" element={<Mission />} />
+          <Route path="/about/history" element={<History />} />
+          <Route path="/about/careers" element={<Careers />} />
+          {/* Admissions subpages */}
+          <Route path="/admissions/scholarships" element={<Scholarships />} />
+
+          {/* Digital Education */}
+          <Route path="/digital-education" element={<DigitalEducation />} />
+          <Route path="/digital-education/campus" element={<Campus />} />
+
+
+          {/* Other sections */}
           <Route path="/programs" element={<Programs />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-
       <Footer />
     </div>
   );
