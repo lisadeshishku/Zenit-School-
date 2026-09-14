@@ -312,8 +312,6 @@ const Contact = () => {
               onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
               style={{ cursor: 'pointer' }}
             >
-              <h4>{t('contactPage.quick.languages.title')}</h4>
-              <p>{t('contactPage.quick.languages.text')}</p>
             </div>
           </div>
         </div>
