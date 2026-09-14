@@ -226,10 +226,10 @@
     "title": "Activities & Clubs",
     "subtitle": "Opportunities to discover passions beyond the classroom.",
     "categories": [
-      { "icon": "🏊‍♀️", "title": "Aquatics", "items": ["Competitive Swimming", "Water Safety", "Aqua Fitness"] },
-      { "icon": "🎨", "title": "Arts & Culture", "items": ["Visual Arts", "Theatre", "Music Ensembles", "Digital Media"] },
-      { "icon": "🔬", "title": "STEM", "items": ["Robotics", "Coding Club", "Science Olympiad", "Math Team"] },
-      { "icon": "🌍", "title": "Global & Service", "items": ["Model UN", "Language Clubs", "Community Projects"] }
+      { "title": "Aquatics", "items": ["Competitive Swimming", "Water Safety", "Aqua Fitness"] },
+      { "title": "Arts & Culture", "items": ["Visual Arts", "Theatre", "Music Ensembles", "Digital Media"] },
+      { "title": "STEM", "items": ["Robotics", "Coding Club", "Science Olympiad", "Math Team"] },
+      {  "title": "Global & Service", "items": ["Model UN", "Language Clubs", "Community Projects"] }
     ]
   },
   "culture": {
@@ -242,10 +242,10 @@
     "imageAlt": "Students collaborating at Zenit School"
   },
   "pillars": [
-    { "icon": "🤗", "title": "Respect & Inclusion", "text": "Every individual is welcomed and supported." },
-    { "icon": "📈", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
-    { "icon": "🤝", "title": "Community", "text": "Students, families, and staff work together." },
-    { "icon": "🧭", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
+    { "icon": "", "title": "Respect & Inclusion", "text": "Every individual is welcomed and supported." },
+    { "icon": "", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
+    { "icon": "", "title": "Community", "text": "Students, families, and staff work together." },
+    { "icon": "", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
   ],
   "gallery": {
     "title": "Community & Life at Zenit",
@@ -663,8 +663,7 @@
       "hours": {
         "title": "Office Hours",
         "weekdays": "Monday - Friday",
-        "weekdayTime": "8:00 AM - 5:00 PM",
-        "saturday": "Saturday: 9:00 AM - 1:00 PM"
+        "weekdayTime": "09:00 - 15:30"
       }
     },
     "form": {
@@ -704,8 +703,7 @@
     "quick": {
       "pool":      { "title": "Swimming Facilities", "text": "Visit our half Olympic pool—perfect for competitive swimming, lessons, and summer camp activities." },
       "parking":   { "title": "Parking", "text": "Free parking available on campus for all visitors and families." },
-      "access":    { "title": "Accessibility", "text": "All facilities are wheelchair accessible with accommodations available." },
-      "languages": { "title": "Languages", "text": "Translation services available upon request for non-English speaking families." }
+      "access":    { "title": "Accessibility", "text": "All facilities are wheelchair accessible with accommodations available." }
     }
   }
 }

@@ -705,8 +705,7 @@
     "quick": {
       "pool":      { "title": "Facilitete Noti", "text": "Vizitoni pishinën tonë gjysmë-olimpike — ideale për gara, mësime dhe aktivitete kampi." },
       "parking":   { "title": "Parkimi", "text": "Parkim falas në kampus për vizitorë dhe familje." },
-      "access":    { "title": "Aksesueshmëri", "text": "Të gjitha ambientet janë të aksesueshme me karrocë, me akomodime sipas nevojës." },
-      "languages": { "title": "Gjuhët", "text": "Shërbime përkthimi me kërkesë për familjet jo-anglishtfolëse." }
+      "access":    { "title": "Aksesueshmëri", "text": "Të gjitha ambientet janë të aksesueshme me karrocë, me akomodime sipas nevojës." }
     }
   }
 }
