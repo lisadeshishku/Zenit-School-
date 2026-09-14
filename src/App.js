@@ -14,7 +14,7 @@ import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 
 // Change this to false when the full website is ready.
-const SITE_UNDER_CONSTRUCTION = true;
+const SITE_UNDER_CONSTRUCTION = false;
 
 function ComingSoon() {
   return (
