@@ -271,3 +271,15 @@
   }
 }
 
+/* Reduce only the space between contact tiles and message form */
+.contact-info-section {
+  padding-bottom: 0.75rem;
+}
+
+.contact-grid {
+  margin-bottom: 0;
+}
+
+.contact-form-section {
+  padding-top: 0.75rem;
+}

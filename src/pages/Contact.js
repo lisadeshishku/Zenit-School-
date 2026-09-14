@@ -282,7 +282,7 @@ const Contact = () => {
               onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
               style={{ cursor: 'pointer' }}
             >
-              <h4>🏊 {t('contactPage.quick.pool.title')}</h4>
+              <h4>{t('contactPage.quick.pool.title')}</h4>
               <p>{t('contactPage.quick.pool.text')}</p>
             </div>
 
@@ -292,7 +292,7 @@ const Contact = () => {
               onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
               style={{ cursor: 'pointer' }}
             >
-              <h4>🚗 {t('contactPage.quick.parking.title')}</h4>
+              <h4>{t('contactPage.quick.parking.title')}</h4>
               <p>{t('contactPage.quick.parking.text')}</p>
             </div>
 
@@ -302,7 +302,7 @@ const Contact = () => {
               onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
               style={{ cursor: 'pointer' }}
             >
-              <h4>♿ {t('contactPage.quick.access.title')}</h4>
+              <h4>{t('contactPage.quick.access.title')}</h4>
               <p>{t('contactPage.quick.access.text')}</p>
             </div>
 
@@ -312,7 +312,7 @@ const Contact = () => {
               onMouseLeave={(e) => setCardColor(e.currentTarget, '')}
               style={{ cursor: 'pointer' }}
             >
-              <h4>🌐 {t('contactPage.quick.languages.title')}</h4>
+              <h4>{t('contactPage.quick.languages.title')}</h4>
               <p>{t('contactPage.quick.languages.text')}</p>
             </div>
           </div>

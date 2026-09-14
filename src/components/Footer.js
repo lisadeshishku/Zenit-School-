@@ -79,7 +79,7 @@ const Footer = () => {
               <p>
                 <Phone size={16} style={{ display: 'inline', marginRight: '8px' }} />
                 <a href="tel:+38349959436" className="footer-link">
-                  +383 49 959 436
+                  +383 49 959 435
                 </a>
               </p>
 

@@ -25,7 +25,7 @@ const AboutSection = () => {
             </p>
             
             <div className="facilities-highlight">
-              <h3>🏊‍♀️ {t("aboutSection.facilities")}</h3>
+              <h3>{t("aboutSection.facilities")}</h3>
               <p>{t("aboutSection.facilitiesDesc")}</p>
             </div>
             

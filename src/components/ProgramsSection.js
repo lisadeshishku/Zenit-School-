@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ProgramCard from './ProgramCard';
+import '../styles/ProgramsSection.css';
 
 const ProgramsSection = () => {
   const { t } = useTranslation();
@@ -45,55 +46,19 @@ const ProgramsSection = () => {
       className="programs-section"
       role="region"
       aria-labelledby="programs-title"
-      style={{ padding: '5rem 0', background: 'white' }}
     >
-      <div className="container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 1rem' }}>
-        {/* Use a real header element with its own block formatting context */}
-        <header
-          className="programs-header"
-          style={{
-            textAlign: 'center',
-            margin: '0 auto 40px auto',
-            maxWidth: 900,
-            position: 'relative',
-            zIndex: 2,
-            contain: 'content', // prevents children from affecting outside flow
-          }}
-        >
-          <h2
-            id="programs-title"
-            className="programs-title"
-            style={{
-              fontSize: '2.5rem',
-              fontWeight: 800,
-              color: '#111827',
-              lineHeight: 1.2,
-              marginBottom: '0.75rem',
-            }}
-          >
+      <div className="container">
+        <header className="home-programs-header">
+          <h2 id="programs-title" className="home-programs-title">
             {t('programs.title')}
           </h2>
-          <p
-            className="programs-subtitle"
-            style={{ fontSize: '1.125rem', color: '#6b7280', lineHeight: 1.7, margin: 0 }}
-          >
+
+          <p className="home-programs-subtitle">
             {t('programs.subtitle')}
           </p>
         </header>
 
-        {/* Explicit grid container with strong defaults */}
-        <div
-          className="programs-grid"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '2rem',
-            alignItems: 'stretch',
-            position: 'relative',
-            zIndex: 1,
-            marginTop: 0,
-          }}
-        >
+        <div className="programs-grid">
           {programs.map((program, index) => (
             <ProgramCard key={index} program={program} />
           ))}

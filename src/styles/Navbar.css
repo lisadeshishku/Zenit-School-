@@ -504,4 +504,15 @@ section {
   .menu-toggle-btn {
     display: inline-flex;
   }
+
+  @media (max-width: 768px) {
+  .App main .page-header {
+    padding-top: 85px !important;
+  }
+}
+}
+
+/* Extra space above all standard page headings */
+.App main .page-header {
+  padding-top: 100px !important;
 }

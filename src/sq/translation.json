@@ -61,7 +61,7 @@
     "visitAddress1": "Prugoc",
     "visitAddress2": "Lartësitë Akademike, AH 12345",
     "call": "Na Telefononi",
-    "callPhone": "+38349959436",
+    "callPhone": "+38349959435",
     "callHours": "E hënë - E premte, 8:00 - 17:00",
     "email": "Na shkruani email",
     "email1": "admissions@zenitschool.edu",
@@ -663,10 +663,9 @@
         "camp": "summercamp@zenitschool.edu"
       },
       "hours": {
-        "title": "Orari i Zyrës",
+        "title": "Orari i Punës",
         "weekdays": "E hënë - E premte",
-        "weekdayTime": "08:00 - 17:00",
-        "saturday": "E shtunë: 09:00 - 13:00"
+        "weekdayTime": "09:00 - 15:30"
       }
     },
     "form": {

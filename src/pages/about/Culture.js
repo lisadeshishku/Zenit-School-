@@ -2,89 +2,31 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../styles/Culture.css';
 
-const Culture = () => {
+const cultureImages = [
+  'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85',
+  'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85',
+  'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=85',
+  'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=85'
+];
+
+export default function Culture() {
   const { t } = useTranslation();
   const pillars = t('culture.pillars', { returnObjects: true }) || [];
-
-  const galleryImages = [
-    'https://picsum.photos/seed/culture1/900/600',
-    'https://picsum.photos/seed/culture2/900/600',
-    'https://picsum.photos/seed/culture3/900/600',
-  ];
-
   return (
     <div className="culture-page">
-      {/* HEADER */}
-      <section className="page-header">
-        <div className="container">
-          <h1 className="page-title">{t('culture.title')}</h1>
-          <p className="page-subtitle">{t('culture.subtitle')}</p>
-        </div>
-      </section>
-
-      {/* INTRO */}
-      <section className="culture-intro">
-        <div className="container intro-grid">
-          <div className="intro-text">
-            <h2>{t('culture.intro.title')}</h2>
-            <p>{t('culture.intro.text1')}</p>
-            <p>{t('culture.intro.text2')}</p>
-          </div>
-          <div className="intro-image">
-            <img
-              src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80"
-              alt={t('culture.intro.imageAlt')}
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* PILLARS */}
-      <section className="pillars-section">
-        <div className="container pillars-grid">
-          {pillars.map((p, i) => (
-            <div key={i} className="pillar-card">
-              <div className="pillar-emoji">{p.icon}</div>
-              <h3>{p.title}</h3>
-              <p>{p.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* COMMUNITY GALLERY */}
-      <section className="culture-gallery">
-        <div className="container">
-          <h2 className="gallery-title">{t('culture.gallery.title')}</h2>
-          <p className="gallery-subtitle">{t('culture.gallery.subtitle')}</p>
-
-          <div className="gallery-grid">
-            {galleryImages.map((src, i) => (
-              <div className="gallery-card" key={i}>
-                <img
-                  src={src}
-                  alt={t('culture.gallery.imageAlt', { index: i + 1 })}
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="culture-cta">
-        <div className="container">
-          <h3>{t('culture.cta.title')}</h3>
-          <p>{t('culture.cta.text')}</p>
-          <a href="/about/activities" className="cta-btn">
-            {t('culture.cta.btn')}
-          </a>
-        </div>
-      </section>
+      <section className="page-header culture-header"><div className="container"><h1 className="page-title">{t('culture.title')}</h1><p className="page-subtitle">{t('culture.subtitle')}</p></div></section>
+      <section className="culture-intro"><div className="container culture-intro-grid">
+        <div className="culture-intro-image"><img src={cultureImages[0]} alt={t('culture.intro.imageAlt')} /></div>
+        <div className="culture-intro-copy"><span className="section-kicker">Zenit community</span><h2>{t('culture.intro.title')}</h2><p>{t('culture.intro.text1')}</p><p>{t('culture.intro.text2')}</p></div>
+      </div></section>
+      <section className="culture-pillars"><div className="container culture-pillars-grid">
+        {Array.isArray(pillars) && pillars.map((pillar, index) => <article className="culture-pillar" key={index}><span>{String(index + 1).padStart(2, '0')}</span><h3>{pillar.title}</h3><p>{pillar.text}</p></article>)}
+      </div></section>
+      <section className="culture-gallery"><div className="container">
+        <div className="culture-gallery-heading"><div><span className="section-kicker">Everyday at Zenit</span><h2>{t('culture.gallery.title')}</h2></div><p>{t('culture.gallery.subtitle')}</p></div>
+        <div className="culture-photo-grid">{cultureImages.slice(1).map((src, index) => <img key={src} src={src} alt={t('culture.gallery.imageAlt', { index: index + 1 })} loading="lazy" />)}</div>
+      </div></section>
+      <section className="culture-cta"><div className="container culture-cta-inner"><div><h2>{t('culture.cta.title')}</h2><p>{t('culture.cta.text')}</p></div><a href="/about/activities" className="cta-btn">{t('culture.cta.btn')}</a></div></section>
     </div>
   );
-};
-
-export default Culture;
+}
