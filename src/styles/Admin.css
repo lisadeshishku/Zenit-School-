@@ -1,0 +1,695 @@
+/* =========================
+   Shared admin layout
+   ========================= */
+
+.admin-login-page,
+.admin-dashboard,
+.admin-loading {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.admin-login-page *,
+.admin-dashboard *,
+.admin-loading * {
+  box-sizing: border-box;
+}
+
+/* =========================
+   Login page
+   ========================= */
+
+.admin-login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background-color: #f3f6fb;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 14px 35px rgba(20, 36, 71, 0.1);
+}
+
+.admin-login-logo {
+  display: block;
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 1.5rem;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.admin-login-card h1 {
+  margin: 0 0 0.5rem;
+  color: #142447;
+  font-size: 1.65rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.admin-login-card > p {
+  margin: 0 0 1.75rem;
+  color: #64748b;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.admin-login-card label {
+  display: block;
+  margin: 1rem 0 0.4rem;
+  color: #334155;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.admin-login-card input {
+  width: 100%;
+  height: 46px;
+  padding: 0 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.admin-login-card input:focus {
+  border-color: #142447;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 36, 71, 0.1);
+}
+
+.admin-login-card button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  background-color: #142447;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-login-card button:hover {
+  background-color: #203763;
+}
+
+.admin-login-card button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.admin-login-error {
+  margin: 1rem 0 0;
+  color: #b91c1c;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* =========================
+   Loading page
+   ========================= */
+
+.admin-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f3f6fb;
+}
+
+.admin-loading p {
+  color: #64748b;
+}
+
+/* =========================
+   Dashboard
+   ========================= */
+
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 2.5rem 1.5rem 5rem;
+  background-color: #f3f6fb;
+  color: #1e293b;
+}
+
+.admin-dashboard-header {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #142447;
+}
+
+.admin-dashboard-label {
+  margin: 0 0 0.3rem;
+  color: #d8c188;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0 0 0.3rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.25;
+}
+
+.admin-dashboard-header div > p:last-child {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+}
+
+.admin-logout-button {
+  flex-shrink: 0;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   Dashboard intro
+   ========================= */
+
+.admin-dashboard-content {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.admin-dashboard-content h2 {
+  margin: 0 0 0.3rem;
+  color: #142447;
+  font-size: 1.25rem;
+}
+
+.admin-dashboard-content p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.admin-new-button {
+  flex-shrink: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  background-color: #142447;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-new-button:hover {
+  background-color: #203763;
+}
+
+/* =========================
+   Messages
+   ========================= */
+
+.admin-notification {
+  width: 100%;
+  max-width: 780px;
+  margin: 1rem auto 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background-color: #eff6ff;
+  color: #1e40af;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   News form
+   ========================= */
+
+.admin-news-form {
+  width: 100%;
+  max-width: 780px;
+  margin: 1.5rem auto 0;
+  padding: 1.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 22px rgba(20, 36, 71, 0.06);
+}
+
+.admin-form-heading {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-form-heading h2 {
+  margin: 0 0 0.35rem;
+  color: #142447;
+  font-size: 1.35rem;
+}
+
+.admin-form-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Languages appear vertically instead of making the form too wide */
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.admin-form-column {
+  min-width: 0;
+}
+
+.admin-form-column h3 {
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.8rem;
+  border-left: 4px solid #142447;
+  background-color: #f8fafc;
+  color: #142447;
+  font-size: 1rem;
+}
+
+.admin-form-column label,
+.admin-image-field label {
+  display: block;
+  margin: 1rem 0 0.4rem;
+  color: #334155;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.admin-form-column input,
+.admin-form-column textarea,
+.admin-image-field input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.admin-form-column input {
+  height: 44px;
+  padding: 0 0.85rem;
+}
+
+.admin-form-column textarea {
+  min-height: 90px;
+  padding: 0.8rem 0.85rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.admin-form-column textarea[rows='10'] {
+  min-height: 210px;
+}
+
+.admin-form-column input:focus,
+.admin-form-column textarea:focus {
+  border-color: #142447;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 36, 71, 0.08);
+}
+
+.admin-image-field {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.admin-image-field input {
+  padding: 0.65rem;
+}
+
+.admin-image-preview {
+  display: block;
+  width: 160px;
+  height: 100px;
+  margin-top: 1rem;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.admin-selected-file {
+  margin: 0.7rem 0 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   Form buttons
+   ========================= */
+
+.admin-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.admin-form-actions button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-form-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.admin-cancel-button {
+  border: 1px solid #cbd5e1 !important;
+  background-color: #ffffff;
+  color: #475569;
+}
+
+.admin-draft-button {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.admin-publish-button {
+  background-color: #142447;
+  color: #ffffff;
+}
+
+/* =========================
+   News list
+   ========================= */
+
+.admin-news-list {
+  width: 100%;
+  max-width: 960px;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.admin-news-list > h2 {
+  margin: 0 0 1rem;
+  color: #142447;
+  font-size: 1.25rem;
+}
+
+.admin-empty-state {
+  padding: 2rem;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.admin-empty-state p {
+  margin: 0;
+  color: #64748b;
+}
+
+.admin-news-item {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.admin-news-thumbnail {
+  width: 110px;
+  height: 74px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.admin-news-information {
+  min-width: 0;
+}
+
+.admin-news-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.admin-news-information h3 {
+  margin: 0;
+  color: #142447;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.admin-news-information p {
+  margin: 0.35rem 0;
+  color: #64748b;
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+}
+
+.admin-news-information small {
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.admin-status {
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.admin-status.published {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.admin-status.draft {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.admin-news-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-news-actions button {
+  padding: 0.55rem 0.75rem;
+  border: 0;
+  border-radius: 7px;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-news-actions .admin-delete-button {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 650px) {
+  .admin-login-page {
+    padding: 1rem;
+  }
+
+  .admin-login-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .admin-dashboard {
+    padding: 1rem 1rem 3rem;
+  }
+
+  .admin-dashboard-header,
+  .admin-dashboard-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-logout-button,
+  .admin-new-button {
+    width: 100%;
+  }
+
+  .admin-news-form,
+  .admin-news-list {
+    padding: 1.25rem;
+  }
+
+  .admin-form-actions {
+    flex-direction: column;
+  }
+
+  .admin-form-actions button {
+    width: 100%;
+  }
+
+  .admin-news-item {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-news-thumbnail {
+    width: 100%;
+    height: 180px;
+  }
+
+  .admin-news-actions {
+    width: 100%;
+  }
+
+  .admin-news-actions button {
+    flex: 1;
+  }
+}
+
+
+/* =========================
+   Compact two-column form
+   ========================= */
+
+.admin-news-form {
+  width: calc(100% - 3rem);
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+}
+
+.admin-form-heading {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.admin-form-column {
+  min-width: 0;
+  padding: 0.25rem 0 1rem;
+}
+
+.admin-form-column h3 {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0.9rem;
+}
+
+.admin-form-column label {
+  margin-top: 1.15rem;
+  margin-bottom: 0.45rem;
+}
+
+.admin-form-column input {
+  height: 44px;
+}
+
+/* Make the summary fields shorter */
+
+.admin-form-column textarea[rows='3'] {
+  min-height: 75px;
+  height: 75px;
+}
+
+/* Make the article fields shorter but expandable */
+
+.admin-form-column textarea[rows='10'] {
+  min-height: 150px;
+  height: 150px;
+  max-height: 350px;
+}
+
+.admin-image-field {
+  margin-top: 1rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-form-actions {
+  margin-top: 1.75rem;
+  padding: 0.25rem 0;
+  border-top: 0;
+}
+
+/* More space between dashboard sections */
+
+.admin-dashboard-content {
+  margin-bottom: 2.5rem;
+}
+
+.admin-news-list {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 820px) {
+  .admin-news-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .admin-form-column textarea[rows='10'] {
+    min-height: 170px;
+    height: 170px;
+  }
+}

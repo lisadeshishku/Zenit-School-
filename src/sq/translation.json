@@ -146,7 +146,7 @@
     "pillarsTitle": "Çfarë e bën Zenit-in ndryshe",
     "reasons": [
       {
-        "icon": "🎯",
+        "icon": "",
         "title": "Mësim i qartë dhe rigoroz",
         "text": "Nxënësit e dinë saktësisht si duket suksesi dhe marrin reagime për ta arritur.",
         "points": [
@@ -156,7 +156,7 @@
         ]
       },
       {
-        "icon": "🤝",
+        "icon": "",
         "title": "Marrëdhënie të forta",
         "text": "Çdo nxënës njihet. Familjet janë partnerë, jo spektatorë.",
         "points": [
@@ -166,7 +166,7 @@
         ]
       },
       {
-        "icon": "📈",
+        "icon": "",
         "title": "Përparim i dukshëm",
         "text": "Matim atë që ka rëndësi dhe ndihmojmë nxënësit të reflektojnë, planifikojnë dhe përmirësohen.",
         "points": [
@@ -219,20 +219,20 @@
       "text": "Orët ndërthurin projekte, laboratorë dhe diskutime, të mbështetura nga teknologjia dhe objektiva të qarta."
     },
     "features": [
-      { "icon": "🧪", "title": "Laboratorë & Projekte", "text": "Eksperimente shkencore, ndërtim në makerspace dhe zgjidhje të problemeve reale." },
-      { "icon": "💻", "title": "Mjete Digjitale", "text": "Tabela interaktive, tableta dhe platforma mësimore rrisin pjesëmarrjen." },
-      { "icon": "🧠", "title": "Mbështetje e Personalizuar", "text": "Feedback formues dhe mentorim në grupe të vogla." },
-      { "icon": "🤝", "title": "Bashkëpunim", "text": "Puna në grup, prezantime dhe feedback mes bashkëmoshatarëve." }
+      { "icon": "", "title": "Laboratorë & Projekte", "text": "Eksperimente shkencore, ndërtim në makerspace dhe zgjidhje të problemeve reale." },
+      { "icon": "", "title": "Mjete Digjitale", "text": "Tabela interaktive, tableta dhe platforma mësimore rrisin pjesëmarrjen." },
+      { "icon": "", "title": "Mbështetje e Personalizuar", "text": "Feedback formues dhe mentorim në grupe të vogla." },
+      { "icon": "", "title": "Bashkëpunim", "text": "Puna në grup, prezantime dhe feedback mes bashkëmoshatarëve." }
     ]
   },
   "activities": {
     "title": "Aktivitete & Klube",
     "subtitle": "Mundësi për të zbuluar pasione jashtë klasës.",
     "categories": [
-      { "icon": "🏊‍♀️", "title": "Akuatika", "items": ["Not Garash", "Siguria në Ujë", "Aqua Fitness"] },
-      { "icon": "🎨", "title": "Arte & Kulturë", "items": ["Arte Pamore", "Teatër", "Ansamble Muzikore", "Media Digjitale"] },
-      { "icon": "🔬", "title": "STEM", "items": ["Robotikë", "Klubi i Kodimit", "Olimpiada e Shkencës", "Ekipi i Matematikës"] },
-      { "icon": "🌍", "title": "Global & Shërbim", "items": ["Model UN", "Klube Gjuhe", "Projekte Komunitare"] }
+      { "icon": "", "title": "Akuatika", "items": ["Not Garash", "Siguria në Ujë", "Aqua Fitness"] },
+      { "icon": "", "title": "Arte & Kulturë", "items": ["Arte Pamore", "Teatër", "Ansamble Muzikore", "Media Digjitale"] },
+      { "icon": "", "title": "STEM", "items": ["Robotikë", "Klubi i Kodimit", "Olimpiada e Shkencës", "Ekipi i Matematikës"] },
+      { "icon": "", "title": "Global & Shërbim", "items": ["Model UN", "Klube Gjuhe", "Projekte Komunitare"] }
     ]
   },
   "culture": {
@@ -245,10 +245,10 @@
     "imageAlt": "Nxënës duke bashkëpunuar në Shkollën Zenit"
   },
   "pillars": [
-    { "icon": "🤗", "title": "Respekt & Përfshirje", "text": "Çdo individ pritet dhe mbështetet." },
-    { "icon": "📈", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
-    { "icon": "🤝", "title": "Komunitet", "text": "Nxënësit, familjet dhe stafi punojnë së bashku." },
-    { "icon": "🧭", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
+    { "icon": "", "title": "Respekt & Përfshirje", "text": "Çdo individ pritet dhe mbështetet." },
+    { "icon": "", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
+    { "icon": "", "title": "Komunitet", "text": "Nxënësit, familjet dhe stafi punojnë së bashku." },
+    { "icon": "", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
   ],
   "gallery": {
     "title": "Komuniteti & Jeta në Zenit",
@@ -339,10 +339,10 @@
     "visionTitle": "Vizioni ynë",
     "visionText": "Të frymëzojmë nxënësit të arrijnë potencialin e tyre dhe të kontribuojnë në shoqëri.",
     "values": [
-      { "icon": "🎓", "title": "Ekselencë", "text": "Standarde të larta, përmirësim i vazhdueshëm." },
-      { "icon": "🤝", "title": "Komunitet", "text": "Partneritet me familjet dhe organizatat lokale." },
-      { "icon": "🌍", "title": "Qytetari Globale", "text": "Respekt, përfshirje, mirëkuptim kulturor." },
-      { "icon": "🧠", "title": "Rritje", "text": "Qëndrueshmëri, reflektim dhe dashuri për dijen." }
+      { "icon": "", "title": "Ekselencë", "text": "Standarde të larta, përmirësim i vazhdueshëm." },
+      { "icon": "", "title": "Komunitet", "text": "Partneritet me familjet dhe organizatat lokale." },
+      { "icon": "", "title": "Qytetari Globale", "text": "Respekt, përfshirje, mirëkuptim kulturor." },
+      { "icon": "", "title": "Rritje", "text": "Qëndrueshmëri, reflektim dhe dashuri për dijen." }
     ]
   },
   "history": {
@@ -418,9 +418,9 @@
     "title": "Edukimi Digjital",
     "subtitle": "Mjete dhe metoda moderne që pasurojnë të nxënit.",
     "pillars": [
-      { "icon": "💻", "title": "Pajisje 1:1", "text": "Laptopë ose tableta për projekte dhe kërkime." },
-      { "icon": "☁️", "title": "Mësim në Cloud", "text": "Detyra, feedback dhe bashkëpunim online." },
-      { "icon": "🧠", "title": "Aftësi Digjitale", "text": "Edukim mediatik, bazat e kodimit dhe siguria online." }
+      { "icon": "", "title": "Pajisje 1:1", "text": "Laptopë ose tableta për projekte dhe kërkime." },
+      { "icon": "", "title": "Mësim në Cloud", "text": "Detyra, feedback dhe bashkëpunim online." },
+      { "icon": "", "title": "Aftësi Digjitale", "text": "Edukim mediatik, bazat e kodimit dhe siguria online." }
     ],
     "platforms": [
       { "name": "Google Workspace", "use": "Docs, Classroom, Drive për kursin dhe feedback." },
@@ -578,7 +578,7 @@
       }
     },
     "summer": {
-      "title": "🏊‍♀️ Kampi Veror Zenit",
+      "title": "Kampi Veror Zenit",
       "ages": "Mosha 6–16",
       "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Aktivitete kampi veror",
@@ -592,7 +592,7 @@
         "Ekskursione dhe përvoja kulturore"
       ],
       "highlight": {
-        "title": "🏊‍♀️ Ekselencë në Not:",
+        "title": "Ekselencë në Not:",
         "text": "Nga mësime për fillestarë deri te kampe stërvitore konkurruese."
       }
     },
@@ -612,22 +612,22 @@
       "title": "Përtej Klasës",
       "categories": [
         {
-          "icon": "🏊‍♀️",
+          "icon": "",
           "title": "Programe Akuatike",
           "items": ["Ekip Noti Konkurrues", "Ujëpolo", "Not Sinkron", "Certifikim Roje Plazhi", "Klase Aqua Fitness"]
         },
         {
-          "icon": "🎨",
+          "icon": "",
           "title": "Arte & Kulturë",
           "items": ["Studio Arte Pamore", "Produksione Teatri", "Ansamble Muzikore", "Media Digjitale", "Shkrim Kreativ"]
         },
         {
-          "icon": "🔬",
+          "icon": "",
           "title": "Klube STEM",
           "items": ["Ekip Robotike", "Olimpiada e Shkencës", "Klubi i Kodimit", "Gara Matematike", "Klubi Mjedisor"]
         },
         {
-          "icon": "🌍",
+          "icon": "",
           "title": "Angazhim Global",
           "items": ["Model United Nations", "Klube Gjuhe", "Shkëmbim Kulturor", "Shërbim Ndërkombëtar", "Studime Jashtë"]
         }

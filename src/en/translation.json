@@ -144,7 +144,7 @@
     "pillarsTitle": "What makes Zenit different",
     "reasons": [
       {
-        "icon": "🎯",
+        "icon": "",
         "title": "Clear, rigorous learning",
         "text": "Students know exactly what success looks like and receive the feedback to get there.",
         "points": [
@@ -154,7 +154,7 @@
         ]
       },
       {
-        "icon": "🤝",
+        "icon": "",
         "title": "Strong relationships",
         "text": "Every student is known. Families are partners, not spectators.",
         "points": [
@@ -164,7 +164,7 @@
         ]
       },
       {
-        "icon": "📈",
+        "icon": "",
         "title": "Visible progress",
         "text": "We measure what matters and help students reflect, plan, and improve.",
         "points": [
@@ -216,10 +216,10 @@
       "text": "Lessons combine projects, labs and discussions, supported by technology and clear learning goals."
     },
     "features": [
-      { "icon": "🧪", "title": "Labs & Projects", "text": "Science experiments, makerspace builds, and real-world problem solving." },
-      { "icon": "💻", "title": "Digital Tools", "text": "Interactive boards, tablets and learning platforms enhance participation." },
-      { "icon": "🧠", "title": "Personalised Support", "text": "Formative feedback and small group coaching." },
-      { "icon": "🤝", "title": "Collaboration", "text": "Teamwork, presentations and peer feedback." }
+      { "icon": "", "title": "Labs & Projects", "text": "Science experiments, makerspace builds, and real-world problem solving." },
+      { "icon": "", "title": "Digital Tools", "text": "Interactive boards, tablets and learning platforms enhance participation." },
+      { "icon": "", "title": "Personalised Support", "text": "Formative feedback and small group coaching." },
+      { "icon": "", "title": "Collaboration", "text": "Teamwork, presentations and peer feedback." }
     ]
   },
   "activities": {
@@ -336,10 +336,10 @@
     "visionTitle": "Our Vision",
     "visionText": "Inspire students to reach their full potential and contribute meaningfully to society.",
     "values": [
-      { "icon": "🎓", "title": "Excellence", "text": "High standards, continuous improvement." },
-      { "icon": "🤝", "title": "Community", "text": "Partnership with families and local organizations." },
-      { "icon": "🌍", "title": "Global Citizenship", "text": "Respect, inclusion, cultural understanding." },
-      { "icon": "🧠", "title": "Growth", "text": "Resilience, reflection and a love of learning." }
+      { "icon": "", "title": "Excellence", "text": "High standards, continuous improvement." },
+      { "icon": "", "title": "Community", "text": "Partnership with families and local organizations." },
+      { "icon": "", "title": "Global Citizenship", "text": "Respect, inclusion, cultural understanding." },
+      { "icon": "", "title": "Growth", "text": "Resilience, reflection and a love of learning." }
     ]
   },
   "history": {
@@ -415,9 +415,9 @@
     "title": "Digital Education",
     "subtitle": "Modern tools and methods that enhance learning.",
     "pillars": [
-      { "icon": "💻", "title": "1:1 Devices", "text": "Students use laptops or tablets daily for projects and research." },
-      { "icon": "☁️", "title": "Cloud Learning", "text": "Assignments, feedback and collaboration live in the cloud." },
-      { "icon": "🧠", "title": "Digital Skills", "text": "Media literacy, coding basics and online safety." }
+      { "icon": "", "title": "1:1 Devices", "text": "Students use laptops or tablets daily for projects and research." },
+      { "icon": "", "title": "Cloud Learning", "text": "Assignments, feedback and collaboration live in the cloud." },
+      { "icon": "", "title": "Digital Skills", "text": "Media literacy, coding basics and online safety." }
     ],
     "platforms": [
       { "name": "Google Workspace", "use": "Docs, Classroom, Drive for coursework and feedback." },
@@ -575,7 +575,7 @@
       }
     },
     "summer": {
-      "title": "🏊‍♀️ Zenit Summer Camp",
+      "title": "Zenit Summer Camp",
       "ages": "Ages 6-16",
       "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Summer camp activities",
@@ -609,22 +609,22 @@
       "title": "Beyond the Classroom",
       "categories": [
         {
-          "icon": "🏊‍♀️",
+          "icon": "🏊",
           "title": "Aquatic Programs",
           "items": ["Competitive Swimming Team", "Water Polo", "Synchronized Swimming", "Lifeguard Certification", "Aqua Fitness Classes"]
         },
         {
-          "icon": "🎨",
+          "icon": "",
           "title": "Arts & Culture",
           "items": ["Visual Arts Studio", "Theater Productions", "Music Ensembles", "Digital Media", "Creative Writing"]
         },
         {
-          "icon": "🔬",
+          "icon": "",
           "title": "STEM Clubs",
           "items": ["Robotics Team", "Science Olympiad", "Coding Club", "Math Competition", "Environmental Club"]
         },
         {
-          "icon": "🌍",
+          "icon": "",
           "title": "Global Engagement",
           "items": ["Model United Nations", "Language Clubs", "Cultural Exchange", "International Service", "Study Abroad"]
         }
