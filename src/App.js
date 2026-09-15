@@ -22,8 +22,6 @@ import Culture from './pages/about/Culture';
 import News from './pages/about/News';
 import Director from './pages/about/Director';
 import Staff from './pages/about/Staff';
-import Mission from './pages/about/Mission';
-import History from './pages/about/History';
 import Careers from './pages/about/Careers';
 import NewsArticle from './pages/about/NewsArticle';
 
@@ -64,8 +62,6 @@ function App() {
           <Route path="/about/news" element={<News />} />
           <Route path="/about/director" element={<Director />} />
           <Route path="/about/staff" element={<Staff />} />
-          <Route path="/about/mission" element={<Mission />} />
-          <Route path="/about/history" element={<History />} />
           <Route path="/about/careers" element={<Careers />} />
           <Route path="/about/news/:slug" element={<NewsArticle />}/>
 

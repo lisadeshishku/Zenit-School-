@@ -1,0 +1,41 @@
+/* Homepage programme heading only.
+   This overrides the horizontal header layout without changing the cards. */
+.programs-section .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 820px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.programs-section .section-header .section-title {
+  width: 100%;
+  margin: 0 0 0.85rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  color: #0f172a;
+}
+
+.programs-section .section-header .section-subtitle {
+  width: 100%;
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .programs-section .section-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .programs-section .section-header .section-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

@@ -1,47 +1,37 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'; // ADD THIS
+import { useTranslation } from 'react-i18next';
 import '../styles/AboutSection.css';
 
 const AboutSection = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation(); // ADD THIS
-
-  const handleLearnMore = () => {
-    navigate('/about');
-  };
+  const { t } = useTranslation();
 
   return (
     <section className="about-section">
       <div className="container">
         <div className="about-content">
           <div className="about-text">
-            <h2 className="about-title">{t("aboutSection.title")}</h2>
-            <p className="about-description">
-              {t("aboutSection.desc1")}
-            </p>
-            <p className="about-description">
-              {t("aboutSection.desc2")}
-            </p>
-            
+            <p className="section-kicker">{t('home.about.kicker')}</p>
+            <h2 className="about-title">{t('home.about.title')}</h2>
+            <p className="about-description">{t('home.about.paragraph1')}</p>
+            <p className="about-description">{t('home.about.paragraph2')}</p>
+
             <div className="facilities-highlight">
-              <h3>{t("aboutSection.facilities")}</h3>
-              <p>{t("aboutSection.facilitiesDesc")}</p>
+              <h3>{t('home.about.highlightTitle')}</h3>
+              <p>{t('home.about.highlightText')}</p>
             </div>
-            
-            <button className="about-cta-btn" onClick={handleLearnMore}>
-              {t("aboutSection.cta")}
+
+            <button className="about-cta-btn" onClick={() => navigate('/about')}>
+              {t('home.about.cta')}
             </button>
           </div>
+
           <div className="about-image">
             <img
-              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt={t("aboutSection.title")}
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&q=80"
+              alt={t('home.about.imageAlt')}
             />
-            <div className="experience-badge">
-              <span className="badge-number">40+</span>
-              <span className="badge-text">{t("aboutSection.years")}</span>
-            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,6 @@ const Navbar = () => {
     leadership: [
       { name: 'director', path: '/about/director' },
       { name: 'staff', path: '/about/staff' },
-      { name: 'mission', path: '/about/mission' },
       { name: 'careers', path: '/about/careers' }
     ],
     admissions: [

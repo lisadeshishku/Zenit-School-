@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
@@ -11,82 +11,68 @@ const Hero = () => {
 
   const heroSlides = [
     {
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: t("hero.slide1.title"),
-      subtitle: t("hero.slide1.subtitle")
+      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2340&q=80',
+      title: t('home.hero.slides.academics.title'),
+      subtitle: t('home.hero.slides.academics.subtitle'),
     },
     {
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80",
-      title: t("hero.slide2.title"),
-      subtitle: t("hero.slide2.subtitle")
+      image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2532&q=80',
+      title: t('home.hero.slides.technology.title'),
+      subtitle: t('home.hero.slides.technology.subtitle'),
     },
     {
-      image: "https://images.unsplash.com/photo-1581726690015-c9861472ba13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: t("hero.slide3.title"),
-      subtitle: t("hero.slide3.subtitle")
-    }
+      image: 'https://images.unsplash.com/photo-1581726690015-c9861472ba13?auto=format&fit=crop&w=2340&q=80',
+      title: t('home.hero.slides.development.title'),
+      subtitle: t('home.hero.slides.development.subtitle'),
+    },
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    const timer = window.setInterval(() => {
+      setCurrentSlide((previous) => (previous + 1) % heroSlides.length);
+    }, 6000);
+
+    return () => window.clearInterval(timer);
   }, [heroSlides.length]);
-
-  const handleExplorePrograms = () => {
-    navigate('/programs');
-  };
-
-  const handleScheduleTour = () => {
-    navigate('/contact');
-  };
 
   return (
     <section className="hero">
-      <div className="hero-overlay"></div>
-      
+      <div className="hero-overlay" />
+
       {heroSlides.map((slide, index) => (
         <div
-          key={index}
+          key={slide.title}
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
         >
-          <img
-            src={slide.image}
-            alt={slide.title}
-            className="hero-image"
-          />
+          <img src={slide.image} alt={slide.title} className="hero-image" />
         </div>
       ))}
 
       <div className="hero-content">
-        <h1 className="hero-title">
-          {heroSlides[currentSlide].title}
-        </h1>
-        <p className="hero-subtitle">
-          {heroSlides[currentSlide].subtitle}
-        </p>
+        <h1 className="hero-title">{heroSlides[currentSlide].title}</h1>
+        <p className="hero-subtitle">{heroSlides[currentSlide].subtitle}</p>
         <div className="hero-buttons">
-          <button className="btn-primary" onClick={handleExplorePrograms}>
-            {t("hero.explorePrograms")}
+          <button className="btn-primary" onClick={() => navigate('/programs')}>
+            {t('home.hero.explorePrograms')}
           </button>
-          <button className="btn-secondary" onClick={handleScheduleTour}>
-            {t("hero.scheduleTour")}
+          <button className="btn-secondary" onClick={() => navigate('/contact')}>
+            {t('home.hero.scheduleVisit')}
           </button>
         </div>
       </div>
 
-      <div className="scroll-indicator">
+      <div className="scroll-indicator" aria-hidden="true">
         <ChevronDown className="scroll-icon" />
       </div>
 
       <div className="slide-indicators">
-        {heroSlides.map((_, index) => (
+        {heroSlides.map((slide, index) => (
           <button
-            key={index}
+            key={slide.title}
+            type="button"
             onClick={() => setCurrentSlide(index)}
             className={`indicator ${index === currentSlide ? 'active' : ''}`}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={t('home.hero.goToSlide', { number: index + 1 })}
           />
         ))}
       </div>

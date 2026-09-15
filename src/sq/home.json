@@ -1,0 +1,131 @@
+{
+  "home": {
+    "hero": {
+      "ariaLabel": "Prezantimi i Shkollës Zenit",
+      "eyebrow": "SHKOLLA ZENIT",
+      "slides": {
+        "academics": {
+          "title": "Dije e qëndrueshme. Mendim i pavarur.",
+          "subtitle": "Mësimdhënie e strukturuar dhe standarde të qarta akademike për zhvillimin e çdo nxënësi."
+        },
+        "technology": {
+          "title": "Nga njohuria te zbatimi",
+          "subtitle": "Kodimi, teknologjia dhe projektet praktike e bëjnë nxënësin pjesëmarrës aktiv në procesin mësimor."
+        },
+        "development": {
+          "title": "Arsimim që zhvillon më shumë",
+          "subtitle": "Një përvojë arsimore që zhvillon dijen, mendimin kritik, përgjegjësinë dhe vetëbesimin."
+        }
+      },
+      "explorePrograms": "Shfletoni programet",
+      "scheduleVisit": "Caktoni një vizitë",
+      "goToSlide": "Shko te pamja {{number}}"
+    },
+    "strengths": {
+      "ariaLabel": "Pikat kryesore të Shkollës Zenit",
+      "academics": {
+        "title": "Standard akademik",
+        "text": "Objektiva të qarta dhe përcjellje e vazhdueshme e përparimit."
+      },
+      "technology": {
+        "title": "Teknologji dhe kodim",
+        "text": "Njohuritë zbatohen përmes projekteve dhe sfidave praktike."
+      },
+      "swimming": {
+        "title": "Not gjatë shkollës",
+        "text": "Zhvillim fizik dhe siguri në ujë në pishinën gjysmë-olimpike."
+      },
+      "support": {
+        "title": "Mundësi mbështetëse",
+        "text": "Bursa dhe mbështetje financiare sipas kritereve të shkollës."
+      }
+    },
+    "about": {
+      "kicker": "PSE ZENIT?",
+      "title": "Një qasje e plotë ndaj arsimit",
+      "paragraph1": "Shkolla Zenit ofron një proces mësimor të strukturuar, me standarde të qarta akademike dhe vëmendje të vazhdueshme ndaj përparimit të nxënësve.",
+      "paragraph2": "Mësimdhënia ndërthur njohuritë teorike me punën praktike, teknologjinë dhe aktivitetin fizik, duke i ndihmuar nxënësit të zhvillojnë mendim kritik, përgjegjësi dhe vetëbesim.",
+      "highlightTitle": "Mësim që lidhet me praktikën",
+      "highlightText": "Kodimi, projektet teknologjike dhe aktivitetet praktike u japin nxënësve mundësi të hulumtojnë, të bashkëpunojnë dhe t'i zbatojnë njohuritë në situata konkrete.",
+      "cta": "Më shumë rreth Zenit",
+      "imageAlt": "Nxënës duke bashkëpunuar gjatë një aktiviteti mësimor"
+    },
+    "programs": {
+      "kicker": "PROGRAMET MËSIMORE",
+      "title": "Programet tona",
+      "subtitle": "Nga shkolla fillore deri te shkolla e mesme e lartë, programet ndërtojnë hap pas hapi njohuritë, aftësitë dhe pavarësinë e nxënësve.",
+      "learnMore": "Shihni programin",
+      "primary": {
+        "title": "Shkolla fillore",
+        "description": "Një bazë e qëndrueshme në gjuhë, matematikë, shkencë dhe zhvillim shoqëror, e ndërtuar përmes mësimit të qartë dhe punës aktive.",
+        "level": "Klasat 1–5",
+        "imageAlt": "Nxënës të shkollës fillore gjatë mësimit"
+      },
+      "lowerSecondary": {
+        "title": "Shkolla e mesme e ulët",
+        "description": "Njohuri më të thelluara, mendim kritik dhe përgjegjësi më e madhe në një fazë të rëndësishme të zhvillimit akademik.",
+        "level": "Klasat 6–9",
+        "imageAlt": "Nxënës të shkollës së mesme të ulët duke punuar së bashku"
+      },
+      "upperSecondary": {
+        "title": "Shkolla e mesme e lartë",
+        "description": "Përgatitje akademike e përqendruar, aftësi për punë të pavarur dhe orientim drejt studimeve dhe mundësive të ardhshme.",
+        "level": "Klasat 10–12",
+        "imageAlt": "Nxënës të shkollës së mesme të lartë gjatë një projekti"
+      },
+      "summer": {
+        "title": "Kampi veror Zenit",
+        "description": "Një program veror që ndërthur aktivitetet sportive, krijimtarinë dhe të nxënit në një mjedis të organizuar dhe aktiv.",
+        "level": "Program veror",
+        "imageAlt": "Aktivitete në Kampin Veror Zenit"
+      }
+    },
+    "learning": {
+      "kicker": "TË NXËNIT NË ZENIT",
+      "title": "Nga shpjegimi te kuptimi dhe zbatimi",
+      "description": "Nxënësit udhëhiqen të kuptojnë konceptet, t'i lidhin ato me njohuritë ekzistuese dhe t'i përdorin në situata të reja.",
+      "imageAlt": "Mjedisi mësimor i Shkollës Zenit",
+      "features": {
+        "classroom": {
+          "title": "Mësimdhënie e strukturuar",
+          "text": "Konceptet shpjegohen qartë dhe përforcohen përmes diskutimit, ushtrimeve dhe vlerësimit të vazhdueshëm."
+        },
+        "practice": {
+          "title": "Punë praktike",
+          "text": "Projektet dhe detyrat praktike zhvillojnë arsyetimin, kreativitetin, bashkëpunimin dhe zgjidhjen e problemeve."
+        },
+        "technology": {
+          "title": "Kodim dhe teknologji",
+          "text": "Teknologjia përdoret për të krijuar, analizuar dhe për ta kthyer një ide në zgjidhje konkrete."
+        },
+        "pool": {
+          "title": "Pishinë gjysmë-olimpike",
+          "text": "Noti gjatë shkollës mbështet zhvillimin fizik, disiplinën dhe sigurinë e nxënësve në ujë."
+        }
+      }
+    },
+    "admissions": {
+      "kicker": "PRANIMET",
+      "title": "Njihuni nga afër me Shkollën Zenit",
+      "subtitle": "Vizitoni shkollën, njihuni me mjedisin dhe merrni informacion të plotë për programet dhe procesin e regjistrimit.",
+      "apply": "Aplikoni për regjistrim",
+      "visit": "Caktoni një vizitë",
+      "supportNote": "Informacioni për bursat e meritës dhe mbështetjen financiare ofrohet nga administrata e shkollës."
+    },
+    "language": {
+      "switchTo": "Kalo në {{language}}"
+    },
+    "footer": {
+      "description": "Arsim cilësor që ndërton dije të qëndrueshme, mendim kritik dhe përgjegjësi.",
+      "quickLinks": "Lidhje të shpejta",
+      "about": "Rreth nesh",
+      "programs": "Programet",
+      "admissions": "Pranimet",
+      "contact": "Kontakti",
+      "programmes": "Programet mësimore",
+      "contactHeading": "Na kontaktoni",
+      "address": "Fshati Prugoc, Kampusi i Shkollës Zenit, Prishtinë, Kosovë",
+      "copyright": "© {{year}} Shkolla Zenit. Të gjitha të drejtat e rezervuara."
+    }
+  }
+}

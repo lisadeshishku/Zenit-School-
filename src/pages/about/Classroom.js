@@ -11,7 +11,8 @@ const galleryImages = [
   '/insidetheclass/insideclass9880.jpg'
 ];
 
-const fallbackImage = 'https://picsum.photos/seed/zenit-classroom-fallback/900/600';
+const fallbackImage =
+  'https://picsum.photos/seed/zenit-classroom-fallback/900/600';
 
 export default function Classroom() {
   const { t } = useTranslation();
@@ -34,14 +35,14 @@ export default function Classroom() {
       <section className="classroom-intro">
         <div className="container classroom-intro-grid">
           <div className="classroom-intro-copy">
-            <span className="classroom-kicker">Learning at Zenit</span>
+            <span className="classroom-kicker">{t('classroom.hero.kicker')}</span>
             <h2>{t('classroom.hero.title')}</h2>
             <p>{t('classroom.hero.text')}</p>
           </div>
           <div className="classroom-intro-image">
             <img
               src="/insidetheclass/insideclass6820.jpg"
-              alt={t('classroom.title')}
+              alt={t('classroom.hero.imageAlt')}
               onError={useFallback}
             />
           </div>
@@ -51,13 +52,18 @@ export default function Classroom() {
       <section className="classroom-gallery">
         <div className="container">
           <div className="classroom-gallery-heading">
-            <span>Inside our classrooms</span>
+            <span>{t('classroom.galleryTitle')}</span>
             <div className="gallery-line" />
           </div>
           <div className="classroom-photo-grid">
             {galleryImages.map((src, index) => (
               <figure className={`classroom-photo classroom-photo-${index + 1}`} key={src}>
-                <img src={src} alt={`Classroom view ${index + 1}`} loading="lazy" onError={useFallback} />
+                <img
+                  src={src}
+                  alt={t('classroom.galleryImageAlt', { number: index + 1 })}
+                  loading="lazy"
+                  onError={useFallback}
+                />
               </figure>
             ))}
           </div>
@@ -67,13 +73,15 @@ export default function Classroom() {
       <section className="classroom-features">
         <div className="container">
           <div className="classroom-features-heading">
-            <span className="classroom-kicker">Our approach</span>
-            <h2>{t('classroom.featuresTitle', { defaultValue: 'Learning designed around every student' })}</h2>
+            <span className="classroom-kicker">{t('classroom.featuresKicker')}</span>
+            <h2>{t('classroom.featuresTitle')}</h2>
           </div>
           <div className="classroom-features-grid">
             {Array.isArray(features) && features.map((feature, index) => (
               <article className="classroom-feature" key={index}>
-                <span className="feature-number">{String(index + 1).padStart(2, '0')}</span>
+                <span className="feature-number">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <h3>{feature.title}</h3>
                 <p>{feature.text}</p>
               </article>

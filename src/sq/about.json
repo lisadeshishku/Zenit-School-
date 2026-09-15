@@ -1,0 +1,104 @@
+{
+  "aboutPage": {
+    "title": "Rreth Shkollës Zenit",
+    "subtitle": "Që nga viti 2009, ndërtojmë një mjedis arsimor ku dija, përgjegjësia dhe zhvillimi i nxënësit ecin së bashku.",
+    "history": {
+      "heading": "Historia jonë që nga viti 2009",
+      "paragraphs": [
+        "Shkolla Zenit u themelua në vitin 2009 me synimin për të ofruar arsim cilësor për nxënësit e shkollës fillore dhe të mesme. Që nga fillimi, puna jonë është mbështetur në mësimdhënie të strukturuar, standarde të qarta akademike dhe bashkëpunim të vazhdueshëm me familjet.",
+        "Programi mësimor ndërthur njohuritë teorike me punën praktike, teknologjinë, kodimin dhe aktivitetin fizik. Synimi ynë është që nxënësit të zhvillojnë dije të qëndrueshme, mendim kritik, përgjegjësi, pavarësi dhe aftësi për zgjidhjen e problemeve."
+      ],
+      "timeline": [
+        {
+          "year": "2009",
+          "title": "Themelimi i Shkollës",
+          "text": "Shkolla Zenit hap dyert për nxënësit e arsimit fillor dhe të mesëm, duke nisur rrugëtimin e saj arsimor."
+        },
+        {
+          "year": "2015",
+          "title": "Hapja e Pishinës Gjysmë-Olimpike",
+          "text": "Në kampusin e Shkollës Zenit hapet pishina gjysmë-olimpike, duke mundësuar përfshirjen e notit në përvojën shkollore."
+        },
+        {
+          "year": "2021",
+          "title": "Fillimi i Kampit Veror Zenit",
+          "text": "Hapet Kampi Veror Zenit, me një program të organizuar që ndërthur aktivitetet sportive, krijimtarinë dhe të nxënit."
+        },
+        {
+          "year": "Sot",
+          "title": "Teknologjia në Arsim",
+          "text": "Google Workspace for Education, PowerSchool SIS, Code.org dhe qasja në Financial Times mbështesin mësimin, komunikimin dhe administrimin e shkollës."
+        }
+      ]
+    },
+    "mv": {
+      "missionTitle": "Misioni ynë",
+      "missionText": "Misioni ynë është të ofrojmë arsim cilësor që ndërton dije të qëndrueshme, mendim kritik, përgjegjësi dhe aftësi praktike. Përmes mësimdhënies së strukturuar dhe bashkëpunimit me familjet, mbështesim zhvillimin akademik dhe personal të çdo nxënësi.",
+      "visionTitle": "Vizioni ynë",
+      "visionText": "Vizioni ynë është një shkollë me standarde të larta akademike, ku nxënësit zhvillohen në mënyrë të gjithanshme dhe mësojnë ta përdorin dijen me pavarësi, përgjegjësi dhe qëllim."
+    },
+    "values": {
+      "title": "Vlerat tona",
+      "items": [
+        {
+          "title": "Dija",
+          "text": "Kultivojmë kureshtjen, përgatitjen dhe përpjekjen e vazhdueshme."
+        },
+        {
+          "title": "Përgjegjësia",
+          "text": "Nxënësit udhëhiqen të marrin përgjegjësi për punën dhe zgjedhjet e tyre."
+        },
+        {
+          "title": "Respekti",
+          "text": "Ndërtojmë marrëdhënie të mbështetura në respekt, mirëkuptim dhe komunikim të hapur."
+        },
+        {
+          "title": "Bashkëpunimi",
+          "text": "Shkolla, nxënësit dhe familjet punojnë së bashku për përparim të vazhdueshëm."
+        }
+      ]
+    },
+    "faculty": {
+      "title": "Teknologjia në shërbim të të nxënit",
+      "text": "Nxënësit përdorin Google Workspace for Education për bashkëpunim dhe organizim, ndërsa Code.org i njeh me konceptet bazë të kodimit. Në shkollën e mesme të lartë fillojnë edhe zhvillimin e faqeve web. PowerSchool SIS mbështet menaxhimin e të dhënave dhe komunikimin me familjet, ndërsa llogaritë shkollore u mundësojnë nxënësve qasje në Financial Times.",
+      "imageAlt": "Nxënës duke bashkëpunuar dhe përdorur mjete digjitale",
+      "stats": [
+        {
+          "number": "2009",
+          "label": "Viti i themelimit"
+        },
+        {
+          "number": "1–12",
+          "label": "Klasat që ofrojmë"
+        },
+        {
+          "number": "4",
+          "label": "Platforma dhe burime digjitale"
+        }
+      ]
+    },
+    "campus": {
+      "title": "Mjedisi mësimor",
+      "facilities": [
+        {
+          "image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Hapësira mësimore",
+          "title": "Hapësira mësimore",
+          "text": "Klasa dhe hapësira të organizuara për mësim të përqendruar, punë praktike dhe bashkëpunim."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Pishinë gjysmë-olimpike",
+          "title": "Pishinë gjysmë-olimpike",
+          "text": "Hapësirë e dedikuar për zhvillimin e aftësive në not, aktivitetin fizik dhe sigurinë në ujë."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Nxënës duke përdorur teknologjinë gjatë mësimit",
+          "title": "Teknologji në mësim",
+          "text": "Code.org dhe mësimi i zhvillimit të faqeve web ndihmojnë në ndërtimin e aftësive digjitale dhe të mendimit logjik."
+        }
+      ]
+    }
+  }
+}

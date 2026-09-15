@@ -1,8 +1,37 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+} from 'lucide-react';
 import '../styles/Footer.css';
+
+const platformLogos = [
+  {
+    name: 'Google Workspace for Education',
+    image: '/images/platforms/google-workspace.png',
+    className: 'footer-platform-logo--google-workspace',
+  },
+  {
+    name: 'PowerSchool SIS',
+    image: '/images/platforms/powerschool.png',
+    className: 'footer-platform-logo--powerschool',
+  },
+  {
+    name: 'Code.org',
+    image: '/images/platforms/code-org.png',
+    className: 'footer-platform-logo--code',
+  },
+  {
+    name: 'Financial Times',
+    image: '/images/platforms/financial-times.png',
+    className: 'footer-platform-logo--financial-times',
+  },
+];
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -11,81 +40,149 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          {/* Brand / Logo */}
           <div className="footer-brand">
-            <div className="footer-logo">{t('navbar.logo.name')}</div>
+            <div className="footer-logo">Zenit School</div>
+
             <p className="footer-description">
-              {t('footer.description')}
+              {t('home.footer.description')}
             </p>
+
             <div className="social-links">
               <a
                 href="https://www.instagram.com/shkollazenit/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
+                aria-label="Instagram"
               >
                 <Instagram size={24} />
               </a>
+
               <a
                 href="https://www.facebook.com/shkollazenit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
+                aria-label="Facebook"
               >
                 <Facebook size={24} />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="footer-links">
-            <h4 className="footer-heading">{t('footer.quickLinks')}</h4>
+            <h2 className="footer-heading">
+              {t('home.footer.quickLinks')}
+            </h2>
+
             <ul className="link-list">
-              <li><Link to="/about" className="footer-link">{t('footer.about')}</Link></li>
-              <li><Link to="/programs" className="footer-link">{t('footer.programs')}</Link></li>
-              <li><Link to="/admissions" className="footer-link">{t('footer.admissions')}</Link></li>
-              <li><Link to="/contact" className="footer-link">{t('footer.contact')}</Link></li>
+              <li>
+                <Link to="/about" className="footer-link">
+                  {t('home.footer.about')}
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/programs" className="footer-link">
+                  {t('home.footer.programs')}
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/admissions" className="footer-link">
+                  {t('home.footer.admissions')}
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/contact" className="footer-link">
+                  {t('home.footer.contact')}
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Programs Links */}
           <div className="footer-links">
-            <h4 className="footer-heading">{t('footer.programsHeader')}</h4>
+            <h2 className="footer-heading">
+              {t('home.footer.programmes')}
+            </h2>
+
             <ul className="link-list">
-              <li><Link to="/programs#elementary" className="footer-link">{t('footer.elementary')}</Link></li>
-              <li><Link to="/programs#middle" className="footer-link">{t('footer.middle')}</Link></li>
-              <li><Link to="/programs#high" className="footer-link">{t('footer.high')}</Link></li>
-              <li><Link to="/programs#summer" className="footer-link">{t('footer.summer')}</Link></li>
+              <li>
+                <Link
+                  to="/programs#elementary"
+                  className="footer-link"
+                >
+                  {t('home.programs.primary.title')}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/programs#middle"
+                  className="footer-link"
+                >
+                  {t('home.programs.lowerSecondary.title')}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/programs#high"
+                  className="footer-link"
+                >
+                  {t('home.programs.upperSecondary.title')}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/programs#summer"
+                  className="footer-link"
+                >
+                  {t('home.programs.summer.title')}
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact / Address */}
           <div className="footer-contact">
-            <h4 className="footer-heading">{t('footer.connect')}</h4>
+            <h2 className="footer-heading">
+              {t('home.footer.contactHeading')}
+            </h2>
+
             <div className="contact-info">
-              {/* Static address not translated */}
               <p>
-                {' '}
+                <MapPin size={16} aria-hidden="true" />
+
                 <a
-                  href="https://www.google.com/maps/place/Shkolla+Zenit/@42.7507188,21.1392983,17z/data=!3m1!4b1!4m6!3m5!1s0x1354a0fd88b40665:0xb32bc8606d91da68!8m2!3d42.7507149!4d21.1418732!16s%2Fg%2F11bwyxr1hz?entry=ttu"
+                  href="https://www.google.com/maps/place/Shkolla+Zenit/@42.7507188,21.1392983,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link"
                 >
-                  Fshati Prugoc, Kampusi i Zenit School, Prishtinë, Kosovë, 10000
+                  {t('home.footer.address')}
                 </a>
               </p>
 
               <p>
-                <Phone size={16} style={{ display: 'inline', marginRight: '8px' }} />
-                <a href="tel:+38349959436" className="footer-link">
+                <Phone size={16} aria-hidden="true" />
+
+                <a
+                  href="tel:+38349959435"
+                  className="footer-link"
+                >
                   +383 49 959 435
                 </a>
               </p>
 
               <p>
-                <Mail size={16} style={{ display: 'inline', marginRight: '8px' }} />
-                <a href="mailto:info@zenitschool.org" className="footer-link">
+                <Mail size={16} aria-hidden="true" />
+
+                <a
+                  href="mailto:info@zenitschool.org"
+                  className="footer-link"
+                >
                   info@zenitschool.org
                 </a>
               </p>
@@ -93,8 +190,33 @@ const Footer = () => {
           </div>
         </div>
 
+        <div
+          className="footer-platforms-logos"
+          aria-label={t('home.footer.platformsAriaLabel', {
+            defaultValue:
+              'Platformat dhe burimet digjitale të Shkollës Zenit',
+          })}
+        >
+          {platformLogos.map((platform) => (
+            <div
+              className={`footer-platform-logo ${platform.className}`}
+              key={platform.name}
+            >
+              <img
+                src={platform.image}
+                alt={platform.name}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+
         <div className="footer-bottom">
-          <p>{t('footer.copyright')}</p>
+          <p>
+            {t('home.footer.copyright', {
+              year: new Date().getFullYear(),
+            })}
+          </p>
         </div>
       </div>
     </footer>

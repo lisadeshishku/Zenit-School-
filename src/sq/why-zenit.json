@@ -1,0 +1,99 @@
+{
+  "whyZenit": {
+    "title": "Pse Zenit?",
+    "subtitle": "Një shkollë me pritshmëri të qarta, mësim të strukturuar dhe mundësi për ta zbatuar dijen në praktikë.",
+    "intro": {
+      "paragraphs": [
+        "Në Shkollën Zenit, përparimi i nxënësit ndërtohet përmes mësimdhënies së qartë, punës së vazhdueshme dhe bashkëpunimit ndërmjet shkollës dhe familjes.",
+        "Programet tona ndërthurin përmbajtjen akademike me teknologjinë, kodimin, projektet praktike dhe aktivitetin fizik. Kjo qasje i ndihmon nxënësit të zhvillojnë njohuri të qëndrueshme, mendim kritik, përgjegjësi dhe pavarësi."
+      ]
+    },
+    "pillarsTitle": "Çfarë e dallon Zenitin",
+    "reasons": [
+      {
+        "icon": "",
+        "title": "Mësimdhënie e qartë dhe e strukturuar",
+        "text": "Çdo temë zhvillohet me objektiva të kuptueshme, shpjegim të kujdesshëm dhe përcjellje të vazhdueshme të përparimit.",
+        "points": [
+          "Objektiva të qarta mësimore",
+          "Ushtrime që përforcojnë konceptet kryesore",
+          "Vlerësim dhe komente të vazhdueshme"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Dije që zbatohet në praktikë",
+        "text": "Nxënësit hulumtojnë, zgjidhin probleme dhe punojnë në projekte që e lidhin përmbajtjen mësimore me zbatimin.",
+        "points": [
+          "Konceptet bazë të kodimit përmes Code.org",
+          "Zhvillim i faqeve web në shkollën e mesme të lartë",
+          "Projekte teknologjike dhe punë bashkëpunuese"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Zhvillim dhe mbështetje e gjithanshme",
+        "text": "Zhvillimi akademik mbështetet nga aktiviteti fizik, përgjegjësia personale dhe komunikimi i rregullt me familjet.",
+        "points": [
+          "Not gjatë shkollës në pishinën gjysmë-olimpike",
+          "Bashkëpunim i vazhdueshëm me prindërit",
+          "Bursa merite dhe mundësi për mbështetje financiare"
+        ]
+      }
+    ],
+    "approach": {
+      "title": "Si zhvillohet të nxënit në Zenit",
+      "steps": [
+        {
+          "title": "Objektiva të qarta",
+          "text": "Nxënësit e dinë çfarë pritet të mësojnë dhe cilat njohuri e aftësi duhet të dëshmojnë."
+        },
+        {
+          "title": "Udhëzim dhe praktikë",
+          "text": "Shpjegimi, diskutimi dhe ushtrimet e orientuara krijojnë bazën për kuptim të thellë dhe punë të pavarur."
+        },
+        {
+          "title": "Zbatim dhe përparim",
+          "text": "Projektet, detyrat praktike dhe komentet e mësuesit i ndihmojnë nxënësit ta përdorin dijen dhe të përmirësohen vazhdimisht."
+        }
+      ]
+    },
+    "outcomesTitle": "Çfarë ndërtojnë nxënësit",
+    "highlights": [
+      {
+        "kpi": "Dije",
+        "label": "Bazë akademike e qëndrueshme",
+        "note": "Konceptet kuptohen, praktikohen dhe lidhen me njohuritë e mëparshme."
+      },
+      {
+        "kpi": "Aftësi",
+        "label": "Mendim dhe zbatim praktik",
+        "note": "Nxënësit analizojnë, bashkëpunojnë, përdorin teknologjinë dhe zgjidhin probleme."
+      },
+      {
+        "kpi": "Përgjegjësi",
+        "label": "Pavarësi në të nxënë",
+        "note": "Nxënësit mësojnë të organizojnë punën, të reflektojnë dhe të marrin përgjegjësi për përparimin e tyre."
+      }
+    ],
+    "cta": {
+      "title": "Njihuni nga afër me Shkollën Zenit",
+      "text": "Vizitoni kampusin, njihuni me mjedisin mësimor dhe merrni informacion për programet, regjistrimin, bursat dhe mbështetjen financiare.",
+      "button": "Caktoni një vizitë"
+    },
+    "fallback": {
+      "intro1": "Në Shkollën Zenit, përparimi ndërtohet përmes mësimdhënies së qartë, punës së vazhdueshme dhe mbështetjes së duhur.",
+      "intro2": "Programet tona lidhin dijen akademike me teknologjinë, punën praktike dhe zhvillimin personal.",
+      "pillarTitle": "Mësimdhënie e qartë dhe e strukturuar",
+      "pillarText": "Objektivat e kuptueshme, ushtrimet e orientuara dhe komentet e vazhdueshme mbështesin përparimin e nxënësve.",
+      "approach1Title": "Objektiva të qarta",
+      "approach1Text": "Përcaktojmë njohuritë dhe aftësitë kryesore për secilën temë.",
+      "approach2Title": "Udhëzim dhe praktikë",
+      "approach2Text": "Shpjegimi dhe ushtrimet ndërtojnë kuptim të thellë.",
+      "approach3Title": "Zbatim dhe përparim",
+      "approach3Text": "Projektet dhe komentet e mësuesit ndihmojnë në përmirësim të vazhdueshëm.",
+      "outcomeLabel": "Përparim akademik dhe personal",
+      "outcomeNote": "Dije të qëndrueshme, aftësi praktike dhe përgjegjësi."
+    }
+  }
+}

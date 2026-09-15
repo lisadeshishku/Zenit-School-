@@ -1,0 +1,104 @@
+{
+  "aboutPage": {
+    "title": "About Zenit School",
+    "subtitle": "Since 2009, we have built an educational environment where knowledge, responsibility and student development progress together.",
+    "history": {
+      "heading": "Our story since 2009",
+      "paragraphs": [
+        "Zenit School was established in 2009 with the aim of providing quality education for primary and secondary students. From the beginning, our work has been based on structured teaching, clear academic standards and continuous cooperation with families.",
+        "Our academic programme combines theoretical knowledge with practical learning, technology, coding and physical activity. Our aim is for students to develop lasting knowledge, critical thinking, responsibility, independence and problem-solving skills."
+      ],
+      "timeline": [
+        {
+          "year": "2009",
+          "title": "The Establishment of Zenit School",
+          "text": "Zenit School opens its doors to primary and secondary students, beginning its educational journey."
+        },
+        {
+          "year": "2015",
+          "title": "Opening of the Half-Olympic Pool",
+          "text": "The half-Olympic pool opens on the Zenit School campus, enabling swimming to become part of the school experience."
+        },
+        {
+          "year": "2021",
+          "title": "Launch of Zenit Summer Camp",
+          "text": "Zenit Summer Camp opens with an organised programme combining sport, creativity and learning."
+        },
+        {
+          "year": "Today",
+          "title": "Technology in Education",
+          "text": "Google Workspace for Education, PowerSchool SIS, Code.org and access to the Financial Times support learning, communication and school administration."
+        }
+      ]
+    },
+    "mv": {
+      "missionTitle": "Our mission",
+      "missionText": "Our mission is to provide quality education that builds lasting knowledge, critical thinking, responsibility and practical skills. Through structured teaching and cooperation with families, we support every student’s academic and personal development.",
+      "visionTitle": "Our vision",
+      "visionText": "Our vision is a school with high academic standards, where students develop in a well-rounded way and learn to use knowledge with independence, responsibility and purpose."
+    },
+    "values": {
+      "title": "Our values",
+      "items": [
+        {
+          "title": "Knowledge",
+          "text": "We cultivate curiosity, preparation and sustained effort."
+        },
+        {
+          "title": "Responsibility",
+          "text": "Students are guided to take responsibility for their work and choices."
+        },
+        {
+          "title": "Respect",
+          "text": "We build relationships based on respect, understanding and open communication."
+        },
+        {
+          "title": "Cooperation",
+          "text": "The school, students and families work together towards continuous progress."
+        }
+      ]
+    },
+    "faculty": {
+      "title": "Technology supporting learning",
+      "text": "Students use Google Workspace for Education to collaborate and organise their work, while Code.org introduces fundamental coding concepts. In upper secondary school, students also begin web development. PowerSchool SIS supports data management and communication with families, while school accounts give students access to the Financial Times.",
+      "imageAlt": "Students collaborating and using digital tools",
+      "stats": [
+        {
+          "number": "2009",
+          "label": "Year established"
+        },
+        {
+          "number": "1–12",
+          "label": "Grades offered"
+        },
+        {
+          "number": "4",
+          "label": "Digital platforms and resources"
+        }
+      ]
+    },
+    "campus": {
+      "title": "Learning environment",
+      "facilities": [
+        {
+          "image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Learning spaces",
+          "title": "Learning spaces",
+          "text": "Classrooms and spaces organised for focused learning, practical work and collaboration."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Half-Olympic pool",
+          "title": "Half-Olympic pool",
+          "text": "A dedicated space for developing swimming ability, physical fitness and water safety."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          "alt": "Students using technology during a lesson",
+          "title": "Technology in learning",
+          "text": "Code.org and web-development lessons help students build digital skills and logical thinking."
+        }
+      ]
+    }
+  }
+}

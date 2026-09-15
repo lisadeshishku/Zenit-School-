@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
+import AdminVacancies from './AdminVacancies';
 import '../styles/Admin.css';
 
 const emptyForm = {
@@ -222,7 +223,7 @@ const AdminDashboard = ({ session, onLogout }) => {
       <header className="admin-dashboard-header">
         <div>
           <p className="admin-dashboard-label">Zenit School</p>
-          <h1>Menaxhimi i lajmeve</h1>
+          <h1>Menaxhimi i përmbajtjes</h1>
           <p>{session.user.email}</p>
         </div>
 
@@ -465,6 +466,7 @@ const AdminDashboard = ({ session, onLogout }) => {
             </article>
           ))}
       </section>
+      <AdminVacancies session={session} />
     </main>
   );
 };

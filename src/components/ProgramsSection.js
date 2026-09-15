@@ -8,59 +8,54 @@ const ProgramsSection = () => {
 
   const programs = [
     {
-      title: t('programs.elementaryTitle'),
-      description: t('programs.elementaryDesc'),
-      image:
-        'https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      ages: t('programs.elementaryAges'),
+      title: t('home.programs.primary.title'),
+      description: t('home.programs.primary.description'),
+      level: t('home.programs.primary.level'),
+      imageAlt: t('home.programs.primary.imageAlt'),
+      image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1000&q=80',
       link: '/programs#elementary',
     },
     {
-      title: t('programs.middleTitle'),
-      description: t('programs.middleDesc'),
-      image:
-        'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      ages: t('programs.middleAges'),
+      title: t('home.programs.lowerSecondary.title'),
+      description: t('home.programs.lowerSecondary.description'),
+      level: t('home.programs.lowerSecondary.level'),
+      imageAlt: t('home.programs.lowerSecondary.imageAlt'),
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80',
       link: '/programs#middle',
     },
     {
-      title: t('programs.highTitle'),
-      description: t('programs.highDesc'),
-      image:
-        'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      ages: t('programs.highAges'),
+      title: t('home.programs.upperSecondary.title'),
+      description: t('home.programs.upperSecondary.description'),
+      level: t('home.programs.upperSecondary.level'),
+      imageAlt: t('home.programs.upperSecondary.imageAlt'),
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80',
       link: '/programs#high',
     },
     {
-      title: t('programs.summerTitle'),
-      description: t('programs.summerDesc'),
-      image:
-        'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      ages: t('programs.summerAges'),
+      title: t('home.programs.summer.title'),
+      description: t('home.programs.summer.description'),
+      level: t('home.programs.summer.level'),
+      imageAlt: t('home.programs.summer.imageAlt'),
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80',
       link: '/programs#summer',
     },
   ];
 
   return (
-    <section
-      className="programs-section"
-      role="region"
-      aria-labelledby="programs-title"
-    >
+    <section className="programs-section" aria-labelledby="home-programs-title">
       <div className="container">
-        <header className="home-programs-header">
-          <h2 id="programs-title" className="home-programs-title">
-            {t('programs.title')}
-          </h2>
-
-          <p className="home-programs-subtitle">
-            {t('programs.subtitle')}
-          </p>
-        </header>
+        <div className="section-header home-programs-header">
+          <h2 id="home-programs-title" className="section-title">{t('home.programs.title')}</h2>
+          <p className="section-subtitle">{t('home.programs.subtitle')}</p>
+        </div>
 
         <div className="programs-grid">
-          {programs.map((program, index) => (
-            <ProgramCard key={index} program={program} />
+          {programs.map((program) => (
+            <ProgramCard
+              key={program.title}
+              program={program}
+              learnMoreLabel={t('home.programs.learnMore')}
+            />
           ))}
         </div>
       </div>

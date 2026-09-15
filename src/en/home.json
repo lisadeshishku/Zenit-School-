@@ -1,0 +1,131 @@
+{
+  "home": {
+    "hero": {
+      "ariaLabel": "Introduction to Zenit School",
+      "eyebrow": "ZENIT SCHOOL",
+      "slides": {
+        "academics": {
+          "title": "Lasting knowledge. Independent thinking.",
+          "subtitle": "Structured teaching and clear academic standards that support every student's development."
+        },
+        "technology": {
+          "title": "From knowledge to application",
+          "subtitle": "Coding, technology and practical projects make students active participants in the learning process."
+        },
+        "development": {
+          "title": "An education that develops more",
+          "subtitle": "An educational experience that develops knowledge, critical thinking, responsibility and confidence."
+        }
+      },
+      "explorePrograms": "Explore our programmes",
+      "scheduleVisit": "Schedule a visit",
+      "goToSlide": "Go to slide {{number}}"
+    },
+    "strengths": {
+      "ariaLabel": "Key strengths of Zenit School",
+      "academics": {
+        "title": "Academic standards",
+        "text": "Clear objectives and continuous monitoring of student progress."
+      },
+      "technology": {
+        "title": "Technology and coding",
+        "text": "Knowledge is applied through projects and practical challenges."
+      },
+      "swimming": {
+        "title": "Swimming at school",
+        "text": "Physical development and water safety in our half-Olympic pool."
+      },
+      "support": {
+        "title": "Financial support",
+        "text": "Scholarships and financial assistance based on the school's criteria."
+      }
+    },
+    "about": {
+      "kicker": "WHY ZENIT?",
+      "title": "A complete approach to education",
+      "paragraph1": "Zenit School provides a structured learning process, with clear academic standards and continuous attention to student progress.",
+      "paragraph2": "Teaching combines theoretical knowledge with practical work, technology and physical activity, helping students develop critical thinking, responsibility and confidence.",
+      "highlightTitle": "Learning connected to practice",
+      "highlightText": "Coding, technology projects and practical activities give students opportunities to investigate, collaborate and apply their knowledge to real challenges.",
+      "cta": "Learn more about Zenit",
+      "imageAlt": "Students collaborating during a learning activity"
+    },
+    "programs": {
+      "kicker": "ACADEMIC PROGRAMMES",
+      "title": "Our programmes",
+      "subtitle": "From primary through upper secondary school, our programmes build students' knowledge, skills and independence step by step.",
+      "learnMore": "View programme",
+      "primary": {
+        "title": "Primary School",
+        "description": "A strong foundation in language, mathematics, science and social development, built through clear teaching and active learning.",
+        "level": "Grades 1–5",
+        "imageAlt": "Primary school students learning in class"
+      },
+      "lowerSecondary": {
+        "title": "Lower Secondary School",
+        "description": "Deeper subject knowledge, critical thinking and greater responsibility during an important stage of academic development.",
+        "level": "Grades 6–9",
+        "imageAlt": "Lower secondary students working together"
+      },
+      "upperSecondary": {
+        "title": "Upper Secondary School",
+        "description": "Focused academic preparation, independent learning skills and guidance towards further study and future opportunities.",
+        "level": "Grades 10–12",
+        "imageAlt": "Upper secondary students completing a project"
+      },
+      "summer": {
+        "title": "Zenit Summer Camp",
+        "description": "A summer programme combining sport, creativity and learning in an organised and active environment.",
+        "level": "Summer programme",
+        "imageAlt": "Activities at Zenit Summer Camp"
+      }
+    },
+    "learning": {
+      "kicker": "LEARNING AT ZENIT",
+      "title": "From explanation to understanding and application",
+      "description": "Students are guided to understand concepts, connect them to existing knowledge and use them in new situations.",
+      "imageAlt": "The learning environment at Zenit School",
+      "features": {
+        "classroom": {
+          "title": "Structured teaching",
+          "text": "Concepts are explained clearly and reinforced through discussion, practice and continuous assessment."
+        },
+        "practice": {
+          "title": "Practical learning",
+          "text": "Projects and practical tasks develop reasoning, creativity, collaboration and problem-solving."
+        },
+        "technology": {
+          "title": "Coding and technology",
+          "text": "Technology is used to create, analyse and turn an idea into a practical solution."
+        },
+        "pool": {
+          "title": "Half-Olympic pool",
+          "text": "Swimming during the school day supports students' physical development, discipline and water safety."
+        }
+      }
+    },
+    "admissions": {
+      "kicker": "ADMISSIONS",
+      "title": "Experience Zenit School in person",
+      "subtitle": "Visit the school, explore the learning environment and receive complete information about our programmes and admissions process.",
+      "apply": "Apply for admission",
+      "visit": "Schedule a visit",
+      "supportNote": "Information about merit scholarships and financial assistance is available from the school administration."
+    },
+    "language": {
+      "switchTo": "Switch to {{language}}"
+    },
+    "footer": {
+      "description": "Quality education that builds lasting knowledge, critical thinking and responsibility.",
+      "quickLinks": "Quick links",
+      "about": "About us",
+      "programs": "Programmes",
+      "admissions": "Admissions",
+      "contact": "Contact",
+      "programmes": "Academic programmes",
+      "contactHeading": "Contact us",
+      "address": "Prugoc Village, Zenit School Campus, Prishtina, Kosovo",
+      "copyright": "© {{year}} Zenit School. All rights reserved."
+    }
+  }
+}

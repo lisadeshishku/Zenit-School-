@@ -105,3 +105,14 @@
   box-shadow: 0 10px 20px rgba(37,99,235,.25);
 }
 
+
+  /* Space between the fixed navbar and admissions content */
+.scholarship-page-spacing {
+  padding-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .scholarship-page-spacing {
+    padding-top: 2.5rem;
+  }
+}

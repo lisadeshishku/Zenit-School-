@@ -51,7 +51,8 @@
     "address1": "123 Education Boulevard",
     "address2": "Academic Heights, AH 12345",
     "email": "info@zenitschool.edu",
-    "copyright": "© 2025 Zenit School. All rights reserved."
+    "copyright": "© 2025 Zenit School. All rights reserved.",
+    "platformsAriaLabel": "Digital platforms and resources used by Zenit School"
   },
   "contactSection": {
     "title": "Get in Touch",
@@ -79,19 +80,19 @@
   },
   "programs": {
     "title": "Our Programs",
-    "subtitle": "From early childhood through graduation, plus our exciting summer camp program, we offer comprehensive educational experiences designed to nurture growth and inspire curiosity.",
+    "subtitle": "Structured education from Grade 1 to Grade 12, complemented by Study Hour, clubs, projects and Zenit Summer Camp.",
     "elementaryTitle": "Elementary School",
-    "elementaryDesc": "Foundation years focused on creativity, exploration, and fundamental skills development in a nurturing environment.",
-    "elementaryAges": "Ages 5-11",
-    "middleTitle": "Middle School",
-    "middleDesc": "Transitional years emphasizing critical thinking, collaboration, and personal growth through innovative curriculum.",
-    "middleAges": "Ages 11-14",
-    "highTitle": "High School",
-    "highDesc": "Advanced preparation for university with rigorous academics, leadership opportunities, and global perspectives.",
-    "highAges": "Ages 14-18",
+    "elementaryDesc": "Strong foundations in language, mathematics, science and social development through clear instruction and practical work.",
+    "elementaryAges": "Grades 1–5",
+    "middleTitle": "Lower Secondary School",
+    "middleDesc": "Deeper subject knowledge, critical thinking and greater responsibility developed through lessons, projects and clubs.",
+    "middleAges": "Grades 6–9",
+    "highTitle": "Upper Secondary School",
+    "highDesc": "Focused academic preparation, independent work and practical skills, including web development.",
+    "highAges": "Grades 10–12",
     "summerTitle": "Zenit Summer Camp",
-    "summerDesc": "An exciting summer program featuring swimming in our half Olympic pool, arts, sports, and academic enrichment activities.",
-    "summerAges": "Ages 6-16",
+    "summerDesc": "A summer programme combining swimming, sport, team games, dance, creativity and outdoor activities.",
+    "summerAges": "Summer programme",
     "learnMore": "Learn More"
   },
   "stats": {
@@ -117,9 +118,9 @@
     "scheduleTour": "Schedule Tour"
   },
   "admissionsCTA": {
-    "title": "Ready to Join Our Community?",
-    "subtitle": "Take the first step towards an exceptional educational journey. Our admissions team is here to guide you through the process.",
-    "apply": "Apply Now",
+    "title": "Admissions at Zenit School",
+    "subtitle": "To begin the admissions process, complete the form or schedule a visit to learn more about our school and academic programmes.",
+    "apply": "Complete the Form",
     "visit": "Schedule a Visit"
   },
   "aboutSection": {
@@ -210,54 +211,87 @@
   },
   "classroom": {
     "title": "Inside the Classroom",
-    "subtitle": "How learning happens at Zenit: engaging, practical and student-centered.",
+    "subtitle": "A structured and practical learning process focused on the development of every student.",
     "hero": {
-      "title": "Active, Hands-On Learning",
-      "text": "Lessons combine projects, labs and discussions, supported by technology and clear learning goals."
+      "kicker": "Learning at Zenit",
+      "title": "Active learning connected to practice",
+      "text": "Lessons combine clear instruction, discussion, practical work and projects. Students are guided to analyse, collaborate and apply their knowledge in concrete situations.",
+      "imageAlt": "Students participating in lessons at Zenit School"
     },
+    "galleryTitle": "Inside our classrooms",
+    "galleryImageAlt": "Classroom view {{number}}",
+    "featuresKicker": "Our approach",
+    "featuresTitle": "Learning organised around students’ needs",
     "features": [
-      { "icon": "", "title": "Labs & Projects", "text": "Science experiments, makerspace builds, and real-world problem solving." },
-      { "icon": "", "title": "Digital Tools", "text": "Interactive boards, tablets and learning platforms enhance participation." },
-      { "icon": "", "title": "Personalised Support", "text": "Formative feedback and small group coaching." },
-      { "icon": "", "title": "Collaboration", "text": "Teamwork, presentations and peer feedback." }
+      { "title": "Structured teaching", "text": "Each lesson has clear objectives, organised instruction and tasks that help students develop lasting knowledge." },
+      { "title": "Coding and technology", "text": "Students learn fundamental coding concepts through Code.org, while upper-secondary students also begin studying web development." },
+      { "title": "Practical work and interdisciplinary projects", "text": "Practical activities take place across the curriculum. In biology, biotechnology, chemistry, physics, technology and other subjects, students conduct experiments, undertake research and create projects that connect knowledge from different disciplines." },
+      { "title": "Collaboration and support", "text": "Group work, presentations, continuous guidance and feedback help students develop independence, responsibility and confidence." }
     ]
   },
   "activities": {
-    "title": "Activities & Clubs",
-    "subtitle": "Opportunities to discover passions beyond the classroom.",
+    "kicker": "Beyond the classroom",
+    "title": "Activities and Clubs",
+    "subtitle": "Clubs, projects and school activities give students space to explore their interests, develop their talents and contribute to school life.",
+    "headerImageAlt": "Student activities at Zenit School",
+    "creativeImageAlt": "Creative student activities",
+    "studentImageAlt": "Students participating in school activities",
     "categories": [
-      { "title": "Aquatics", "items": ["Competitive Swimming", "Water Safety", "Aqua Fitness"] },
-      { "title": "Arts & Culture", "items": ["Visual Arts", "Theatre", "Music Ensembles", "Digital Media"] },
-      { "title": "STEM", "items": ["Robotics", "Coding Club", "Science Olympiad", "Math Team"] },
-      {  "title": "Global & Service", "items": ["Model UN", "Language Clubs", "Community Projects"] }
+      {
+        "title": "Student leadership and participation",
+        "desc": "Through the Student Government and other school initiatives, students represent their peers, propose ideas and participate in organising school life. These experiences develop responsibility, collaboration and communication.",
+        "items": ["Student Government", "Student-led initiatives", "Community projects"]
+      },
+      {
+        "title": "Science, technology and history",
+        "desc": "Academic clubs extend learning beyond regular lessons. Students undertake biology and biotechnology projects, develop skills in coding and web development, and research historical topics.",
+        "items": ["Biotechnology Club", "Coding and web development", "History Club", "Science and technology projects"]
+      },
+      {
+        "title": "Art, music and performance",
+        "desc": "Creative activities allow students to express their ideas and talents. Through art, music and choir, they produce original work, prepare performances and participate in school programmes.",
+        "items": ["Art Club", "Music Club", "Choir", "Exhibitions and performances"]
+      },
+      {
+        "title": "Sport and swimming",
+        "desc": "Physical activity is an important part of life at Zenit. The Swimming Club and other sporting activities support physical development, discipline, coordination and teamwork.",
+        "items": ["Swimming Club", "Sporting activities", "Games and motor-skills activities"]
+      },
+      {
+        "title": "Events, traditions and educational visits",
+        "desc": "Throughout the school year, we celebrate School Day on 7 March, organise programmes marking 28 November and 17 February, and hold other cultural and commemorative activities. We also organise excursions and educational visits to different destinations, allowing students to broaden their knowledge and share experiences beyond the school environment.",
+        "items": ["School Day – 7 March", "28 November programme", "17 February programme", "Excursions to different destinations", "Educational visits and special activities"]
+      }
     ]
   },
   "culture": {
-  "title": "School Culture",
-  "subtitle": "The values that define our community.",
-  "intro": {
-    "title": "Building a Respectful, Supportive Environment",
-    "text1": "At Zenit School, our culture is built on empathy, curiosity, and collaboration. We believe that learning happens best in a community that values every voice and celebrates diversity.",
-    "text2": "From classroom discussions to school events, our students learn to think critically, communicate openly, and grow together as confident, kind individuals.",
-    "imageAlt": "Students collaborating at Zenit School"
+    "title": "School Culture",
+    "subtitle": "An environment grounded in respect, responsibility and collaboration.",
+    "intro": {
+      "kicker": "The Zenit community",
+      "title": "A culture that supports learning and development",
+      "text1": "At Zenit School, school culture is built each day through respectful relationships, clear expectations and shared responsibility. Students are guided to express their views, listen to others and contribute actively to the community.",
+      "text2": "Collaboration among students, teachers and families creates continuity across learning, conduct and wellbeing. This approach supports a calm, safe environment focused on the progress of every student.",
+      "imageAlt": "Students collaborating at Zenit School"
+    },
+    "pillars": [
+      { "title": "Respect", "text": "We communicate considerately, listen to different perspectives and care for our shared environment." },
+      { "title": "Responsibility", "text": "Students learn to take responsibility for their decisions, conduct, participation and academic work." },
+      { "title": "Collaboration", "text": "Working together in lessons, clubs, projects and activities develops communication and the ability to contribute to a group." },
+      { "title": "Participation", "text": "Students are encouraged to propose ideas and participate in Student Government and the wider life of the school." }
+    ],
+    "gallery": {
+      "kicker": "Everyday life at Zenit",
+      "title": "Life in our community",
+      "subtitle": "Lessons, projects, activities and school events create regular opportunities for collaboration, expression and participation.",
+      "imageAlt": "School life at Zenit {{index}}"
+    },
+    "cta": {
+      "title": "Discover life beyond the classroom",
+      "text": "Learn more about our clubs, sport, projects, cultural programmes, excursions and student activities.",
+      "btn": "View activities"
+    }
   },
-  "pillars": [
-    { "icon": "", "title": "Respect & Inclusion", "text": "Every individual is welcomed and supported." },
-    { "icon": "", "title": "Growth Mindset", "text": "We learn from mistakes and celebrate progress." },
-    { "icon": "", "title": "Community", "text": "Students, families, and staff work together." },
-    { "icon": "", "title": "Integrity", "text": "Honesty and responsibility guide our choices." }
-  ],
-  "gallery": {
-    "title": "Community & Life at Zenit",
-    "subtitle": "Our days are filled with creativity, teamwork, and moments that strengthen our spirit.",
-    "imageAlt": "Zenit culture image {{index}}"
-  },
-  "cta": {
-    "title": "Be Part of Our Community",
-    "text": "Zenit School is more than a place to learn — it’s a place to belong. Join our events, volunteer, and grow with us.",
-    "btn": "Explore Activities"
-  }
-},
 
   "news": {
     "title": "News & Updates",
@@ -289,19 +323,20 @@
   },
   "director": {
     "title": "From the Director",
-    "subtitle": "A message of welcome and purpose.",
-    "greeting": "Dear Parents and Students,",
+    "subtitle": "A message for the families, students and wider Zenit School community.",
+    "greeting": "Dear parents and students,",
     "paragraphs": [
-      "At Zenit, we believe every learner is capable of excellence with the right guidance and care.",
-      "Our programs balance academic rigor with the arts, athletics, and character education.",
-      "I invite you to visit our campus and experience our community first-hand."
+      "Since Zenit School was founded in 2009, our aim has been to provide a structured academic environment in which every student is guided to build lasting knowledge and strong working habits.",
+      "A school’s responsibility extends beyond the transmission of knowledge. We work to help students develop independent thought, responsibility, collaboration and the ability to apply what they learn in practice.",
+      "Study Hour, projects in science and technology, web development, swimming, clubs, Olympiads and hackathons provide students with varied opportunities to learn, create and present their work.",
+      "Continuing cooperation with families is an important part of this process. I invite you to learn more about our school, its programmes and its community."
     ],
     "name": "Butrint Deshishku",
     "role": "School Director",
     "highlights": [
-      { "kpi": "40+", "label": "Years Serving Families" },
-      { "kpi": "98%", "label": "University Acceptance" },
-      { "kpi": "8:1", "label": "Student–Teacher Ratio" }
+      { "kpi": "Study", "label": "Organised Study Hour with guidance from teachers" },
+      { "kpi": "Practice", "label": "Projects and applied learning across the curriculum" },
+      { "kpi": "Opportunity", "label": "Clubs, Olympiads, hackathons and presentations" }
     ]
   },
   "staff": {
@@ -353,97 +388,77 @@
     ]
   },
   "careers": {
-    "title": "Employment Opportunities",
-    "subtitle": "Join a mission-driven team of educators and professionals.",
-    "apply": "Apply Now",
-    "how": {
-      "title": "How to Apply",
-      "text": "Submit your resume and a brief letter of intent. We review applications on a rolling basis."
+    "title": "Careers",
+    "subtitle": "Information about opportunities to join the Zenit School team.",
+    "noOpenings": {
+      "title": "There are currently no vacancies",
+      "text": "Zenit School does not have any open positions at this time."
     },
-    "jobs": [
-      {
-        "title": "Elementary Teacher",
-        "type": "Full-time",
-        "location": "Prishtina",
-        "department": "Elementary",
-        "requirements": ["Bachelor’s in Education", "2+ years teaching", "English proficiency"],
-        "applyUrl": "https://forms.gle/your-form-1"
-      },
-      {
-        "title": "School Counselor",
-        "type": "Full-time",
-        "location": "Prishtina",
-        "department": "Student Support",
-        "requirements": ["Counseling degree", "Experience with adolescents", "Strong communication"],
-        "applyUrl": "https://forms.gle/your-form-2"
-      }
-    ]
+    "how": {
+      "title": "Employment Announcements",
+      "text": "New employment opportunities will be published on this page and through Zenit School’s official channels."
+    }
   },
   "scholarships": {
-    "title": "Scholarships and Awards",
-    "subtitle": "Merit- and need-based opportunities that support our learners.",
-    "apply": "Apply Now",
+    "title": "Scholarships and Financial Aid",
+    "subtitle": "Zenit School offers scholarships based on different forms of merit, as well as financial support for families.",
+    "apply": "Request Information",
     "programs": [
       {
-        "name": "Academic Merit Scholarship",
-        "eligibility": "Grades 8–12 • GPA 3.8+",
-        "benefits": ["Up to 50% tuition", "Mentor support", "Leadership seminar"],
-        "applyUrl": "https://forms.gle/your-form-merit"
-      },
-      {
-        "name": "Athletics – Swimming Excellence",
-        "eligibility": "Competitive swimmers • Coach recommendation",
-        "benefits": ["Training support", "Competition fees", "Pool lane priority"],
-        "applyUrl": "https://forms.gle/your-form-swim"
+        "name": "Scholarship",
+        "eligibility": "Assessment is based on a student’s merits and the criteria established by the school.",
+        "benefits": ["Different forms of merit may be considered", "Each request is reviewed individually", "Decisions are supported by the relevant documentation"]
       },
       {
         "name": "Financial Aid",
-        "eligibility": "Based on demonstrated need",
-        "benefits": ["Sliding-scale tuition", "Textbook assistance"],
-        "applyUrl": "https://forms.gle/your-form-aid"
+        "eligibility": "Support for families, assessed according to their circumstances and the documentation provided.",
+        "benefits": ["Confidential review of each request", "Individual assessment of family circumstances", "Clear information about the required steps and documentation"]
       }
     ],
     "faq": {
-      "title": "Scholarship FAQs",
+      "title": "Frequently Asked Questions",
       "items": [
-        { "q": "When are applications due?", "a": "We review on a rolling basis; priority by May 31." },
-        { "q": "Can I apply to multiple programs?", "a": "Yes, you may apply to more than one; awards cannot be stacked beyond 50%." }
+        { "q": "What forms of support does Zenit School offer?", "a": "The school offers scholarships based on different forms of merit, as well as financial aid for families." },
+        { "q": "How can I obtain further information?", "a": "Contact Zenit School for the current criteria, required documents and information on how to submit a request." }
       ]
     }
   },
-    "digitalEducation": {
+  "digitalEducation": {
+    "kicker": "TECHNOLOGY IN LEARNING",
     "title": "Digital Education",
-    "subtitle": "Modern tools and methods that enhance learning.",
+    "subtitle": "Digital technology and platforms integrated into teaching, communication and school administration.",
+    "heroImageAlt": "Students using technology during learning",
     "pillars": [
-      { "icon": "", "title": "1:1 Devices", "text": "Students use laptops or tablets daily for projects and research." },
-      { "icon": "", "title": "Cloud Learning", "text": "Assignments, feedback and collaboration live in the cloud." },
-      { "icon": "", "title": "Digital Skills", "text": "Media literacy, coding basics and online safety." }
+      { "title": "Digital Learning and Collaboration", "text": "Through school-managed Google Workspace accounts, students use Google tools for assignments, learning materials, communication and collaboration." },
+      { "title": "Coding and Web Development", "text": "Students learn foundational coding concepts through Code.org, while those in Grades 10–12 develop knowledge and projects in web development." },
+      { "title": "Technology Supporting Learning", "text": "Digital tools are used for research, practical projects, presenting student work and accessing academic resources." }
     ],
+    "platformsKicker": "THE TOOLS WE USE",
+    "platformsTitle": "Digital Platforms and Resources",
+    "platformsSubtitle": "The tools that support learning, information management and the development of digital skills at Zenit School.",
     "platforms": [
-      { "name": "Google Workspace", "use": "Docs, Classroom, Drive for coursework and feedback." },
-      { "name": "Coding Platforms", "use": "Scratch/Code.org for block-based and introductory coding." },
-      { "name": "LMS", "use": "Centralized materials, deadlines and announcements." }
+      { "name": "Google Workspace", "use": "Google tools for communication, creating and storing materials, assignments and school collaboration." },
+      { "name": "Google Cloud", "use": "Access to Google Cloud services for appropriate educational and technology projects." },
+      { "name": "PowerSchool SIS", "use": "The student information system supporting the school’s academic and administrative management." },
+      { "name": "Code.org", "use": "A learning platform for developing foundational coding concepts and logical thinking." },
+      { "name": "Financial Times", "use": "Students receive access to the Financial Times through their school email accounts." }
     ]
   },
   "campus": {
-    "title": "Academic Campus",
-    "subtitle": "Learning spaces designed for focus, creativity and wellbeing.",
-    "zones": [
-      {
-        "name": "Science & Technology Labs",
-        "text": "Hands-on experiments, robotics, and makerspace.",
-        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
-        "name": "Aquatic Center (Half Olympic Pool)",
-        "text": "Curricular swimming, team training and safety programs.",
-        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
-        "name": "Library & Study Hub",
-        "text": "Quiet study, group rooms and digital resources.",
-        "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
-      }
+    "kicker": "ONE ENVIRONMENT FOR LEARNING AND DEVELOPMENT",
+    "title": "The Zenit School Campus",
+    "subtitle": "A campus where academic spaces, technology and sport form part of students’ everyday experience.",
+    "heroImageAlt": "The Zenit School campus",
+    "statementKicker": "THE CAMPUS",
+    "intro": "The campus is organised to connect classroom learning with practical work, technology and physical activity, giving students suitable spaces for each part of the school day.",
+    "spacesKicker": "CAMPUS SPACES",
+    "spacesTitle": "Environments designed around how students learn",
+    "spaces": [
+      { "title": "School Campus", "text": "The school’s spaces bring learning, projects, activities and everyday school life together within one organised environment." },
+      { "title": "A Dedicated Classroom for Every Subject", "text": "For Grades 6–12, each subject is taught in its own classroom, allowing students to work in an environment suited to that subject’s content and activities." },
+      { "title": "Technology Laboratory", "text": "A space for practical learning, technology projects, coding and the development of digital skills, including ICT, Smart Lab, web development and STEM activities." },
+      { "title": "Sports Centre", "text": "The sports facilities support physical education, training and the different activities that take place throughout lessons and school life." },
+      { "title": "Half-Olympic Swimming Pool", "text": "The pool forms part of the campus and supports swimming instruction, which is included in the curriculum beginning in Grade 1." }
     ]
   },
 
@@ -514,126 +529,126 @@
   }, 
   "programsPage": {
     "header": {
-      "title": "Our Programs",
-      "subtitle": "Comprehensive educational programs designed to challenge, inspire, and prepare students for success — from elementary through high school, plus our exciting Zenit Summer Camp."
+      "title": "Academic Programmes",
+      "subtitle": "From Grade 1 to Grade 12, Zenit’s programmes build knowledge, practical skills and responsibility, supported by Study Hour, clubs and student projects."
     },
     "elementary": {
       "title": "Elementary School",
-      "ages": "Ages 5-11",
+      "ages": "Grades 1–5",
       "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Elementary students",
-      "desc": "Foundation years focused on creativity, exploration, and fundamental skills development.",
+      "desc": "Strong foundations in language, mathematics, science and social development, built through clear instruction and active participation.",
       "points": [
-        "Small class sizes (12–15 students)",
-        "Integrated STEAM curriculum",
-        "Swimming lessons in our half Olympic pool",
-        "Art, music, and physical education",
-        "Character development programs",
-        "Field trips and hands-on learning"
+        "Study Hour with guidance from teachers",
+        "Swimming within the curriculum beginning in Grade 1",
+        "Foundational coding and technology concepts through Code.org",
+        "Art, music and physical education",
+        "Practical work and projects across different subjects",
+        "Clubs, excursions and school activities"
       ],
       "highlight": {
-        "title": "Swimming Program:",
-        "text": "All elementary students receive weekly instruction focusing on water safety and basic strokes."
+        "title": "Study Hour:",
+        "text": "Students have organised time to complete assignments and consolidate their learning with support from teachers."
       }
     },
     "middle": {
-      "title": "Middle School",
-      "ages": "Ages 11-14",
+      "title": "Lower Secondary School",
+      "ages": "Grades 6–9",
       "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Middle school students",
-      "desc": "Transitional years emphasizing critical thinking, collaboration, and personal growth.",
+      "desc": "An important stage in which students deepen their subject knowledge, develop critical thinking and take greater responsibility for their work.",
       "points": [
-        "Advanced academic courses",
-        "Leadership development programs",
-        "Competitive swimming team",
-        "Student clubs and organizations",
-        "Community service projects",
-        "Technology integration"
+        "Study Hour and continuing academic support",
+        "Experiments and projects in the natural sciences",
+        "Coding, technology and work with digital tools",
+        "Academic, creative and sporting clubs",
+        "Participation in Mathematics Olympiads and hackathons",
+        "Opportunities to present work and demonstrate abilities"
       ],
       "highlight": {
-        "title": "Competitive Swimming:",
-        "text": "Train in our half Olympic pool for regional and national competitions."
+        "title": "Ideas presented publicly:",
+        "text": "Projects, Olympiads and hackathons allow students to present their work, knowledge and creativity."
       }
     },
     "high": {
-      "title": "High School",
-      "ages": "Ages 14-18",
+      "title": "Upper Secondary School",
+      "ages": "Grades 10–12",
       "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "High school students",
-      "desc": "Advanced preparation for university with rigorous academics and leadership opportunities.",
+      "desc": "Focused academic preparation, independent work and practical application of knowledge for further study and future opportunities.",
       "points": [
-        "Advanced Placement (AP) courses",
-        "International Baccalaureate (IB) program",
-        "Elite swimming program",
-        "University counseling",
-        "Study abroad opportunities",
-        "Research projects and internships"
+        "Web development in Grades 10–12",
+        "Practical and interdisciplinary projects",
+        "Study Hour and guided independent work",
+        "Hackathons and Mathematics Olympiads",
+        "Clubs and Student Government",
+        "Presentation of student projects, ideas and abilities"
       ],
       "highlight": {
-        "title": "Elite Swimming:",
-        "text": "Athletes compete at state and national levels; many receive college scholarships."
+        "title": "Web development:",
+        "text": "Students in Grades 10–12 learn the foundations of web development and apply them in concrete projects."
       }
     },
     "summer": {
       "title": "Zenit Summer Camp",
-      "ages": "Ages 6-16",
+      "ages": "Summer programme",
       "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Summer camp activities",
-      "desc": "An exciting summer program featuring our half Olympic pool and enriching activities.",
+      "desc": "An organised summer programme in which children learn, create, stay active and build friendships through varied experiences.",
       "points": [
-        "Daily swimming instruction and pool activities",
-        "Water safety and lifeguard training",
-        "Arts and crafts workshops",
-        "STEM camps and coding",
-        "Sports and outdoor adventures",
-        "Field trips and cultural experiences"
+        "Swimming and pool activities",
+        "Sport, games and team competitions",
+        "Dance, music and movement",
+        "Creative games and art workshops",
+        "Outdoor activities and adventures",
+        "Collaboration, social interaction and new friendships"
       ],
       "highlight": {
-        "title": "🏊‍♀️ Swimming Excellence:",
-        "text": "From beginner lessons to competitive training camps."
+        "title": "A new experience each day:",
+        "text": "The programme combines physical activity, creativity and play in an organised and active environment."
       }
     },
     "results": {
-      "title": "Academic Excellence & Results",
-      "text": "Our rigorous academic programs consistently produce outstanding results. With a 98% university acceptance rate and graduates attending top institutions worldwide, our students are well-prepared for success.",
+      "title": "A complete learning journey",
+      "text": "Each stage builds on the one before it, connecting academic knowledge with practical work, technology, physical activity and student participation.",
       "items": [
-        { "number": "98%", "label": "University Acceptance" },
-        { "number": "85%", "label": "Honor Roll Students" },
-        { "number": "42",  "label": "AP Courses Offered" },
-        { "number": "15",  "label": "Swimming Records Held" }
+        { "number": "1–5", "label": "Elementary School" },
+        { "number": "6–9", "label": "Lower Secondary School" },
+        { "number": "10–12", "label": "Upper Secondary School" },
+        { "number": "Summer", "label": "Zenit Summer Camp" }
       ],
       "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Students celebrating success"
     },
     "extracurricular": {
-      "title": "Beyond the Classroom",
+      "title": "Opportunities beyond lessons",
       "categories": [
         {
           "icon": "🏊",
-          "title": "Aquatic Programs",
-          "items": ["Competitive Swimming Team", "Water Polo", "Synchronized Swimming", "Lifeguard Certification", "Aqua Fitness Classes"]
+          "title": "Study and support",
+          "items": ["Study Hour", "Guidance from teachers", "Independent work"]
         },
         {
           "icon": "",
-          "title": "Arts & Culture",
-          "items": ["Visual Arts Studio", "Theater Productions", "Music Ensembles", "Digital Media", "Creative Writing"]
+          "title": "Clubs",
+          "items": ["Biotechnology", "History", "Art", "Music and choir"]
         },
         {
           "icon": "",
-          "title": "STEM Clubs",
-          "items": ["Robotics Team", "Science Olympiad", "Coding Club", "Math Competition", "Environmental Club"]
+          "title": "Technology and competitions",
+          "items": ["Code.org", "Web development", "Hackathons", "Mathematics Olympiads"]
         },
         {
           "icon": "",
-          "title": "Global Engagement",
-          "items": ["Model United Nations", "Language Clubs", "Cultural Exchange", "International Service", "Study Abroad"]
+          "title": "Sport and participation",
+          "items": ["Swimming", "Sporting activities", "Student Government", "Project presentations"]
         }
       ]
     }
   }, 
   "admissionsPage": {
     "title": "Admissions",
-    "subtitle": "Join our community of learners and future leaders."
+    "subtitle": "Information and guidance for enrolling students at Zenit School."
   },
   "contactPage": {
     "header": {
@@ -707,10 +722,3 @@
     }
   }
 }
-
-
-
-
-
-
-

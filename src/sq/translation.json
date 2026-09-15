@@ -21,10 +21,10 @@
     "volunteer": "Punë Vullnetare",
     "charity": "Bamirësi",
     "solidarity": "Solidaritet",
-    "admissions": "Pranime",
-    "admission": "Pranimi në Zenit",
+    "admissions": "Regjistrime",
+    "admission": "Regjistrimi në Zenit",
     "aid": "Ndihmë Financiare",
-    "scholarships": "Bursa dhe Çmime",
+    "scholarships": "Bursa",
     "fees": "Tarifat e Studentëve",
     "digitalEducation": "Arsimi Digjital",
     "campus": "Kampusi Akademik",
@@ -40,7 +40,7 @@
     "quickLinks": "Lidhje të Shpejta",
     "about": "Rreth Nesh",
     "programs": "Programe",
-    "admissions": "Pranime",
+    "admissions": "Regjistrime",
     "contact": "Kontakt",
     "programsHeader": "Programe",
     "elementary": "Shkolla Fillore",
@@ -52,7 +52,8 @@
     "address2": "Lartësitë Akademike, AH 12345",
     "phone": "+1 (555) 123-4567",
     "email": "info@zenitschool.edu",
-    "copyright": "© 2025 Shkolla Zenit. Të gjitha të drejtat e rezervuara."
+    "copyright": "© 2025 Shkolla Zenit. Të gjitha të drejtat e rezervuara.",
+    "platformsAriaLabel": "Platformat dhe burimet digjitale që përdor Shkolla Zenit"
   },
   "contactSection": {
     "title": "Kontaktoni",
@@ -80,21 +81,21 @@
     "creativeDesc": "Hapësira frymëzuese për arte, muzikë, teatër dhe prodhim mediesh digjitale"
   },
   "programs": {
-    "title": "Programe",
-    "subtitle": "Nga fëmijëria e hershme deri në diplomim, si dhe programi ynë i veçantë i kampit veror, ofrojmë përvoja gjithëpërfshirëse arsimore për të nxitur rritjen dhe kureshtjen.",
+    "title": "Programet Mësimore",
+    "subtitle": "Arsim i strukturuar nga klasa e parë deri në klasën e dymbëdhjetë, i plotësuar me orë studimi, klube, projekte dhe Kampin Veror Zenit.",
     "elementaryTitle": "Shkolla Fillore",
-    "elementaryDesc": "Vitet themeluese të fokusuara në kreativitet, eksplorim dhe zhvillim të aftësive bazë në një mjedis të kujdesshëm.",
-    "elementaryAges": "Mosha 5-11",
+    "elementaryDesc": "Themele të qëndrueshme në gjuhë, matematikë, shkencë dhe zhvillim shoqëror, me mësim të qartë dhe punë praktike.",
+    "elementaryAges": "Klasat 1–5",
     "middleTitle": "Shkolla e Mesme e Ulët",
-    "middleDesc": "Vite tranzicioni që theksojnë mendimin kritik, bashkëpunimin dhe zhvillimin personal përmes kurrikulës inovative.",
-    "middleAges": "Mosha 11-14",
+    "middleDesc": "Njohuri më të thelluara, mendim kritik dhe përgjegjësi më e madhe, të zhvilluara përmes mësimit, projekteve dhe klubeve.",
+    "middleAges": "Klasat 6–9",
     "highTitle": "Shkolla e Mesme e Lartë",
-    "highDesc": "Përgatitje e avancuar për universitet me akademikë të fortë, mundësi lidershipi dhe perspektiva globale.",
-    "highAges": "Mosha 14-18",
+    "highDesc": "Përgatitje akademike e përqendruar, punë e pavarur dhe aftësi praktike, përfshirë zhvillimin e faqeve të internetit.",
+    "highAges": "Klasat 10–12",
     "summerTitle": "Kampi Veror Zenit",
-    "summerDesc": "Një program emocionues veror me not në pishinën tonë gjysmë olimpike, arte, sport dhe aktivitete të pasura edukative.",
-    "summerAges": "Mosha 6-16",
-    "learnMore": "Mëso Më Shumë"
+    "summerDesc": "Një program veror me not, sport, lojëra ekipore, vallëzim, krijimtari dhe aktivitete në natyrë.",
+    "summerAges": "Program veror",
+    "learnMore": "Mëso më shumë"
   },
   "stats": {
     "students": "Nxënës",
@@ -119,10 +120,10 @@
     "scheduleTour": "Cakto Vizitën"
   },
   "admissionsCTA": {
-    "title": "Gati për t'iu bashkuar komunitetit tonë?",
-    "subtitle": "Hidh hapin e parë drejt një udhëtimi të jashtëzakonshëm arsimor. Ekipi ynë i pranimeve është këtu për t'ju udhëhequr gjatë procesit.",
-    "apply": "Apliko Tani",
-    "visit": "Cakto një Vizitë"
+    "title": "Regjistrimet në Shkollën Zenit",
+    "subtitle": "Për të nisur procesin e regjistrimit, plotësoni formularin ose caktoni një vizitë për të njohur nga afër shkollën dhe programet tona mësimore.",
+    "apply": "Plotësoni Formularin",
+    "visit": "Caktoni një Vizitë"
   },
   "aboutSection": {
     "title": "Kultivojmë Ekselencën Që Nga 1985",
@@ -213,57 +214,90 @@
 
   "classroom": {
     "title": "Brenda Klasës",
-    "subtitle": "Si ndodh mësimi në Zenit: angazhues, praktik dhe i fokusuar te nxënësi.",
+    "subtitle": "Një proces mësimor i strukturuar, praktik dhe i përqendruar në zhvillimin e çdo nxënësi.",
     "hero": {
-      "title": "Mësim Aktiv & Praktik",
-      "text": "Orët ndërthurin projekte, laboratorë dhe diskutime, të mbështetura nga teknologjia dhe objektiva të qarta."
+      "kicker": "Mësimi në Zenit",
+      "title": "Mësim aktiv dhe i lidhur me praktikën",
+      "text": "Orët mësimore ndërthurin shpjegimin e qartë, diskutimin, punën praktike dhe projektet. Nxënësit udhëzohen të analizojnë, të bashkëpunojnë dhe t’i zbatojnë njohuritë në situata konkrete.",
+      "imageAlt": "Nxënësit gjatë procesit mësimor në Shkollën Zenit"
     },
+    "galleryTitle": "Brenda klasave tona",
+    "galleryImageAlt": "Pamje nga klasa {{number}}",
+    "featuresKicker": "Qasja jonë",
+    "featuresTitle": "Mësim i organizuar rreth nevojave të nxënësit",
     "features": [
-      { "icon": "", "title": "Laboratorë & Projekte", "text": "Eksperimente shkencore, ndërtim në makerspace dhe zgjidhje të problemeve reale." },
-      { "icon": "", "title": "Mjete Digjitale", "text": "Tabela interaktive, tableta dhe platforma mësimore rrisin pjesëmarrjen." },
-      { "icon": "", "title": "Mbështetje e Personalizuar", "text": "Feedback formues dhe mentorim në grupe të vogla." },
-      { "icon": "", "title": "Bashkëpunim", "text": "Puna në grup, prezantime dhe feedback mes bashkëmoshatarëve." }
+      { "title": "Mësimdhënie e strukturuar", "text": "Çdo orë zhvillohet me objektiva të qarta, shpjegim të organizuar dhe detyra që i ndihmojnë nxënësit t’i përvetësojnë njohuritë në mënyrë të qëndrueshme." },
+      { "title": "Kodim dhe teknologji", "text": "Nxënësit mësojnë konceptet bazë të kodimit përmes Code.org, ndërsa në shkollën e mesme të lartë fillojnë edhe zhvillimin e faqeve të internetit." },
+      { "title": "Punë praktike dhe projekte ndërlëndore", "text": "Aktivitetet praktike zhvillohen në të gjitha lëndët. Në biologji, bioteknologji, kimi, fizikë, teknologji dhe fusha të tjera, nxënësit realizojnë eksperimente, kërkime dhe projekte që lidhin njohuritë nga lëndë të ndryshme." },
+      { "title": "Bashkëpunim dhe mbështetje", "text": "Puna në grup, prezantimet, udhëzimi i vazhdueshëm dhe feedback-u i ndihmojnë nxënësit të zhvillojnë pavarësi, përgjegjësi dhe vetëbesim." }
     ]
   },
   "activities": {
-    "title": "Aktivitete & Klube",
-    "subtitle": "Mundësi për të zbuluar pasione jashtë klasës.",
+    "kicker": "Përtej mësimit në klasë",
+    "title": "Aktivitete dhe Klube",
+    "subtitle": "Klubet, projektet dhe veprimtaritë shkollore u krijojnë nxënësve hapësirë për të zbuluar interesat e tyre, për të zhvilluar talente dhe për të kontribuar në jetën e shkollës.",
+    "headerImageAlt": "Aktivitetet e nxënësve në Shkollën Zenit",
+    "creativeImageAlt": "Aktivitete krijuese të nxënësve",
+    "studentImageAlt": "Nxënësit duke marrë pjesë në aktivitete shkollore",
     "categories": [
-      { "icon": "", "title": "Akuatika", "items": ["Not Garash", "Siguria në Ujë", "Aqua Fitness"] },
-      { "icon": "", "title": "Arte & Kulturë", "items": ["Arte Pamore", "Teatër", "Ansamble Muzikore", "Media Digjitale"] },
-      { "icon": "", "title": "STEM", "items": ["Robotikë", "Klubi i Kodimit", "Olimpiada e Shkencës", "Ekipi i Matematikës"] },
-      { "icon": "", "title": "Global & Shërbim", "items": ["Model UN", "Klube Gjuhe", "Projekte Komunitare"] }
+      {
+        "title": "Udhëheqje dhe pjesëmarrje nxënësore",
+        "desc": "Përmes Qeverisë së Nxënësve dhe nismave të ndryshme shkollore, nxënësit përfaqësojnë bashkëmoshatarët, propozojnë ide dhe marrin pjesë në organizimin e jetës së shkollës. Këto përvoja zhvillojnë përgjegjësinë, bashkëpunimin dhe komunikimin.",
+        "items": ["Qeveria e Nxënësve", "Nisma të udhëhequra nga nxënësit", "Projekte komunitare"]
+      },
+      {
+        "title": "Shkencë, teknologji dhe histori",
+        "desc": "Klubet akademike e zgjerojnë mësimin përtej orës së rregullt. Nxënësit punojnë në projekte të biologjisë dhe bioteknologjisë, zhvillojnë njohuri në kodim dhe zhvillim të faqeve të internetit, si dhe hulumtojnë tema historike.",
+        "items": ["Klubi i Bioteknologjisë", "Kodim dhe zhvillim i faqeve të internetit", "Klubi i Historisë", "Projekte shkencore dhe teknologjike"]
+      },
+      {
+        "title": "Art, muzikë dhe interpretim",
+        "desc": "Veprimtaritë artistike u mundësojnë nxënësve të shprehin idetë dhe talentin e tyre. Përmes artit, muzikës dhe korit, ata krijojnë punime, përgatitin interpretime dhe marrin pjesë në programet e shkollës.",
+        "items": ["Klubi i Artit", "Klubi i Muzikës", "Kori", "Ekspozita dhe interpretime"]
+      },
+      {
+        "title": "Sport dhe not",
+        "desc": "Aktiviteti fizik është pjesë e rëndësishme e jetës në Zenit. Klubi i notit dhe aktivitetet e tjera sportive mbështesin zhvillimin fizik, disiplinën, koordinimin dhe punën në ekip.",
+        "items": ["Klubi i Notit", "Aktivitete sportive", "Lojëra dhe ushtrime motorike"]
+      },
+      {
+        "title": "Ngjarje, tradita dhe vizita mësimore",
+        "desc": "Gjatë vitit shkollor organizojmë Ditën e Shkollës më 7 Mars, programe për 28 Nëntorin dhe 17 Shkurtin, si dhe aktivitete të tjera kulturore e përkujtimore. Organizojmë gjithashtu ekskursione dhe vizita mësimore në vende të ndryshme, ku nxënësit zgjerojnë njohuritë dhe krijojnë përvoja të përbashkëta jashtë shkollës.",
+        "items": ["Dita e Shkollës – 7 Marsi", "Programi i 28 Nëntorit", "Programi i 17 Shkurtit", "Ekskursione në vende të ndryshme", "Vizita mësimore dhe aktivitete të veçanta"]
+      }
     ]
   },
   "culture": {
-  "title": "Kultura e Shkollës",
-  "subtitle": "Vlerat që formësojnë komunitetin tonë.",
-  "intro": {
-    "title": "Ndërtimi i një Mjedisi Respektues dhe Mbështetës",
-    "text1": "Në Shkollën Zenit, kultura jonë bazohet në empati, kureshtje dhe bashkëpunim. Ne besojmë se të nxënit ndodh më së miri në një komunitet që vlerëson çdo zë dhe feston diversitetin.",
-    "text2": "Nga diskutimet në klasë te aktivitetet e shkollës, nxënësit tanë mësojnë të mendojnë kritikisht, të komunikojnë hapur dhe të rriten së bashku si individë të sigurt dhe të dhembshur.",
-    "imageAlt": "Nxënës duke bashkëpunuar në Shkollën Zenit"
+    "title": "Kultura e Shkollës",
+    "subtitle": "Një mjedis i bazuar në respekt, përgjegjësi dhe bashkëpunim.",
+    "intro": {
+      "kicker": "Komuniteti Zenit",
+      "title": "Një kulturë që mbështet të nxënit dhe zhvillimin",
+      "text1": "Në Shkollën Zenit, kultura e shkollës ndërtohet çdo ditë përmes marrëdhënieve të respektueshme, pritshmërive të qarta dhe përgjegjësisë së përbashkët. Nxënësit udhëzohen të shprehin mendimet e tyre, të dëgjojnë të tjerët dhe të kontribuojnë në mënyrë aktive në komunitet.",
+      "text2": "Bashkëpunimi ndërmjet nxënësve, mësimdhënësve dhe familjeve krijon vazhdimësi ndërmjet mësimit, sjelljes dhe mirëqenies. Kjo qasje ndihmon në krijimin e një mjedisi të qetë, të sigurt dhe të përqendruar në përparimin e çdo nxënësi.",
+      "imageAlt": "Nxënës duke bashkëpunuar në Shkollën Zenit"
+    },
+    "pillars": [
+      { "title": "Respekt", "text": "Komunikojmë me konsideratë, dëgjojmë pikëpamjet e të tjerëve dhe kujdesemi për mjedisin e përbashkët." },
+      { "title": "Përgjegjësi", "text": "Nxënësit mësojnë të marrin përgjegjësi për vendimet, sjelljen, angazhimin dhe detyrat e tyre." },
+      { "title": "Bashkëpunim", "text": "Puna e përbashkët në klasë, klube, projekte dhe aktivitete zhvillon komunikimin dhe aftësinë për të kontribuar në grup." },
+      { "title": "Pjesëmarrje", "text": "Nxënësit inkurajohen të propozojnë ide dhe të marrin pjesë në Qeverinë e Nxënësve dhe në jetën e shkollës." }
+    ],
+    "gallery": {
+      "kicker": "Përditshmëria në Zenit",
+      "title": "Jeta në komunitetin tonë",
+      "subtitle": "Mësimi, projektet, aktivitetet dhe ngjarjet shkollore krijojnë mundësi të vazhdueshme për bashkëpunim, shprehje dhe përfshirje.",
+      "imageAlt": "Pamje nga jeta shkollore në Zenit {{index}}"
+    },
+    "cta": {
+      "title": "Zbuloni jetën përtej klasës",
+      "text": "Mësoni më shumë rreth klubeve, sportit, projekteve, programeve kulturore, ekskursioneve dhe aktiviteteve të nxënësve.",
+      "btn": "Shihni aktivitetet"
+    }
   },
-  "pillars": [
-    { "icon": "", "title": "Respekt & Përfshirje", "text": "Çdo individ pritet dhe mbështetet." },
-    { "icon": "", "title": "Mendësi Rritjeje", "text": "Mësojmë nga gabimet dhe festojmë progresin." },
-    { "icon": "", "title": "Komunitet", "text": "Nxënësit, familjet dhe stafi punojnë së bashku." },
-    { "icon": "", "title": "Integritet", "text": "Ndërshmëria dhe përgjegjësia udhëheqin zgjedhjet tona." }
-  ],
-  "gallery": {
-    "title": "Komuniteti & Jeta në Zenit",
-    "subtitle": "Ditët tona janë të mbushura me kreativitet, bashkëpunim dhe momente që forcojnë shpirtin tonë komunitar.",
-    "imageAlt": "Foto e kulturës së Zenit {{index}}"
-  },
-  "cta": {
-    "title": "Bëhu Pjesë e Komunitetit Tonë",
-    "text": "Shkolla Zenit është më shumë se një vend për të mësuar — është një vend për të përkitur. Bashkohuni në evente, bëhuni vullnetarë dhe rrituni me ne.",
-    "btn": "Eksploro Aktivitetet"
-  }
-},
 
   "news": {
-    "title": "Lajme & Përditësime",
+    "title": "Lajme & Njoftime",
     "subtitle": "Të rejat nga jeta në kampus.",
     "readMore": "Lexo më shumë",
     "posts": [
@@ -292,19 +326,20 @@
   },
   "director": {
     "title": "Nga Drejtori",
-    "subtitle": "Një mesazh mirëseardhjeje dhe vizioni.",
-    "greeting": "Të dashur Prindër dhe Nxënës,",
+    "subtitle": "Një mesazh për familjet, nxënësit dhe komunitetin e Shkollës Zenit.",
+    "greeting": "Të nderuar prindër dhe nxënës,",
     "paragraphs": [
-      "Në Zenit besojmë se çdo nxënës mund të arrijë ekselencë me udhëheqjen dhe kujdesin e duhur.",
-      "Programet tona balancojnë rreptësinë akademike me artet, sportin dhe edukimin e karakterit.",
-      "Ju ftoj të vizitoni kampusin për të përjetuar nga afër komunitetin tonë."
+      "Që nga themelimi i Shkollës Zenit në vitin 2009, synimi ynë ka qenë të ofrojmë një mjedis të strukturuar akademik, ku çdo nxënës udhëzohet të ndërtojë njohuri të qëndrueshme dhe shprehi të mira pune.",
+      "Përgjegjësia e shkollës nuk kufizohet vetëm në përcjelljen e njohurive. Ne punojmë që nxënësit të zhvillojnë mendim të pavarur, përgjegjësi, bashkëpunim dhe aftësinë për t’i zbatuar njohuritë në praktikë.",
+      "Ora e studimit, projektet në shkencë dhe teknologji, zhvillimi i faqeve të internetit, noti, klubet, olimpiadat dhe hackathonet u krijojnë nxënësve mundësi të ndryshme për të mësuar, për të krijuar dhe për ta prezantuar punën e tyre.",
+      "Bashkëpunimi i vazhdueshëm me familjet është pjesë e rëndësishme e këtij procesi. Ju ftoj ta njihni nga afër shkollën, programet dhe komunitetin tonë."
     ],
     "name": "Butrint Deshishku",
     "role": "Drejtori i Shkollës",
     "highlights": [
-      { "kpi": "40+", "label": "Vite në Shërbim të Familjeve" },
-      { "kpi": "98%", "label": "Pranim në Universitet" },
-      { "kpi": "8:1", "label": "Raport Nxënës–Mësues" }
+      { "kpi": "Studim", "label": "Orë e organizuar me udhëzim nga mësimdhënësit" },
+      { "kpi": "Praktikë", "label": "Projekte dhe zbatim i njohurive në të gjitha lëndët" },
+      { "kpi": "Mundësi", "label": "Klube, olimpiada, hackathone dhe prezantime" }
     ]
   },
   "staff": {
@@ -356,97 +391,77 @@
     ]
   },
   "careers": {
-    "title": "Vende Pune",
-    "subtitle": "Bëhu pjesë e një ekipi me mision.",
-    "apply": "Apliko Tani",
-    "how": {
-      "title": "Si të Aplikoni",
-      "text": "Dërgoni CV dhe një letër interesi. Aplikimet shqyrtohen vazhdimisht."
+    "title": "Mundësi Punësimi",
+    "subtitle": "Informacion mbi mundësitë për t’iu bashkuar ekipit të Shkollës Zenit.",
+    "noOpenings": {
+      "title": "Aktualisht nuk ka vende të lira pune",
+      "text": "Në këtë kohë, Shkolla Zenit nuk ka konkurse të hapura për punësim."
     },
-    "jobs": [
-      {
-        "title": "Mësues/e i/e Ciklit Fillor",
-        "type": "Kohë e plotë",
-        "location": "Prishtinë",
-        "department": "Fillor",
-        "requirements": ["Diplomë në Arsim", "2+ vite përvojë", "Anglisht e mirë"],
-        "applyUrl": "https://forms.gle/your-form-1"
-      },
-      {
-        "title": "Këshillues/e Shkollor/e",
-        "type": "Kohë e plotë",
-        "location": "Prishtinë",
-        "department": "Mbështetje Nxënësish",
-        "requirements": ["Diplomë në Këshillim", "Përvojë me adoleshentë", "Komunikim i fortë"],
-        "applyUrl": "https://forms.gle/your-form-2"
-      }
-    ]
+    "how": {
+      "title": "Njoftimet për Punësim",
+      "text": "Mundësitë e reja të punësimit do të publikohen në këtë faqe dhe në kanalet zyrtare të Shkollës Zenit."
+    }
   },
   "scholarships": {
-    "title": "Bursa dhe Çmime",
-    "subtitle": "Mundësi mbi meritë dhe nevojë që mbështesin nxënësit tanë.",
-    "apply": "Apliko Tani",
+    "title": "Bursa dhe Ndihmë Financiare",
+    "subtitle": "Shkolla Zenit ofron bursa mbi bazën e meritave të ndryshme dhe mbështetje financiare për familjet.",
+    "apply": "Kërkoni Informacion",
     "programs": [
       {
-        "name": "Bursa e Meritës Akademike",
-        "eligibility": "Klasat 8–12 • GPA 3.8+",
-        "benefits": ["Deri në 50% të tarifës", "Mentorim", "Seminar lidershipi"],
-        "applyUrl": "https://forms.gle/your-form-merit"
-      },
-      {
-        "name": "Sport – Ekselencë në Not",
-        "eligibility": "Notarë konkurrues • Rekomandim trajneri",
-        "benefits": ["Mbështetje trajnimi", "Tarifa garash", "Prioritet korsi"],
-        "applyUrl": "https://forms.gle/your-form-swim"
+        "name": "Bursë",
+        "eligibility": "Vlerësimi bëhet mbi bazën e meritave të nxënësit dhe kritereve të përcaktuara nga shkolla.",
+        "benefits": ["Merren parasysh forma të ndryshme të meritës", "Çdo kërkesë shqyrtohet individualisht", "Vendimi mbështetet në dokumentacionin përkatës"]
       },
       {
         "name": "Ndihmë Financiare",
-        "eligibility": "Bazuar në nevojë të provuar",
-        "benefits": ["Tarifë sipas shkallës", "Ndihmë për tekste"],
-        "applyUrl": "https://forms.gle/your-form-aid"
+        "eligibility": "Mbështetje për familjet, e vlerësuar sipas rrethanave dhe dokumentacionit të paraqitur.",
+        "benefits": ["Shqyrtim konfidencial i kërkesës", "Vlerësim individual i rrethanave familjare", "Informacion i qartë mbi hapat dhe dokumentet e nevojshme"]
       }
     ],
     "faq": {
       "title": "Pyetje të Shpeshta",
       "items": [
-        { "q": "Kur është afati?", "a": "Vlerësojmë vazhdimisht; prioritet deri më 31 Maj." },
-        { "q": "A mund të aplikoj për disa bursa?", "a": "Po, por grantet nuk kombinohen mbi 50%." }
+        { "q": "Çfarë lloje mbështetjeje ofron Shkolla Zenit?", "a": "Shkolla ofron bursa meritore, si dhe ndihmë financiare për familjet." },
+        { "q": "Si mund të marr më shumë informacion?", "a": "Kontaktoni Shkollën Zenit për kriteret aktuale, dokumentet e nevojshme dhe mënyrën e paraqitjes së kërkesës." }
       ]
     }
   },
   "digitalEducation": {
-    "title": "Edukimi Digjital",
-    "subtitle": "Mjete dhe metoda moderne që pasurojnë të nxënit.",
+    "kicker": "TEKNOLOGJIA NË MËSIM",
+    "title": "Arsimi Digjital",
+    "subtitle": "Teknologji dhe platforma digjitale të integruara në mësimdhënie, komunikim dhe administrim shkollor.",
+    "heroImageAlt": "Nxënës duke përdorur teknologjinë gjatë mësimit",
     "pillars": [
-      { "icon": "", "title": "Pajisje 1:1", "text": "Laptopë ose tableta për projekte dhe kërkime." },
-      { "icon": "", "title": "Mësim në Cloud", "text": "Detyra, feedback dhe bashkëpunim online." },
-      { "icon": "", "title": "Aftësi Digjitale", "text": "Edukim mediatik, bazat e kodimit dhe siguria online." }
+      { "title": "Mësim dhe Bashkëpunim Digjital", "text": "Përmes llogarive shkollore në Google Workspace, nxënësit përdorin mjetet e Google për detyra, materiale mësimore, komunikim dhe bashkëpunim." },
+      { "title": "Kodim dhe Zhvillim për Web", "text": "Nxënësit mësojnë konceptet bazë të kodimit përmes Code.org, ndërsa në klasat 10–12 zhvillojnë njohuri dhe projekte në zhvillimin e faqeve të internetit." },
+      { "title": "Teknologji në Shërbim të Mësimit", "text": "Mjetet digjitale përdoren për kërkim, projekte praktike, prezantimin e punës së nxënësve dhe qasje në burime akademike." }
     ],
+    "platformsKicker": "MJETET QË PËRDORIM",
+    "platformsTitle": "Platformat dhe Burimet Digjitale",
+    "platformsSubtitle": "Mjetet që mbështesin të nxënit, menaxhimin e informacionit dhe zhvillimin e aftësive digjitale në Shkollën Zenit.",
     "platforms": [
-      { "name": "Google Workspace", "use": "Docs, Classroom, Drive për kursin dhe feedback." },
-      { "name": "Platforma Kodimi", "use": "Scratch/Code.org për kodim hyrës." },
-      { "name": "LMS", "use": "Materiale të centralizuara, afate dhe njoftime." }
+      { "name": "Google Workspace", "use": "Mjetet e Google për komunikim, krijimin dhe ruajtjen e materialeve, detyrat dhe bashkëpunimin shkollor." },
+      { "name": "Google Cloud", "use": "Qasje në shërbimet e Google Cloud për projekte të përshtatshme arsimore dhe teknologjike." },
+      { "name": "PowerSchool SIS", "use": "Sistemi i informacionit të nxënësve që mbështet menaxhimin akademik dhe administrativ të shkollës." },
+      { "name": "Code.org", "use": "Platformë mësimore për zhvillimin e koncepteve bazë të kodimit dhe mendimit logjik." },
+      { "name": "Financial Times", "use": "Nxënësit kanë qasje në Financial Times përmes llogarive të tyre shkollore të emailit." }
     ]
   },
   "campus": {
-    "title": "Kampusi Akademik",
-    "subtitle": "Hapësira mësimore për fokus, krijimtari dhe mirëqenie.",
-    "zones": [
-      {
-        "name": "Laboratorë Shkence & Teknologjie",
-        "text": "Eksperimente praktike, robotikë dhe makerspace.",
-        "image": "https://images.unsplash.com/photo-1581091014534-8987c1d647de?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
-        "name": "Qendra Akuatike (Pishinë Gjysmë-Olimpike)",
-        "text": "Not në kurrikulë, ekip gare dhe siguri në ujë.",
-        "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
-        "name": "Bibliotekë & Qendër Studimi",
-        "text": "Studim i qetë, salla grupesh dhe burime digjitale.",
-        "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80"
-      }
+    "kicker": "NJË MJEDIS I PËRBASHKËT PËR MËSIM DHE ZHVILLIM",
+    "title": "Kampusi i Shkollës Zenit",
+    "subtitle": "Një kampus ku hapësirat akademike, teknologjia dhe sporti janë pjesë e përvojës së përditshme të nxënësve.",
+    "heroImageAlt": "Kampusi i Shkollës Zenit",
+    "statementKicker": "KAMPUSI",
+    "intro": "Kampusi është organizuar për ta lidhur mësimin në klasë me punën praktike, teknologjinë dhe aktivitetin fizik, duke u ofruar nxënësve hapësira të përshtatshme për secilën pjesë të ditës shkollore.",
+    "spacesKicker": "HAPËSIRAT E KAMPUSIT",
+    "spacesTitle": "Mjedise të krijuara për mënyrën si mësojnë nxënësit",
+    "spaces": [
+      { "title": "Kampusi Shkollor", "text": "Hapësirat e shkollës bashkojnë mësimin, projektet, aktivitetet dhe jetën e përditshme shkollore në një mjedis të organizuar." },
+      { "title": "Klasa të Dedikuara për Çdo Lëndë", "text": "Për klasat 6–12, çdo lëndë zhvillohet në klasën e vet, duke u mundësuar nxënësve të punojnë në një mjedis të përshtatur për përmbajtjen dhe aktivitetet e asaj lënde." },
+      { "title": "Laboratori i Teknologjisë", "text": "Një hapësirë për mësim praktik, projekte teknologjike, kodim dhe zhvillimin e aftësive digjitale, përfshirë veprimtari në TIK, Smart Lab, zhvillim për web dhe STEM." },
+      { "title": "Qendra Sportive", "text": "Hapësira sportive mbështet edukimin fizik, stërvitjen dhe aktivitetet e ndryshme që zhvillohen gjatë mësimit dhe jetës shkollore." },
+      { "title": "Pishina Gjysmë-Olimpike", "text": "Pishina është pjesë e kampusit dhe mbështet mësimin e notit, i cili përfshihet në kurrikulë duke filluar nga klasa e parë." }
     ]
   },
 
@@ -517,131 +532,131 @@
   },
   "programsPage": {
     "header": {
-      "title": "Programet Tona",
-      "subtitle": "Programe gjithëpërfshirëse për të sfiduar, frymëzuar dhe përgatitur nxënësit për sukses — nga cikli fillor deri në të mesmen, si dhe kampi ynë veror Zenit."
+      "title": "Programet Mësimore",
+      "subtitle": "Nga klasa e parë deri në klasën e dymbëdhjetë, programet e Zenit ndërtojnë njohuri, shkathtësi praktike dhe përgjegjësi, të mbështetura nga ora e studimit, klubet dhe projektet e nxënësve."
     },
     "elementary": {
       "title": "Shkolla Fillore",
-      "ages": "Mosha 5–11",
+      "ages": "Klasat 1–5",
       "image": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Nxënës të ciklit fillor",
-      "desc": "Vitet themeluese me fokus në kreativitet, eksplorim dhe zhvillim të aftësive bazë.",
+      "desc": "Një bazë e qëndrueshme në gjuhë, matematikë, shkencë dhe zhvillim shoqëror, e ndërtuar përmes mësimdhënies së qartë dhe angazhimit aktiv.",
       "points": [
-        "Klasa të vogla (12–15 nxënës)",
-        "Kurrikulë e integruar STEAM",
-        "Mësime noti në pishinën tonë gjysmë-olimpike",
-        "Arte, muzikë dhe edukim fizik",
-        "Programe të zhvillimit të karakterit",
-        "Ekskursione dhe të nxënë praktik"
+        "Ora e studimit me udhëzim nga mësimdhënësit",
+        "Not si pjesë e kurrikulës duke filluar nga klasa e parë",
+        "Kodim bazë dhe koncepte teknologjike përmes Code.org",
+        "Art, muzikë dhe edukim fizik",
+        "Punë praktike dhe projekte në lëndë të ndryshme",
+        "Klube, ekskursione dhe aktivitete shkollore"
       ],
       "highlight": {
-        "title": "Programi i Notit:",
-        "text": "Të gjithë nxënësit e ciklit fillor zhvillojnë orë javore me fokus te siguria në ujë dhe teknikat bazë."
+        "title": "Ora e studimit:",
+        "text": "Nxënësit kanë kohë të organizuar për të punuar në detyrat dhe përforcimin e njohurive me mbështetjen e mësimdhënësve."
       }
     },
     "middle": {
       "title": "Shkolla e Mesme e Ulët",
-      "ages": "Mosha 11–14",
+      "ages": "Klasat 6–9",
       "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Nxënës të ciklit të mesëm të ulët",
-      "desc": "Vite tranzicioni që theksojnë mendimin kritik, bashkëpunimin dhe rritjen personale.",
+      "desc": "Një fazë e rëndësishme ku nxënësit thellojnë njohuritë, zhvillojnë mendimin kritik dhe marrin më shumë përgjegjësi për punën e tyre.",
       "points": [
-        "Kurse akademike të avancuara",
-        "Programe zhvillimi lidershipi",
-        "Ekip noti konkurrues",
-        "Klube dhe organizata të nxënësve",
-        "Projekte shërbimi në komunitet",
-        "Integrim i teknologjisë"
+        "Ora e studimit dhe mbështetje e vazhdueshme akademike",
+        "Eksperimente dhe projekte në shkencat natyrore",
+        "Kodim, teknologji dhe punë me mjete digjitale",
+        "Klube akademike, artistike dhe sportive",
+        "Pjesëmarrje në olimpiada matematikore dhe hackathone",
+        "Mundësi për prezantimin e punimeve dhe aftësive"
       ],
       "highlight": {
-        "title": "Not Konkurrues:",
-        "text": "Stërvitje në pishinën gjysmë-olimpike për gara rajonale dhe kombëtare."
+        "title": "Ide që prezantohen:",
+        "text": "Projektet, olimpiadat dhe hackathonet u japin nxënësve mundësi ta paraqesin punën, njohuritë dhe krijimtarinë e tyre."
       }
     },
     "high": {
       "title": "Shkolla e Mesme e Lartë",
-      "ages": "Mosha 14–18",
+      "ages": "Klasat 10–12",
       "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Nxënës të shkollës së mesme",
-      "desc": "Përgatitje e avancuar për universitet me akademikë të fortë dhe mundësi lidershipi.",
+      "desc": "Përgatitje akademike e përqendruar, punë e pavarur dhe zbatim praktik i njohurive për studimet dhe mundësitë e ardhshme.",
       "points": [
-        "Kurse AP (Advanced Placement)",
-        "Program IB (International Baccalaureate)",
-        "Program elitar noti",
-        "Këshillim universitar",
-        "Mundësi shkëmbimi ndërkombëtar",
-        "Projekte kërkimore dhe praktika"
+        "Zhvillim i faqeve të internetit në klasat 10–12",
+        "Projekte praktike dhe ndërlëndore",
+        "Ora e studimit dhe punë e pavarur e udhëzuar",
+        "Hackathone dhe olimpiada matematikore",
+        "Klube dhe Qeveria e Nxënësve",
+        "Prezantim i projekteve, ideve dhe aftësive të nxënësve"
       ],
       "highlight": {
-        "title": "Not Elitar:",
-        "text": "Sportistë që konkurrojnë në nivele shtetërore e kombëtare; shumë prej tyre fitojnë bursa universitare."
+        "title": "Zhvillimi i faqeve të internetit:",
+        "text": "Nxënësit e klasave 10–12 mësojnë bazat e zhvillimit për web dhe i zbatojnë ato në projekte konkrete."
       }
     },
     "summer": {
       "title": "Kampi Veror Zenit",
-      "ages": "Mosha 6–16",
+      "ages": "Program veror",
       "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Aktivitete kampi veror",
-      "desc": "Një program veror emocionues me pishinën tonë gjysmë-olimpike dhe aktivitete pasuruese.",
+      "desc": "Një program i organizuar veror ku fëmijët mësojnë, krijojnë, lëvizin dhe ndërtojnë miqësi përmes përvojave të ndryshme.",
       "points": [
-        "Mësime ditore noti dhe aktivitete në pishinë",
-        "Siguria në ujë dhe certifikim roje plazhi",
-        "Punëtori arti dhe zeje",
-        "Kampi STEM dhe kodim",
-        "Sport dhe aventura në natyrë",
-        "Ekskursione dhe përvoja kulturore"
+        "Not dhe aktivitete në pishinë",
+        "Sport, lojëra dhe gara ekipore",
+        "Vallëzim, muzikë dhe lëvizje",
+        "Lojëra krijuese dhe punëtori arti",
+        "Aktivitete në natyrë dhe aventura",
+        "Bashkëpunim, shoqërim dhe miqësi të reja"
       ],
       "highlight": {
-        "title": "Ekselencë në Not:",
-        "text": "Nga mësime për fillestarë deri te kampe stërvitore konkurruese."
+        "title": "Çdo ditë një përvojë e re:",
+        "text": "Programi ndërthur aktivitetin fizik, krijimtarinë dhe lojën në një mjedis të organizuar dhe aktiv."
       }
     },
     "results": {
-      "title": "Ekselencë Akademike & Rezultate",
-      "text": "Programet tona rigoroze prodhojnë vazhdimisht rezultate të shkëlqyera. Me 98% pranim në universitet dhe të diplomuar në institucione elitare, nxënësit tanë janë të përgatitur për sukses.",
+      "title": "Një rrugëtim i plotë mësimor",
+      "text": "Çdo fazë ndërton mbi të mëparshmen, duke lidhur njohuritë akademike me punën praktike, teknologjinë, aktivitetin fizik dhe pjesëmarrjen e nxënësve.",
       "items": [
-        { "number": "98%", "label": "Pranim në Universitet" },
-        { "number": "85%", "label": "Nxënës në Honor Roll" },
-        { "number": "42",  "label": "Kurse AP të ofruara" },
-        { "number": "15",  "label": "Rekorde në Not" }
+        { "number": "1–5", "label": "Shkolla Fillore" },
+        { "number": "6–9", "label": "Shkolla e Mesme e Ulët" },
+        { "number": "10–12", "label": "Shkolla e Mesme e Lartë" },
+        { "number": "Verë", "label": "Kampi Veror Zenit" }
       ],
       "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       "alt": "Nxënës që festojnë suksesin"
     },
     "extracurricular": {
-      "title": "Përtej Klasës",
+      "title": "Mundësi përtej orës mësimore",
       "categories": [
         {
           "icon": "",
-          "title": "Programe Akuatike",
-          "items": ["Ekip Noti Konkurrues", "Ujëpolo", "Not Sinkron", "Certifikim Roje Plazhi", "Klase Aqua Fitness"]
+          "title": "Studim dhe mbështetje",
+          "items": ["Ora e studimit", "Udhëzim nga mësimdhënësit", "Punë e pavarur"]
         },
         {
           "icon": "",
-          "title": "Arte & Kulturë",
-          "items": ["Studio Arte Pamore", "Produksione Teatri", "Ansamble Muzikore", "Media Digjitale", "Shkrim Kreativ"]
+          "title": "Klube",
+          "items": ["Bioteknologji", "Histori", "Art", "Muzikë dhe kor"]
         },
         {
           "icon": "",
-          "title": "Klube STEM",
-          "items": ["Ekip Robotike", "Olimpiada e Shkencës", "Klubi i Kodimit", "Gara Matematike", "Klubi Mjedisor"]
+          "title": "Teknologji dhe gara",
+          "items": ["Code.org", "Zhvillim për web", "Hackathone", "Olimpiada matematikore"]
         },
         {
           "icon": "",
-          "title": "Angazhim Global",
-          "items": ["Model United Nations", "Klube Gjuhe", "Shkëmbim Kulturor", "Shërbim Ndërkombëtar", "Studime Jashtë"]
+          "title": "Sport dhe pjesëmarrje",
+          "items": ["Not", "Aktivitete sportive", "Qeveria e Nxënësve", "Prezantime të projekteve"]
         }
       ]
     }
   },
   "admissionsPage": {
-    "title": "Pranime",
-    "subtitle": "Bëhu pjesë e komunitetit tonë të nxënësve dhe liderëve të ardhshëm."
+    "title": "Regjistrime",
+    "subtitle": "Informacion dhe udhëzim për regjistrimin e nxënësve në Shkollën Zenit."
   },
   "contactPage": {
     "header": {
       "title": "Kontakt",
-      "subtitle": "Na kontaktoni për informacione rreth programeve, pranimeve, kampit veror ose për të rezervuar një vizitë në kampus me tur në pishinën tonë gjysmë-olimpike."
+      "subtitle": "Na kontaktoni për informacione rreth programeve, regjistrimeve, kampit veror ose për të caktuar një vizitë në shkollë."
     },
     "info": {
       "visit": {
@@ -653,7 +668,7 @@
       },
       "call": {
         "title": "Na Telefononi",
-        "admissions": "Pranime: +383 49 959 435",
+        "admissions": "Regjistrime: +383 49 959 435",
         "camp": "Kampi Veror: +383 49 959 430"
       },
       "email": {
@@ -691,7 +706,7 @@
       "subjects": {
         "placeholder": "Zgjidhni një subjekt",
         "options": [
-          { "value": "admissions",  "label": "Pyetje për Pranime" },
+          { "value": "admissions",  "label": "Pyetje për Regjistrime" },
           { "value": "programs",    "label": "Informacione për Programe" },
           { "value": "summer-camp", "label": "Kampi Veror Zenit" },
           { "value": "visit",       "label": "Vizitë në Kampus" },

@@ -91,3 +91,15 @@
     max-width: 300px;
   }
 }
+
+
+
+.admissions-page .admissions-cta {
+  margin-top: 4rem !important;
+}
+
+@media (max-width: 768px) {
+  .admissions-page .admissions-cta {
+    margin-top: 2.5rem !important;
+  }
+}

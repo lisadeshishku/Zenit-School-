@@ -1,4 +1,3 @@
-// src/pages/programs/Programs.js
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
@@ -81,7 +80,6 @@ const Programs = () => {
 
   return (
     <div className="programs-page">
-      {/* Header */}
       <section className="page-header programs-header">
         <div className="container">
           <h1 className="page-title">{t("programsPage.header.title")}</h1>
@@ -89,7 +87,6 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Programs */}
       <section className="programs-section">
         <div className="container">
           {programs.map((program, index) => (
@@ -105,7 +102,6 @@ const Programs = () => {
   );
 };
 
-// Hero-like slideshow for each program
 const ProgramShowcase = ({ program, reversed }) => {
   const [slide, setSlide] = useState(0);
 

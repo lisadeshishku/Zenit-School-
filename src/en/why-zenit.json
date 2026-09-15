@@ -1,0 +1,99 @@
+{
+  "whyZenit": {
+    "title": "Why Zenit?",
+    "subtitle": "A school with clear expectations, structured teaching and opportunities to apply knowledge in practice.",
+    "intro": {
+      "paragraphs": [
+        "At Zenit School, student progress is built through clear teaching, sustained effort and cooperation between the school and families.",
+        "Our programmes combine academic content with technology, coding, practical projects and physical activity. This approach helps students develop lasting knowledge, critical thinking, responsibility and independence."
+      ]
+    },
+    "pillarsTitle": "What distinguishes Zenit",
+    "reasons": [
+      {
+        "icon": "",
+        "title": "Clear and structured teaching",
+        "text": "Every topic is taught through understandable objectives, careful explanation and continuous monitoring of progress.",
+        "points": [
+          "Clear learning objectives",
+          "Practice that reinforces essential concepts",
+          "Continuous assessment and feedback"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Knowledge applied in practice",
+        "text": "Students investigate, solve problems and complete projects that connect academic content with practical application.",
+        "points": [
+          "Fundamental coding concepts through Code.org",
+          "Web development in upper secondary school",
+          "Technology projects and collaborative work"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Well-rounded development and support",
+        "text": "Academic development is supported by physical activity, personal responsibility and regular communication with families.",
+        "points": [
+          "Swimming during school in the half-Olympic pool",
+          "Continuous cooperation with parents",
+          "Merit scholarships and financial-assistance opportunities"
+        ]
+      }
+    ],
+    "approach": {
+      "title": "How learning works at Zenit",
+      "steps": [
+        {
+          "title": "Clear objectives",
+          "text": "Students understand what they are expected to learn and which knowledge and skills they need to demonstrate."
+        },
+        {
+          "title": "Guidance and practice",
+          "text": "Explanation, discussion and guided practice create the foundation for deep understanding and independent work."
+        },
+        {
+          "title": "Application and progress",
+          "text": "Projects, practical tasks and teacher feedback help students use their knowledge and improve continuously."
+        }
+      ]
+    },
+    "outcomesTitle": "What students develop",
+    "highlights": [
+      {
+        "kpi": "Knowledge",
+        "label": "A lasting academic foundation",
+        "note": "Concepts are understood, practised and connected to prior knowledge."
+      },
+      {
+        "kpi": "Skills",
+        "label": "Thinking and practical application",
+        "note": "Students analyse, collaborate, use technology and solve problems."
+      },
+      {
+        "kpi": "Responsibility",
+        "label": "Independence in learning",
+        "note": "Students learn to organise their work, reflect and take responsibility for their progress."
+      }
+    ],
+    "cta": {
+      "title": "Experience Zenit School in person",
+      "text": "Visit the campus, explore the learning environment and receive information about our programmes, admissions, scholarships and financial assistance.",
+      "button": "Schedule a visit"
+    },
+    "fallback": {
+      "intro1": "At Zenit School, progress is built through clear teaching, sustained effort and appropriate support.",
+      "intro2": "Our programmes connect academic knowledge with technology, practical work and personal development.",
+      "pillarTitle": "Clear and structured teaching",
+      "pillarText": "Understandable objectives, guided practice and continuous feedback support student progress.",
+      "approach1Title": "Clear objectives",
+      "approach1Text": "We define the essential knowledge and skills for each topic.",
+      "approach2Title": "Guidance and practice",
+      "approach2Text": "Explanation and practice build deep understanding.",
+      "approach3Title": "Application and progress",
+      "approach3Text": "Projects and teacher feedback support continuous improvement.",
+      "outcomeLabel": "Academic and personal progress",
+      "outcomeNote": "Lasting knowledge, practical skills and responsibility."
+    }
+  }
+}
