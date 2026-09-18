@@ -26,7 +26,7 @@ export default function Director() {
         <div className="container letter-grid">
           <div className="letter-image">
             <img
-              src="/Director/Director.jpeg"
+              src="/images/Director/Director.jpeg"
               alt={t('director.name')}
               className="director-photo"
               onError={(e) => {
