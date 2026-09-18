@@ -12,6 +12,12 @@ const About = () => {
   const values     = t('aboutPage.values.items',       { returnObjects: true }) || [];
   const facilities = t('aboutPage.campus.facilities',  { returnObjects: true }) || [];
   const stats      = t('aboutPage.faculty.stats',      { returnObjects: true }) || [];
+  const aboutImages = [
+  '/images/about/about-hero.jpg',
+  '/images/about/about-pool.jpg',
+  '/images/about/about-technology.jpg',
+  '/images/about/about-community.jpg',
+];
 
   return (
     <div className="about-page">
@@ -94,11 +100,11 @@ const About = () => {
               </div>
             </div>
             <div className="faculty-image">
-              <img
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt={t('aboutPage.faculty.imageAlt')}
-              />
-            </div>
+                <img
+                  src={aboutImages[3]}
+                  alt={t('aboutPage.faculty.imageAlt')}
+                />
+              </div>
           </div>
         </div>
       </section>
@@ -106,17 +112,28 @@ const About = () => {
       {/* Campus Life */}
       <section className="campus-life-section">
         <div className="container">
-          <h3 className="mission-title">{t('aboutPage.campus.title')}</h3>
+          <h3 className="mission-title">
+            {t('aboutPage.campus.title')}
+          </h3>
+
           <div className="facilities-grid">
-            {facilities.map((f, i) => (
-              <div className="facility-card" key={i}>
-                <img src={f.image} alt={f.alt} />
-                <div className="facility-content">
-                  <h4>{f.title}</h4>
-                  <p>{f.text}</p>
+            {Array.isArray(facilities) &&
+              facilities.map((facility, index) => (
+                <div
+                  className="facility-card"
+                  key={`facility-${facility.title || index}`}
+                >
+                  <img
+                    src={aboutImages[index]}
+                    alt={facility.alt || facility.title}
+                  />
+
+                  <div className="facility-content">
+                    <h4>{facility.title}</h4>
+                    <p>{facility.text}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

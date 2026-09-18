@@ -1,518 +1,674 @@
-/* styles/Navbar.css - Final Clean Navigation with No Gaps */
+/* ========================================
+   TOP NAVIGATION
+   ======================================== */
 
-/* Top Header Bar */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  inset: 0 0 auto 0;
   z-index: 1000;
-  height: 70px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding-top: env(safe-area-inset-top); /* respect notches */
+
+  height: 72px;
+  padding-top: env(safe-area-inset-top);
+
+  background: #ffffff;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.05);
 }
 
 .navbar-container {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
-  height: 100%;
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+
+  width: 100%;
   height: 100%;
 }
 
-/* Menu Toggle Button */
-.menu-toggle-btn {
-  background: none;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #374151;
-  transition: all 0.2s ease;
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-  /* Ensure the hamburger is visible on ALL screen sizes */
+
+/* ========================================
+   MENU AND CLOSE BUTTONS
+   ======================================== */
+
+.menu-toggle-btn,
+.close-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  color: #1f2937;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.menu-toggle-btn:hover {
-  background-color: #f3f4f6;
-  transform: scale(1.05);
+.menu-toggle-btn:hover,
+.close-btn:hover {
+  color: #111827;
+  background: #f3f4f6;
+  transform: scale(1.04);
 }
 
-.menu-toggle-btn svg {
-  width: 22px;
-  height: 22px;
+.menu-toggle-btn:active,
+.close-btn:active {
+  transform: scale(0.96);
 }
 
-/* Logo */
-.navbar-brand {
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.navbar-brand,
+.side-nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  color: #1f2937;
   text-decoration: none;
-  color: inherit;
+}
+
+.navbar-brand {
   transition: transform 0.2s ease;
 }
 
 .navbar-brand:hover {
-  transform: scale(1.02);
+  transform: translateY(-1px);
 }
 
 .logo-image {
-  height: 40px;
-  width: 40px;
-  border-radius: 6px;
+  width: 42px;
+  height: 42px;
+
+  border-radius: 7px;
   object-fit: cover;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-text {
-  font-size: 1.2rem;
-  font-weight: 700;
   color: #1f2937;
-  letter-spacing: 0.02em;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
-/* Overlay */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px) grayscale(100%) brightness(0.7);
-  z-index: 1500;
-  transition: all 0.3s ease;
-}
 
-/* Side Navigation - Compact and Clean */
-.side-navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 250px;
-  background: white;
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+/* ========================================
+   DIRECT DESKTOP LINKS
+   ======================================== */
 
-.side-navigation.open {
-  transform: translateX(0);
-}
-
-/* Side Navigation Header - Minimal */
-.side-nav-header {
+.nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #e2e8f0;
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-  min-height: 52px;
-  flex-shrink: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+
+  margin-left: auto;
 }
 
-.side-nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.nav-links a {
+  position: relative;
 
-.side-logo-image {
-  height: 24px;
-  width: 24px;
-  border-radius: 6px;
-  object-fit: cover;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
+  padding: 0.5rem 0;
 
-.side-logo-text {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #2d3748;
-  letter-spacing: 0.025em;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  padding: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #4a5568;
-  transition: all 0.2s ease;
-}
-
-.close-btn:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #2d3748;
-  transform: scale(1.1);
-}
-
-/* Side Navigation Content - Remove All Gaps */
-.side-nav-content {
-  flex: 1;
-  overflow-y: auto;
-  padding: 0;
-  margin: 0;
-}
-
-/* Navigation Sections - No Gaps Between Sections */
-.nav-section {
-  border-bottom: 1px solid #f1f3f4;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-section:last-child {
-  border-bottom: none;
-}
-
-/* Section Headers - Uniform and Tight */
-.section-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px !important;
-  background: white;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-family: inherit;
-  margin: 0 !important;
-  min-height: 40px !important;
-  height: 40px !important;
-  box-sizing: border-box;
-}
-
-.section-header:hover {
-  background-color: #f8f9fa;
-  transform: translateX(2px);
-}
-
-.section-title {
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  color: #2d3748 !important;
-  margin: 0 !important;
-  line-height: 1.3 !important;
-  padding: 0 !important;
-  letter-spacing: 0.025em;
-}
-
-.section-header svg {
-  color: #6b7280;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-  width: 16px !important;
-  height: 16px !important;
-}
-
-.section-header:hover svg {
   color: #374151;
-  transform: scale(1.1);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-/* Submenu - Tight Spacing */
-.submenu {
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #e2e8f0;
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+
+  height: 2px;
+
+  background: #111827;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.2s ease;
 }
 
-.submenu-link {
-  display: block !important;
-  padding: 10px 32px !important;
-  color: #4a5568 !important;
-  text-decoration: none !important;
-  border-left: 3px solid transparent !important;
-  transition: all 0.2s ease !important;
-  font-size: 13px !important;
-  line-height: 1.4 !important;
-  margin: 0 !important;
-  font-weight: 500 !important;
-  height: 36px !important;
-  box-sizing: border-box !important;
-  display: flex !important;
-  align-items: center !important;
+.nav-links a:hover {
+  color: #111827;
 }
 
-.submenu-link:hover {
-  background-color: #edf2f7 !important;
-  color: #2b6cb0 !important;
-  border-left-color: #3182ce !important;
-  transform: translateX(4px) !important;
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
-/* Side Navigation Footer - Minimal */
-.side-nav-footer {
-  padding: 1rem 1rem;
-  border-top: 1px solid #e2e8f0;
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+
+/* ========================================
+   LANGUAGE TOGGLE
+   ======================================== */
+
+.top-language-toggle {
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset any conflicting styles */
-.side-navigation * {
-  box-sizing: border-box;
-}
-
-.side-navigation button {
-  font-family: inherit;
-  outline: none;
-}
-
-.side-navigation a {
-  font-family: inherit;
-  outline: none;
-}
-
-/* Remove focus outlines that might add spacing */
-.side-navigation button:focus,
-.side-navigation a:focus {
-  outline: 2px solid #2563eb;
-  outline-offset: -2px;
-}
-
-/* Language Toggle Adjustments */
 .top-language-toggle .language-toggle {
   font-size: 0.85rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .top-language-toggle .language-toggle:hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================================
+   BLACK-AND-WHITE BACKGROUND OVERLAY
+   ======================================== */
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  backdrop-filter: grayscale(100%) brightness(0.7);
+  -webkit-backdrop-filter: grayscale(100%) brightness(0.7);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+}
+
+.menu-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* ========================================
+   SVG MENU SHAPE
+   ======================================== */
+
+.menu-shape-svg {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   SWEEPING SIDE NAVIGATION
+   ======================================== */
+
+.side-navigation {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 2000;
+
+  display: flex;
+  flex-direction: column;
+
+  width: min(400px, 92vw);
+  height: 100dvh;
+
+  background: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+
+  clip-path: url("#sweeping-menu-shape");
+  -webkit-clip-path: url("#sweeping-menu-shape");
+
+  visibility: hidden;
+
+  transform: translateX(-105%) scaleX(0.94);
+  transform-origin: left center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.7s;
+}
+
+.side-navigation.open {
+  visibility: visible;
+  transform: translateX(0) scaleX(1);
+}
+
+/* Remove previous artificial curve decorations */
+.side-navigation::before,
+.side-navigation::after {
+  display: none;
+  content: none;
+}
+
+
+/* ========================================
+   SIDE NAVIGATION HEADER
+   ======================================== */
+
+.side-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  min-height: 68px;
+  padding: 0 3.5rem 0 1.5rem;
+
+  background: #ffffff;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.side-nav-logo {
+  min-width: 0;
+}
+
+.side-logo-image {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.side-logo-text {
+  overflow: hidden;
+
+  color: #1f2937;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   SIDE NAVIGATION CONTENT
+   ======================================== */
+
+.side-nav-content {
+  flex: 1;
+
+  margin: 0;
+  padding: 1rem 70px 1.5rem 1.6rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+
+/* ========================================
+   NAVIGATION SECTIONS
+   ======================================== */
+
+.nav-section {
+  position: relative;
+
+  margin: 0;
+  padding: 0.7rem 0 0.8rem;
+
+  border: none;
+}
+
+/* Light separator between sections */
+.nav-section:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+
+  background: #edf0f3;
+}
+
+
+/* ========================================
+   SECTION HEADINGS
+   ======================================== */
+
+.section-header {
+  display: inline-flex;
+  align-items: center;
+
+  width: auto;
+  min-height: auto !important;
+  height: auto !important;
+
+  margin: 0 0 0.3rem !important;
+  padding: 0 !important;
+
+  color: #111827;
+  background: transparent !important;
+  border: none;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.section-header:hover {
+  color: #4b5563;
+  background: transparent !important;
+  transform: translateX(2px);
+}
+
+.section-title {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #111827 !important;
+  font-size: 0.78rem !important;
+  font-weight: 750 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   VERTICAL SUBMENU LINKS
+   ======================================== */
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+}
+
+.submenu:empty {
+  display: none;
+}
+
+.submenu-link {
+  position: relative;
+
+  display: inline-block !important;
+
+  width: auto !important;
+  min-height: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0.3rem 0 !important;
+
+  color: #667085 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.submenu-link:hover {
+  color: #111827 !important;
+  background: transparent !important;
+  border: none !important;
+
+  transform: translateX(5px) !important;
+}
+
+
+/* ========================================
+   SIDE NAVIGATION FOOTER
+   ======================================== */
+
+.side-nav-footer {
+  flex-shrink: 0;
+
+  padding: 0.75rem 4rem 0.75rem 1.5rem;
+
+  background: #ffffff;
+  border-top: 1px solid #edf0f3;
 }
 
 .side-nav-footer .language-toggle {
-  font-size: 0.7rem;
-  padding: 0.3rem 0.6rem;
+  font-size: 0.78rem;
 }
 
-/* Ensure main content spacing - AGGRESSIVE GAP REMOVAL */
-.main-content {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.menu-toggle-btn:focus-visible,
+.close-btn:focus-visible,
+.section-header:focus-visible,
+.submenu-link:focus-visible,
+.nav-links a:focus-visible,
+.navbar-brand:focus-visible,
+.side-nav-logo:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
 }
 
-/* Remove gaps from body and html */
-body, html {
-  margin: 0 !important;
-  padding: 0 !important;
-}
 
-/* Fix for React apps - remove default margins */
-#root {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+/* ========================================
+   SCROLLBAR
+   ======================================== */
 
-/* Target common React component containers */
-.App {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Remove any top spacing from main sections */
-main {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* Ensure content starts immediately after navbar */
-.home-page,
-.about-page,
-.contact-page,
-.programs-page,
-.admissions-page {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-/* Target hero sections specifically */
-.hero,
-.hero-section,
-.page-header,
-section:first-child {
-  margin-top: 0 !important;
-  padding-top: 70px !important;
-}
-
-/* Remove default section spacing */
-section {
-  margin-top: 0 !important;
-}
-
-/* Override any global spacing */
-* {
-  margin-top: 0;
-}
-
-*:first-child {
-  margin-top: 0 !important;
-}
-
-/* Scrollbar styling for cleaner look */
 .side-nav-content::-webkit-scrollbar {
   width: 4px;
 }
 
 .side-nav-content::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 .side-nav-content::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 2px;
+  background: #d1d5db;
+  border-radius: 999px;
 }
 
 .side-nav-content::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  background: #9ca3af;
 }
 
-/* Mobile Responsive - Even More Compact */
+
+/* ========================================
+   PAGE SPACING
+   ======================================== */
+
+.App main,
+main,
+.main-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
 @media (max-width: 768px) {
   .navbar {
-    height: 60px;
+    height: 64px;
   }
-  
+
   .navbar-container {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
-  
+
+  .navbar-content {
+    gap: 0.5rem;
+  }
+
+  .navbar-left {
+    gap: 0.35rem;
+  }
+
   .logo-image {
-    height: 36px;
     width: 36px;
-  }
-  
-  .logo-text {
-    font-size: 1.0625rem; /* ~17px */
-    letter-spacing: 0.01em;
+    height: 36px;
   }
 
-  .submenu-link {
-    font-size: 1rem !important;  /* 16px */
-    height: 40px !important;
-    padding: 10px 24px !important;
+  .logo-text {
+    font-size: 1rem;
   }
-  
+
+  .top-language-toggle .language-toggle {
+    padding: 0.4rem 0.55rem;
+  }
+
   .side-navigation {
-    width: 230px;
+    width: 94vw;
   }
-  
+
   .side-nav-header {
-    min-height: 44px;
-    padding: 0.5rem 0.75rem;
+    min-height: 64px;
+    padding: 0 2.75rem 0 1.1rem;
   }
-  
-  .section-header {
-    padding: 12px 14px !important;
-    min-height: 44px !important;
-    height: 44px !important;
-  }
-  
-  .section-title {
-    font-size: 1.0625rem !important; /* ~17px */
-  }
-  
-  .main-content {
-    padding-top: 60px;
-  }
-}
 
-@media (max-width: 480px) {
-  .side-navigation {
-    width: 210px;
+  .side-logo-image {
+    width: 30px;
+    height: 30px;
   }
-  
+
+  .side-logo-text {
+    font-size: 0.86rem;
+  }
+
+  .side-nav-content {
+    padding: 0.8rem 58px 1.25rem 1.25rem;
+  }
+
+  .nav-section {
+    padding: 0.65rem 0 0.75rem;
+  }
+
   .section-header {
-    padding: 10px 12px !important;
-    min-height: 40px !important;
-    height: 40px !important;
+    margin-bottom: 0.25rem !important;
   }
-  
+
   .section-title {
-    font-size: 0.95rem !important;
+    font-size: 0.74rem !important;
   }
-  
+
   .submenu-link {
-    padding: 8px 20px !important;
-    font-size: 0.95rem !important;
-    height: 36px !important;
+    padding: 0.28rem 0 !important;
+    font-size: 0.86rem !important;
+  }
+
+  .side-nav-footer {
+    padding: 0.7rem 3rem 0.7rem 1.1rem;
   }
 }
 
-/* =========================
-   NAVBAR: Mobile-first fixes
-   ========================= */
 
-/* Use a CSS var so sizes are consistent */
-:root {
-  --nb-mobile-height: 64px;
-  --nb-mobile-font: 1.0625rem; /* ~17px */
-  --nb-mobile-link: 1rem;      /* 16px links in slideout */
-}
+/* ========================================
+   SMALL MOBILE
+   ======================================== */
 
-/* If you have inline desktop links, hide them on mobile */
-.nav-links,
-.navbar .desktop-only {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    height: 72px;
-  }
+@media (max-width: 420px) {
   .logo-text {
-    font-size: 1.125rem;
-  }
-  .nav-links,
-  .navbar .desktop-only {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  /* Keep the hamburger visible on desktop */
-  .menu-toggle-btn {
-    display: inline-flex;
+    display: none;
   }
 
-  @media (max-width: 768px) {
-  .App main .page-header {
-    padding-top: 85px !important;
+  .side-logo-text {
+    display: inline;
+  }
+
+  .side-navigation {
+    width: 96vw;
+  }
+
+  .side-nav-header {
+    padding-right: 2.5rem;
+  }
+
+  .side-nav-content {
+    padding-right: 50px;
+  }
+
+  .side-nav-footer {
+    padding-right: 2.75rem;
   }
 }
-}
 
-/* Extra space above all standard page headings */
-.App main .page-header {
-  padding-top: 100px !important;
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .side-navigation,
+  .menu-overlay,
+  .menu-toggle-btn,
+  .close-btn,
+  .submenu-link,
+  .section-header,
+  .navbar-brand {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

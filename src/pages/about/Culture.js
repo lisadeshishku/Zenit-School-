@@ -3,10 +3,22 @@ import { useTranslation } from 'react-i18next';
 import '../../styles/Culture.css';
 
 const cultureImages = [
-  'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85',
-  'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85',
-  'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=85',
-  'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=85'
+  {
+    src: '/images/culture/culture-community.jpg',
+    position: 'center 45%',
+  },
+  {
+    src: '/images/culture/culture shared projects.jpg',
+    position: 'center 60%',
+  },
+  {
+    src: '/images/culture/culture-family-participation.jpg',
+    position: 'center 70%',
+  },
+  {
+    src: '/images/culture/culture-friendship.jpg',
+    position: 'center 60%',
+  },
 ];
 
 export default function Culture() {
@@ -25,7 +37,11 @@ export default function Culture() {
       <section className="culture-intro">
         <div className="container culture-intro-grid">
           <div className="culture-intro-image">
-            <img src={cultureImages[0]} alt={t('culture.intro.imageAlt')} />
+            <img
+              src={cultureImages[0].src}
+              alt={t('culture.intro.imageAlt')}
+              style={{ objectPosition: cultureImages[0].position }}
+            />
           </div>
           <div className="culture-intro-copy">
             <span className="section-kicker">{t('culture.intro.kicker')}</span>
@@ -58,12 +74,13 @@ export default function Culture() {
             <p>{t('culture.gallery.subtitle')}</p>
           </div>
           <div className="culture-photo-grid">
-            {cultureImages.slice(1).map((src, index) => (
+            {cultureImages.slice(1).map((image, index) => (
               <img
-                key={src}
-                src={src}
+                key={image.src}
+                src={image.src}
                 alt={t('culture.gallery.imageAlt', { index: index + 1 })}
                 loading="lazy"
+                style={{ objectPosition: image.position }}
               />
             ))}
           </div>

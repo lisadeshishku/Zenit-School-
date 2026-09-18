@@ -80,9 +80,15 @@
 
 .classroom-photo-grid {
   display: grid;
-  grid-template-columns: 1.15fr .85fr 1fr;
-  grid-auto-rows: 185px;
-  gap: 1rem;
+  grid-template-columns: 1.15fr 0.85fr 1fr;
+
+  /* Coding, robotics and collaboration */
+  grid-template-rows: 245px 245px;
+
+  /* Experiment and final creative-project photo */
+  grid-auto-rows: 205px;
+
+  gap: 1.15rem;
 }
 
 .classroom-photo {
@@ -91,10 +97,22 @@
   border-radius: 11px;
 }
 
+.classroom-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .classroom-photo-1,
 .classroom-photo-5 { grid-row: span 2; }
 
 .classroom-photo-4 { grid-column: span 2; }
+
+.classroom-photo-6 {
+  height: 255px;
+  align-self: start;
+}
 
 .classroom-features { padding: 5rem 0; }
 
@@ -137,16 +155,35 @@
 @media (max-width: 800px) {
   .classroom-intro-grid { grid-template-columns: 1fr; }
   .classroom-intro-image { height: 340px; }
-  .classroom-photo-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 170px; }
-  .classroom-photo-4 { grid-column: auto; }
+  .classroom-photo-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 190px;
+    gap: 0.85rem;
+  }
+
+  .classroom-photo-4 {
+    grid-column: auto;
+  }
 }
+  .classroom-photo-4 { grid-column: auto; }
+
 
 @media (max-width: 560px) {
   .classroom-header { padding: 3.25rem 0 2.5rem; }
   .classroom-intro { padding: 3.5rem 0; }
   .classroom-intro-image { height: 280px; }
   .classroom-gallery { padding: 3.5rem 0; }
-  .classroom-photo-grid { grid-auto-rows: 130px; gap: .65rem; }
-  .classroom-features-grid { grid-template-columns: 1fr; }
+  .classroom-photo-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 230px;
+    gap: 0.75rem;
+  }
+
+  .classroom-photo-1,
+  .classroom-photo-5 {
+    grid-row: auto;
+  }
 }
+  .classroom-features-grid { grid-template-columns: 1fr; }
 

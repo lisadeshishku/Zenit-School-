@@ -11,12 +11,6 @@ const WhyZenit = () => {
   const approach   = t("whyZenit.approach.steps",   { returnObjects: true }) || [];
   const highlights = t("whyZenit.highlights",       { returnObjects: true }) || [];
 
-  const bannerImage =
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=80";
-  const classroomImage =
-    "https://images.unsplash.com/photo-155593-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80";
-  const studentsImage =
-    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80";
 
   return (
     <div className="why-zenit-page">
@@ -36,11 +30,11 @@ const WhyZenit = () => {
               {introParas.map((p, i) => <p key={i}>{p}</p>)}
             </div>
             <figure className="wz-side-image">
-              <img
-                src="/whyzenit/whyzenit1.jpg"
-                alt={t("whyZenit.images.bannerAlt", { defaultValue: "Zenit School exterior" })}
-                loading="lazy"
-              />
+            <img
+              src="/images/why-zenit/why-zenit-community.jpg"
+              alt={t('whyZenit.images.community')}
+              style={{ objectPosition: 'center 50%' }}
+            />
             </figure>
           </div>
         </div>
@@ -64,9 +58,9 @@ const WhyZenit = () => {
             </div>
             <figure className="wz-side-image">
               <img
-                src="/whyzenit/whyzenit2.jpg"
-                alt={t("whyZenit.images.classroomAlt", { defaultValue: "Students in classroom" })}
-                loading="lazy"
+                src="/images/why-zenit/why-zenit-practical-learning.jpg"
+                alt={t('whyZenit.images.practicalLearning')}
+                style={{ objectPosition: 'center 48%' }}
               />
             </figure>
           </div>
@@ -90,9 +84,9 @@ const WhyZenit = () => {
             </div>
             <figure className="wz-side-image">
               <img
-                src="/whyzenit/IMG_7629.jpg"
-                alt={t("whyZenit.images.studentsAlt", { defaultValue: "Students collaborating" })}
-                loading="lazy"
+                src="/images/why-zenit/why-zenit-teacher-guidance.jpg"
+                alt={t('whyZenit.images.teacherGuidance')}
+                style={{ objectPosition: 'center 50%' }}
               />
             </figure>
           </div>

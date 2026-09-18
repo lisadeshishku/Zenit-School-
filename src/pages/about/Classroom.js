@@ -2,13 +2,42 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../styles/Classroom.css';
 
+const introImage = {
+  src: '/images/classroom/classroom-intro.jpg',
+  position: 'center 66%',
+};
+
 const galleryImages = [
-  '/insidetheclass/insideclass3304.jpg',
-  '/insidetheclass/insideclass341.jpg',
-  '/insidetheclass/insideclass3455.jpg',
-  '/insidetheclass/insideclass5876.jpg',
-  '/insidetheclass/insideclass8665.jpg',
-  '/insidetheclass/insideclass9880.jpg'
+  {
+    src: '/images/classroom/classroom-microscope.jpg',
+    altKey: 'classroom.galleryAlts.microscope',
+    position: 'center 48%',
+  },
+  {
+    src: '/images/classroom/classroom-coding.jpg',
+    altKey: 'classroom.galleryAlts.coding',
+    position: 'center 60%',
+  },
+  {
+    src: '/images/classroom/classroom-robotics.jpg',
+    altKey: 'classroom.galleryAlts.robotics',
+    position: 'center 20%',
+  },
+  {
+  src: '/images/classroom/classroom-collaboration.jpg',
+  altKey: 'classroom.galleryAlts.collaboration',
+  position: 'center 80%',
+},
+  {
+    src: '/images/classroom/classroom-experiment.jpg',
+    altKey: 'classroom.galleryAlts.experiment',
+    position: 'center 55%',
+  },
+  {
+    src: '/images/classroom/classroom-creative-project.jpg',
+    altKey: 'classroom.galleryAlts.creativeProject',
+    position: 'center 42%',
+  },
 ];
 
 const fallbackImage =
@@ -41,8 +70,9 @@ export default function Classroom() {
           </div>
           <div className="classroom-intro-image">
             <img
-              src="/insidetheclass/insideclass6820.jpg"
+              src={introImage.src}
               alt={t('classroom.hero.imageAlt')}
+              style={{ objectPosition: introImage.position }}
               onError={useFallback}
             />
           </div>
@@ -56,13 +86,17 @@ export default function Classroom() {
             <div className="gallery-line" />
           </div>
           <div className="classroom-photo-grid">
-            {galleryImages.map((src, index) => (
-              <figure className={`classroom-photo classroom-photo-${index + 1}`} key={src}>
+            {galleryImages.map((image, index) => (
+              <figure
+                className={`classroom-photo classroom-photo-${index + 1}`}
+                key={image.src}
+              >
                 <img
-                  src={src}
-                  alt={t('classroom.galleryImageAlt', { number: index + 1 })}
+                  src={image.src}
+                  alt={t(image.altKey)}
                   loading="lazy"
                   onError={useFallback}
+                  style={{ objectPosition: image.position }}
                 />
               </figure>
             ))}

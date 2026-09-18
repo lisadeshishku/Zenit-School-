@@ -43,8 +43,45 @@
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+/* =========================
+   STATS — MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+  .stats-section {
+    width: 100%;
+    padding: 3rem 0;
+    overflow: visible;
+  }
+
+  .stats-section .container {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
   .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .stat-item {
+    width: 100%;
+    min-width: 0;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.45;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }

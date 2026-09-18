@@ -194,6 +194,11 @@
       "text": "A short tour shows far more than a brochure. Meet our teachers, sit in on a lesson, and see how our students learn.",
       "button": "Book a tour"
     },
+    "images": {
+    "community": "Zenit School students collaborating during an activity",
+    "practicalLearning": "Students applying mathematics through a practical activity",
+    "teacherGuidance": "A teacher guiding students during classroom work"
+    },
     "fallback": {
       "intro1": "Zenit School is built around a simple idea: when students feel known, challenged, and supported, they do their best work — and become their best selves.",
       "intro2": "Our teachers combine rigorous academics with purposeful character formation.",
@@ -227,7 +232,15 @@
       { "title": "Coding and technology", "text": "Students learn fundamental coding concepts through Code.org, while upper-secondary students also begin studying web development." },
       { "title": "Practical work and interdisciplinary projects", "text": "Practical activities take place across the curriculum. In biology, biotechnology, chemistry, physics, technology and other subjects, students conduct experiments, undertake research and create projects that connect knowledge from different disciplines." },
       { "title": "Collaboration and support", "text": "Group work, presentations, continuous guidance and feedback help students develop independence, responsibility and confidence." }
-    ]
+    ],
+    "galleryAlts": {
+  "microscope": "Student working with a microscope",
+  "coding": "Students working on coding",
+  "robotics": "Students developing a robotics project",
+  "collaboration": "Students collaborating during a classroom activity",
+  "experiment": "Students conducting a science experiment",
+  "creativeProject": "Student presenting a creative project"
+}
   },
   "activities": {
     "kicker": "Beyond the classroom",
@@ -716,9 +729,18 @@
       }
     },
     "quick": {
-      "pool":      { "title": "Swimming Facilities", "text": "Visit our half Olympic pool—perfect for competitive swimming, lessons, and summer camp activities." },
-      "parking":   { "title": "Parking", "text": "Free parking available on campus for all visitors and families." },
-      "access":    { "title": "Accessibility", "text": "All facilities are wheelchair accessible with accommodations available." }
+      "pool":      {
+    "title": "Half-Olympic Swimming Pool",
+    "text": "The school pool is used for swimming lessons, training and Zenit Summer Camp activities."
+  },
+      "parking":   {
+    "title": "On-Campus Parking",
+    "text": "Parking is available on the school grounds for parents and visitors."
+  },
+      "access":    {
+    "title": "Accessible Campus",
+    "text": "The school spaces are organised to provide convenient access for students, families and visitors."
+  }
     }
   }
 }

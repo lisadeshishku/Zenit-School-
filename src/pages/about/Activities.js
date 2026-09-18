@@ -3,13 +3,35 @@ import { useTranslation } from 'react-i18next';
 import '../../styles/PageHeaders.css';
 import '../../styles/Activities.css';
 
-const images = [
-  'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1500&q=85',
-  'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=85',
-  'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&w=1200&q=85',
-  'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=85',
-  'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1200&q=85'
-];
+const images = {
+ 
+  hero: '/images/activities/activities-hero.jpg',
+
+ 
+
+  categories: [
+    {
+      src: '/images/activities/activities-leadership.jpg',
+      position: 'center 38%',
+    },
+    {
+      src: '/images/activities/activities-science.jpg',
+      position: 'center 42%',
+    },
+    {
+      src: '/images/activities/activities-music.jpg',
+      position: 'center 42%',
+    },
+    {
+      src: '/images/activities/activities-swimming.jpg',
+      position: 'center 38%',
+    },
+    {
+      src: '/images/activities/activities-events.jpg',
+      position: 'center 35%',
+    },
+  ],
+};
 
 export default function Activities() {
   const { t } = useTranslation();
@@ -25,17 +47,15 @@ export default function Activities() {
             <p>{t('activities.subtitle')}</p>
           </div>
           <div className="activities-header-image">
-            <img src={images[0]} alt={t('activities.headerImageAlt')} />
+            <img
+              src={images.hero}
+              alt={t('activities.title')}
+              className="activities-image activities-image--hero"
+            />
           </div>
         </div>
       </section>
 
-      <section className="activities-collage">
-        <div className="container collage-grid">
-          <img src={images[1]} alt={t('activities.creativeImageAlt')} loading="lazy" />
-          <img src={images[2]} alt={t('activities.studentImageAlt')} loading="lazy" />
-        </div>
-      </section>
 
       <section className="categories-section">
         <div className="container categories-grid">
@@ -43,9 +63,12 @@ export default function Activities() {
             <article className="category-card" key={index}>
               <div className="category-media">
                 <img
-                  src={images[(index + 1) % images.length]}
+                  src={images.categories[index]?.src}
                   alt={category.title}
                   loading="lazy"
+                  style={{
+                    objectPosition: images.categories[index]?.position || 'center',
+                  }}
                 />
               </div>
               <div className="category-content">

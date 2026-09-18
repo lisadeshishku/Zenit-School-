@@ -196,6 +196,11 @@
       "text": "Një tur i shkurtër tregon më shumë se një broshurë. Takoni mësuesit, merrni pjesë në një orë mësimi dhe shihni si mësojnë nxënësit tanë.",
       "button": "Cakto Vizitën"
     },
+    "images": {
+    "community": "Nxënësit e Shkollës Zenit duke bashkëpunuar gjatë një aktiviteti",
+    "practicalLearning": "Nxënësit duke zbatuar matematikën përmes një aktiviteti praktik",
+    "teacherGuidance": "Mësimdhënëse duke udhëhequr nxënësit gjatë punës në klasë"
+    },
     "fallback": {
       "intro1": "Shkolla Zenit ndërtohet mbi një ide të thjeshtë: kur nxënësit ndihen të njohur, të sfiduar dhe të përkrahur, ata bëhen versioni i tyre më i mirë.",
       "intro2": "Mësuesit tanë kombinojnë akademikë rigorozë me formim të qëllimshëm të karakterit.",
@@ -225,6 +230,15 @@
     "galleryImageAlt": "Pamje nga klasa {{number}}",
     "featuresKicker": "Qasja jonë",
     "featuresTitle": "Mësim i organizuar rreth nevojave të nxënësit",
+    "galleryAlts": {
+    "microscope": "Nxënëse duke punuar me mikroskop",
+    "coding": "Nxënës duke punuar në kodim",
+    "robotics": "Nxënës duke zhvilluar një projekt të robotikës",
+    "collaboration": "Nxënës duke bashkëpunuar gjatë një aktiviteti mësimor",
+    "experiment": "Nxënës duke realizuar një eksperiment shkencor",
+    "creativeProject": "Nxënës duke prezantuar një projekt kreativ"
+  },
+    
     "features": [
       { "title": "Mësimdhënie e strukturuar", "text": "Çdo orë zhvillohet me objektiva të qarta, shpjegim të organizuar dhe detyra që i ndihmojnë nxënësit t’i përvetësojnë njohuritë në mënyrë të qëndrueshme." },
       { "title": "Kodim dhe teknologji", "text": "Nxënësit mësojnë konceptet bazë të kodimit përmes Code.org, ndërsa në shkollën e mesme të lartë fillojnë edhe zhvillimin e faqeve të internetit." },
@@ -261,7 +275,7 @@
         "items": ["Klubi i Notit", "Aktivitete sportive", "Lojëra dhe ushtrime motorike"]
       },
       {
-        "title": "Ngjarje, tradita dhe vizita mësimore",
+        "title": "Evente, tradita dhe vizita mësimore",
         "desc": "Gjatë vitit shkollor organizojmë Ditën e Shkollës më 7 Mars, programe për 28 Nëntorin dhe 17 Shkurtin, si dhe aktivitete të tjera kulturore e përkujtimore. Organizojmë gjithashtu ekskursione dhe vizita mësimore në vende të ndryshme, ku nxënësit zgjerojnë njohuritë dhe krijojnë përvoja të përbashkëta jashtë shkollës.",
         "items": ["Dita e Shkollës – 7 Marsi", "Programi i 28 Nëntorit", "Programi i 17 Shkurtit", "Ekskursione në vende të ndryshme", "Vizita mësimore dhe aktivitete të veçanta"]
       }
@@ -718,9 +732,18 @@
       }
     },
     "quick": {
-      "pool":      { "title": "Facilitete Noti", "text": "Vizitoni pishinën tonë gjysmë-olimpike — ideale për gara, mësime dhe aktivitete kampi." },
-      "parking":   { "title": "Parkimi", "text": "Parkim falas në kampus për vizitorë dhe familje." },
-      "access":    { "title": "Aksesueshmëri", "text": "Të gjitha ambientet janë të aksesueshme me karrocë, me akomodime sipas nevojës." }
+      "pool":      {
+    "title": "Pishina gjysmë-olimpike",
+    "text": "Pishina e shkollës përdoret për mësimin e notit, stërvitje dhe aktivitetet e Kampit Veror Zenit."
+  },
+      "parking":   {
+    "title": "Parkim në kampus",
+    "text": "Në hapësirën e shkollës ofrohet parkim për prindërit dhe vizitorët."
+  },
+      "access":    {
+    "title": "Qasje e përshtatshme",
+    "text": "Hapësirat e shkollës janë të organizuara për të mundësuar qasje të lehtë për nxënësit, familjet dhe vizitorët."
+  }
     }
   }
 }

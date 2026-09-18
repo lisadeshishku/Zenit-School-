@@ -271,7 +271,6 @@ input:focus, textarea:focus, select:focus {
 
 main {
   flex: 1;
-  padding-top: 5rem; /* Fixed navbar spacing */
 }
 
 :root {
@@ -553,7 +552,150 @@ main {
   }
 }
 
-/* Extra space above headings on every page using .page-header */
-.page-header {
-  padding-top: calc(70px + 1.5rem) !important;
+
+/* ========================================
+   GLOBAL MOBILE VIEWPORT FIX
+   ======================================== */
+
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 0;
+  margin-inline: auto;
+}
+
+/* Prevent grid and flex children from forcing overflow */
+.App *,
+.App *::before,
+.App *::after {
+  min-width: 0;
+}
+
+/* Correct homepage hero */
+.hero {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 64rem;
+  overflow: hidden;
+}
+
+.hero-title,
+.hero-subtitle {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .hero {
+    height: calc(100svh - 60px);
+    min-height: 620px;
+    margin-top: 60px !important;
+    padding: 0 !important;
+  }
+
+  .hero-content {
+    padding: 2rem 1.25rem;
+  }
+
+  .hero-title {
+    width: 100%;
+    font-size: clamp(2rem, 10vw, 2.75rem);
+    line-height: 1.08;
+  }
+
+  .hero-subtitle {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-slide,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* Match page headings exactly to the fixed navbar height */
+.App main,
+main,
+.main-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.App main .page-header {
+  margin-top: 0 !important;
+  padding-top: 120px !important;
+}
+
+@media (max-width: 768px) {
+  .App main .page-header {
+    padding-top: 90px !important;
+  }
 }
