@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
@@ -27,6 +27,7 @@ const Hero = () => {
     },
   ];
 
+
   useEffect(() => {
     const timer = window.setInterval(() => {
       setCurrentSlide((previous) => (previous + 1) % heroSlides.length);
@@ -35,8 +36,58 @@ const Hero = () => {
     return () => window.clearInterval(timer);
   }, [heroSlides.length]);
 
+  const touchStartX = useRef(null);
+const touchCurrentX = useRef(null);
+
+const showNextSlide = () => {
+  setCurrentSlide((previous) => (previous + 1) % heroSlides.length);
+};
+
+const showPreviousSlide = () => {
+  setCurrentSlide(
+    (previous) => (previous - 1 + heroSlides.length) % heroSlides.length
+  );
+};
+
+const handleTouchStart = (event) => {
+  touchStartX.current = event.touches[0].clientX;
+  touchCurrentX.current = event.touches[0].clientX;
+};
+
+const handleTouchMove = (event) => {
+  touchCurrentX.current = event.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  if (
+    touchStartX.current === null ||
+    touchCurrentX.current === null
+  ) {
+    return;
+  }
+
+  const swipeDistance =
+    touchStartX.current - touchCurrentX.current;
+
+  const minimumSwipeDistance = 50;
+
+  if (swipeDistance > minimumSwipeDistance) {
+    showNextSlide();
+  } else if (swipeDistance < -minimumSwipeDistance) {
+    showPreviousSlide();
+  }
+
+  touchStartX.current = null;
+  touchCurrentX.current = null;
+};
+
   return (
-    <section className="hero">
+      <section
+        className="hero"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
       <div className="hero-overlay" />
 
       {heroSlides.map((slide, index) => (

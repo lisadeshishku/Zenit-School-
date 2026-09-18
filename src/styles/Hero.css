@@ -310,3 +310,15 @@
     transform: translateX(50%);
   }
 }
+
+.hero {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+}
+
+.hero-image {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
