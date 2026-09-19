@@ -220,11 +220,12 @@ const Contact = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="phone">{t('contactPage.form.phone')}</label>
+                  <label htmlFor="phone">{t('contactPage.form.phone')} *</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
+                    required
                     placeholder={t('contactPage.form.placeholders.phone')}
                     autoComplete="off"
                     inputMode="tel"
