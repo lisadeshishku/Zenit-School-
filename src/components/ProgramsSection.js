@@ -12,7 +12,7 @@ const ProgramsSection = () => {
       description: t('home.programs.primary.description'),
       level: t('home.programs.primary.level'),
       imageAlt: t('home.programs.primary.imageAlt'),
-      image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1000&q=80',
+      image: '/images/programs/elementary/elementary-community.jpg',
       link: '/programs#elementary',
     },
     {
